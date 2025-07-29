@@ -39,7 +39,7 @@ const contactInfo = [{
 
 const Footer = () => {
     return (
-        <div className="bg-[var(--off-white)] py-4">
+        <div className="brand-bg-offwhite py-4">
             <div className="py-4 max-w-7xl m-auto">
                 <div className="flex items-center justify-between ">
                     <div className="flex flex-col gap-5 max-w-xl">

@@ -59,7 +59,7 @@ const ServicesMenu = () => {
             {ServicesMenuData.map((menuData) => (
                 <div className="flex items-start gap-2 w-[49%] p-4 cursor-pointer">
                     <Image 
-                        className="w-10 brand-bg-orange"
+                        className="w-10 brand-text-orange"
                         src={menuData.icon}
                     />
                     <div className="flex flex-col">

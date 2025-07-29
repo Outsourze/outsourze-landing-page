@@ -1,3 +1,10 @@
+import HeroSection from "@/component/home/hero"
+
 export default function Home() {
-  return <div>Home</div>
+  return (
+    <div>
+      {/* hero section container */}
+      <HeroSection />
+    </div>
+  )
 }
