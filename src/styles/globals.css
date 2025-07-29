@@ -1,26 +1,60 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600;700&family=Space+Grotesk:wght@500&display=swap');
+
 @import "tailwindcss";
+@tailwind utilities;
 
+/* === Design Tokens / Brand Theme === */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Brand Colors */
+  --color-brand-orange: #FF6600;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #808080;
+  --off-white: #FAFAFA;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* border */
+  --border-black: #010205;
+
+  /* Text color */
+  --primary-text-color: var(--color-black);
+
+  /* Base Layout Colors */
+  --background: var(--color-white);
+  --foreground: var(--color-black);
+
+  /* Typography */
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-cta: 'Space Grotesk', sans-serif;
+
+  /* Corner radius */
+  --radius: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: var(--background);
     --foreground: #ededed;
   }
 }
 
+/* === Base Styles === */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--primary-text-color);
+  font-family: var(--font-body);
+}
+
+/* Example utility: use this in Tailwind via className="bg-texture-orange-overlay" */
+.bg-texture-orange-overlay {
+  background: linear-gradient(rgba(255, 102, 0, 0.3), rgba(255, 102, 0, 0.3));
+}
+
+@layer utilities {
+  .font-cta {
+    font-family: var(--font-cta);
+  }
+
+
 }
