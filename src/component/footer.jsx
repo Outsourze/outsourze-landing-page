@@ -4,36 +4,36 @@ import Link from "next/link";
 const socialMedia = [{
     url: "",
     alt: "facebook",
-    icon: require("@/assets/logo/facebook.png")
+    icon: require("@/assets/icon/facebook.png")
 }, {
     url: "",
     alt: "instagram",
-    icon: require("@/assets/logo/instagram.png")
+    icon: require("@/assets/icon/instagram.png")
 }, {
     url: "",
     alt: "tiktok",
-    icon: require("@/assets/logo/tiktok.png")
+    icon: require("@/assets/icon/tiktok.png")
 }, {
     url: "",
     alt: "linkedin",
-    icon: require("@/assets/logo/linkedin.png")
+    icon: require("@/assets/icon/linkedin.png")
 }]
 
 const contactInfo = [{
     alt: "call",
-    icon: require("@/assets/logo/call.png"),
+    icon: require("@/assets/icon/call.png"),
     text: "PH 12345678 | NZ 12345678 | AU 12345678UK | UK 12345678 | CAN 12345678"
 }, {
     alt: "email",
-    icon: require("@/assets/logo/email.png"),
+    icon: require("@/assets/icon/email.png"),
     text: "hello@outsourze.com"
 }, {
     alt: "location",
-    icon: require("@/assets/logo/location.png"),
+    icon: require("@/assets/icon/location.png"),
     text: "Outsourze Inc Knightsbridge Level 2, 392 B. Valdez Street, Poblacion, Makati,Metro Manila, Philippines, 1201"
 }, {
     alt: "globe",
-    icon: require("@/assets/logo/globe.png"),
+    icon: require("@/assets/icon/globe.png"),
     text: "www.outsourze.com"
 }]
 
