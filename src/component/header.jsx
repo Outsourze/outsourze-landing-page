@@ -3,38 +3,8 @@ import Link from 'next/link';
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
-
-const ServicesMenuData = [{
-    url: "",
-    icon: require("@/assets/icon/customer-support.png"),
-    text: "Customer Support",
-    subText: "Support that cares"
-}, {
-    url: "",
-    icon: require("@/assets/icon/sales-lead.png"),
-    text: "Sale & Lead Generation",
-    subText: "Sales that convert"
-}, {
-    url: "",
-    icon: require("@/assets/icon/hr-recruitment.png"),
-    text: "HR Recruitment",
-    subText: "Hiring made easy"
-}, {
-    url: "",
-    icon: require("@/assets/icon/admin.png"),
-    text: "Administration",
-    subText: "Operations run smoothly"
-}, {
-    url: "",
-    icon: require("@/assets/icon/finance-accounting.png"),
-    text: "Finance & Accounting",
-    subText: "Number done right"
-}, {
-    url: "",
-    icon: require("@/assets/icon/marketing.png"),
-    text: "Marketing & Creative",
-    subText: "Creativity that sells"
-}]
+import { ServicesMenuData } from "@/api/data";
+import WhiteButton from "./ui/white-btn";
 
 const ServicesMenu = () => {
   return (
@@ -84,7 +54,7 @@ const Header = () => {
     }
 
     return (
-        <div className="sticky py-4 max-w-7xl m-auto">
+        <div className="fixed py-4 max-w-7xl m-auto top-0 left-0 right-0 w-full z-50 bg-[var(--background)]">
             <div className="py-4 flex items-center justify-between">
                 <Image 
                     className="w-56" 
@@ -107,12 +77,10 @@ const Header = () => {
                       {isServicesOpen && <ServicesMenu />}
                     </div>
                     <Link className="text-[var(--color-gray)] font-cta" href="/about">About</Link>
-                    <Link 
-                        className="font-cta py-3 px-4 border border-[var(--border-black)] rounded-[50px] text-[var(--primary-text-color)]"
-                        href="/contact-us"
-                    >
-                        Contact Us
-                    </Link>
+                    <WhiteButton 
+                      text={"Contact Us"}
+                      url={"/contact-us"}
+                    />
                 </div>
             </div>
         </div>

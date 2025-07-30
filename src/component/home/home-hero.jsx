@@ -3,7 +3,6 @@
 import Button from "../ui/button";
 import Image from "next/image";
 
-
 const HeroSection = () => {
     return (
         <div className="brand-bg-offwhite">
@@ -58,10 +57,10 @@ const HeroSection = () => {
                       {/* Background image */}
                       <Image
                         className="absolute left-[-27%] bottom-[-80%] z-0 filter brightness-70 backdrop-sepia-50"
-                        src={require("@/assets/images/bubble-bg-hero.png")}
+                        src={require("@/assets/images/bubble-bg.png")}
                         alt="Background"
                         style={{ transform: "rotate(115.48deg)" }}
-                       />
+                      />
 
                       {/* Foreground content */}
                       <div className="relative z-10 flex flex-col gap-4">

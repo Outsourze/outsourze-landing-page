@@ -13,6 +13,7 @@
   --color-white: #ffffff;
   --color-gray: #808080;
   --off-white: #FAFAFA;
+  --color-slight-black: #131313;
 
   /* border */
   --border-black: #010205;
@@ -92,5 +93,12 @@ body {
   .brand-bg-offwhite {
     background-color: var(--off-white);
   }
-  
+
+  .card-bg-slight-black {
+    background-color: var(--color-slight-black);
+  }
+
+  .footer-getstarted-banner-bg {
+    background-color: #020609;
+  }
 }
