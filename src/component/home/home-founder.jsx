@@ -25,10 +25,9 @@ const founderData = [{
 const FounderSection = () => {
     return (
         <div>
-            <div className="max-w-7xl m-auto flex flex-col items-start gap-10">
+            <div className="max-w-7xl m-auto flex flex-col items-start gap-5">
                 <h2 className="brand-text-orange font-extrabold text-5xl font-heading">Meet Our Founders</h2>
-                <hr />
-                <div className="mt-5 flex flex-wrap gap-10 justify-center">
+                <div className="mt-5 flex flex-wrap gap-10 justify-center border-t-black border-t pt-5">
                     {founderData.map((data, index) => (
                         <FounderCard
                             img={data.img}

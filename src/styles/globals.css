@@ -101,4 +101,12 @@ body {
   .footer-getstarted-banner-bg {
     background-color: #020609;
   }
+
+  .mask-spotlight {
+    mask-image: radial-gradient(circle at center, transparent 80px, black 150px);
+    -webkit-mask-image: radial-gradient(circle at center, transparent 80px, black 150px);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+  }
 }
