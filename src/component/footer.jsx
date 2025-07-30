@@ -1,48 +1,39 @@
 import Image from "next/image";
 import Link from "next/link";
+import { contactInfo, socialMedia } from "@/api/data";
+import Button from "./ui/button";
 
-const socialMedia = [{
-    url: "",
-    alt: "facebook",
-    icon: require("@/assets/icon/facebook.png")
-}, {
-    url: "",
-    alt: "instagram",
-    icon: require("@/assets/icon/instagram.png")
-}, {
-    url: "",
-    alt: "tiktok",
-    icon: require("@/assets/icon/tiktok.png")
-}, {
-    url: "",
-    alt: "linkedin",
-    icon: require("@/assets/icon/linkedin.png")
-}]
-
-const contactInfo = [{
-    alt: "call",
-    icon: require("@/assets/icon/call.png"),
-    text: "PH 12345678 | NZ 12345678 | AU 12345678UK | UK 12345678 | CAN 12345678"
-}, {
-    alt: "email",
-    icon: require("@/assets/icon/email.png"),
-    text: "hello@outsourze.com"
-}, {
-    alt: "location",
-    icon: require("@/assets/icon/location.png"),
-    text: "Outsourze Inc Knightsbridge Level 2, 392 B. Valdez Street, Poblacion, Makati,Metro Manila, Philippines, 1201"
-}, {
-    alt: "globe",
-    icon: require("@/assets/icon/globe.png"),
-    text: "www.outsourze.com"
-}]
 
 const Footer = () => {
     return (
         <div className="brand-bg-offwhite py-4">
             <div className="py-4 max-w-7xl m-auto">
+                <div className="footer-getstarted-banner-bg relative overflow-hidden rounded-4xl py-14 px-16 mb-15">
+                  {/* Background image */}
+                  <Image
+                    className="absolute right-0 bottom-[-80%] z-0 brightness-150 blur-2xl"
+                    src={require("@/assets/images/bubble-bg.png")}
+                    alt="Background"
+                    style={{ transform: "rotate(34.48deg)" }}
+                  />
+                    {/* Blue overlay */}
+                    <div className="absolute inset-0 bg-blue-500 opacity-20 z-0 mix-blend-multiply"></div>
+                
+                  {/* Foreground content */}
+                  <div className="relative z-10 flex items-center justify-between w-full">
+                    <h2 className="text-white font-semibold text-[4.6rem] font-jakarta">
+                      Ready to work with us?
+                    </h2>
+                    
+                    <Button 
+                      style={"text-white text-sm gap-8 px-8 py-4"} 
+                      text={"Get Started"} 
+                    />
+                  </div>
+                </div>
+
                 <div className="flex items-center justify-between ">
-                    <div className="flex flex-col gap-5 max-w-xl">
+                    <div className="flex flex-col gap-5 max-w-[34rem]">
                         <Image 
                             className="w-56" 
                             src={require("@/assets/logo/Outsourze Logo.svg")} 
@@ -62,7 +53,7 @@ const Footer = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4 max-w-lg">
+                    <div className="flex flex-col gap-4 max-w-[30rem]">
                         <h3 className="font-semibold text-[20px]">Contact</h3>
                         <div className="flex flex-col gap-3">
                             {contactInfo.map((info, index) => (
