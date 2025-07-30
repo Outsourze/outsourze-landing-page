@@ -1,5 +1,6 @@
 /* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600;700&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600;700&family=Space+Grotesk:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 
 @import "tailwindcss";
 @tailwind utilities;
@@ -27,6 +28,7 @@
   --font-heading: 'Sora', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-cta: 'Space Grotesk', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
 
   /* Corner radius */
   --radius: 1rem;
@@ -56,6 +58,7 @@ body {
 }
 
 @layer utilities {
+  /* font family */
   .font-cta {
     font-family: var(--font-cta);
   }
@@ -63,6 +66,12 @@ body {
   .font-heading {
     font-family: var(--font-heading);
   }
+
+  .font-jakarta {
+    font-family: var(--font-jakarta);
+  }
+
+  /*  */
 
   .shadow-menu {
     box-shadow: var(--menu-shadow);
@@ -73,7 +82,7 @@ body {
   }
 
   .brand-bg-orange {
-    background-color: var(--color-brand-orange);;
+    background-color: var(--color-brand-orange);
   }
 
   .brand-text-orange {
@@ -83,4 +92,5 @@ body {
   .brand-bg-offwhite {
     background-color: var(--off-white);
   }
+  
 }

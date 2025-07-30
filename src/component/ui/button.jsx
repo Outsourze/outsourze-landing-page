@@ -11,7 +11,7 @@ const Button = ({
         >
             {text} 
             <FaArrowRight size={18}/>
-        </Link>
+        </Link> 
     )
 }
 
