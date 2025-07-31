@@ -1,5 +1,6 @@
-import BannerSection from "@/component/about/about-banner"
-import CompanyAboutSection from "@/component/about/about-company"
+import BannerSection from "@/component/about/about-banner";
+import CompanyAboutSection from "@/component/about/about-company";
+import FounderSection from "@/component/about/about-founder";
 
 export default function About() {
   return (
@@ -7,6 +8,7 @@ export default function About() {
       {/* about section container */}
       <BannerSection />
       <CompanyAboutSection />
+      <FounderSection />
     </div>
   )
 }
