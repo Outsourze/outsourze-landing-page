@@ -5,19 +5,20 @@ const FounderCard = ({
     name,
     descrp,
     pos,
-    img
+    img,
+    style,
 }) => {
     return (
-        <div className="h-72 w-[47%] flex gap-6 rounded-xl border border-[#EAEBEC]">
+        <div className={`${style} h-72 w-[47%] flex gap-2 rounded-xl border border-[#e6e6e6]`}>
             <div className="h-full w-[45%] overflow-hidden rounded-xl">
                 <Image 
-                    className="w-auto object-cover"
+                    className="w-auto object-cover object-top"
                     src={img} 
                 />
             </div>
-            <div className="flex flex-col w-[55%] items-start justify-center gap-3">
+            <div className="flex flex-col w-[55%] items-start justify-center gap-3 px-5">
                 <div className="flex flex-col">
-                    <h3 className="font-extrabold text-2xl">{name}</h3>
+                    <h3 className="font-extrabold text-2xl font-heading">{name}</h3>
                     <h4 className="brand-text-orange font-bold">{pos}</h4>
                 </div>
                 

@@ -2,15 +2,15 @@ import { data } from "autoprefixer"
 
 // footer
 export const socialMedia = [{
-    url: "",
+    url: "https://www.facebook.com/outsourze/",
     alt: "facebook",
     icon: require("@/assets/icon/facebook.png")
 }, {
-    url: "",
+    url: "https://www.instagram.com/outsourzeglobal",
     alt: "instagram",
     icon: require("@/assets/icon/instagram.png")
 }, {
-    url: "",
+    url: "www.tiktok.com/@outsourzeglobal",
     alt: "tiktok",
     icon: require("@/assets/icon/tiktok.png")
 }, {
@@ -115,5 +115,3 @@ export const ServicesPitchCardData = [{
     question: "What Sets Us Apart",
     subText: "Lowest Rates in the Industry Long-Term Client Partnerships ...",
 }]
-
-//
