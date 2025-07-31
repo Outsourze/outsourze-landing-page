@@ -1,22 +1,18 @@
 import Image from "next/image";
 
-
 const BannerSection = () => {
     return (
         <div className="min-w-7xl py-8 m-auto flex flex-col">
-            <div className="bg-black w-full h-full p-9 rounded-[3.8rem] relative">
-              <div className="relative w-full h-full overflow-hidden rounded-[3.5rem]">
-                {/* Apply contrast directly to the image */}
+            <div className="relative overflow-hidden">
                 <Image
                   className="object-cover w-full h-full contrast-70"
-                  src={require("@/assets/images/about-banner.png")}
+                  src={require("@/assets/images/contact-banner.png")}
                   alt="About"
                 />    
-
                 {/* Soft orange overlay */}
                 <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay rounded-[3.5rem] pointer-events-none" />
-              </div>
-              <h1 className="brand-text-orange font-black text-[9rem] font-heading absolute bottom-[-0.1em]">ABOUT US</h1>
+
+                <h1 className="font-black text-7xl font-heading absolute top-10 left-7">Get in touch!</h1>
             </div>
         </div>
     )
