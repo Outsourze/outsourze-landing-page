@@ -25,23 +25,21 @@ const FounderSection = () => {
     }]
 
     return (
-        <div>
-            <div className="flex flex-col gap-20 items-start max-w-7xl py-10 m-auto">
-                <div className="flex items-center justify-start gap-10">
-                    <BrandLabel style={"text-4xl py-5 px-7 font-semibold"} text={"Our Founders"}/>
-                    <p className="font-semibold">Flexible outsourcing solutions tailored to your business goals —<br /> from startups to global teams.</p>
-                </div>
-                <div className="flex flex-col gap-5 w-full">
-                    {founderData.map((data, index) => (
-                        <FounderCard 
-                            img={data.img}
-                            name={data.name}
-                            pos={data.pos}
-                            descrp={data.descrp}
-                            key={index}
-                        />
-                    ))}
-                </div>
+        <div className="flex flex-col gap-20 items-start max-w-7xl py-10 m-auto">
+            <div className="flex items-center justify-start gap-10">
+                <BrandLabel style={"text-4xl py-5 px-7 font-semibold"} text={"Our Founders"}/>
+                <p className="font-semibold">Flexible outsourcing solutions tailored to your business goals —<br /> from startups to global teams.</p>
+            </div>
+            <div className="flex flex-col gap-5 w-full">
+                {founderData.map((data, index) => (
+                    <FounderCard 
+                        img={data.img}
+                        name={data.name}
+                        pos={data.pos}
+                        descrp={data.descrp}
+                        key={index}
+                    />
+                ))}
             </div>
         </div>
     )

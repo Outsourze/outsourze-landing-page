@@ -1,0 +1,30 @@
+import Image from "next/image";
+import BrandLabel from "../ui/brand-label";
+import { MdArrowOutward } from "react-icons/md";
+
+const ServiceShowcaseCard = ({
+    img,
+    title,
+    text,
+    url
+}) => {
+    return (
+        <div className="w-[31%] py-5 flex-col flex gap-5">
+            <div className="relative">
+                <div className="relative">
+                    {/* Soft orange overlay */}
+                    <Image src={img} alt="services" className="object-cover w-full h-full contrast-70"/>
+                    <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay pointer-events-none" />
+                </div>
+                
+                <div className="bg-black p-5 absolute right-4 bottom-0 rounded-full">
+                    <MdArrowOutward color="white" size={52}/>
+                </div>
+            </div>
+            <BrandLabel text={title}  style={"self-start font-semibold text-xl"}/>
+            <p className="text-xl font-semibold ">{text}</p>
+        </div>
+    )
+}
+
+export default ServiceShowcaseCard;
