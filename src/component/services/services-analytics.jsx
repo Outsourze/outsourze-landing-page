@@ -30,7 +30,7 @@ const AnalyticSection = () => {
                 <h4 className="font-medium text-6xl">Commitments</h4>
                 <p className="font-medium text-[#00000099] m-2 leading-8">We’re committed to working hand-in-hand with you to understand your business goals and build a dedicated team that helps you grow—efficiently and effectively.</p>
                 <Link 
-                    href={"/"} 
+                    href={"/case-study"} 
                     className="flex items-center gap-5 brand-bg-orange text-white rounded-full self-start px-5 py-3"
                 >
                     <p>View Cost Comparison</p>
