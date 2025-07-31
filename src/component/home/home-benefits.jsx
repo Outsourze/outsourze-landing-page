@@ -1,5 +1,6 @@
 import BrandLabel from "../ui/brand-label";
 import BenefitCard from "./benefits-card";
+import SectionTitle from "../ui/section-title";
 
 const benefitsData = [{
     icon: require("@/assets/icon/benefit-1.png"),
@@ -22,10 +23,10 @@ const BenefitSection = () => {
     return (
         <div>
             <div className="max-w-7xl m-auto flex flex-col items-start gap-10">
-                <div className="flex items-center justify-start gap-10">
-                    <BrandLabel style={"text-4xl py-5 px-7 font-semibold"} text={"Benefits of Outsourcing"}/>
-                    <p className="font-semibold">Flexible outsourcing solutions tailored to your business goals — <br/>from startups to global teams.</p>
-                </div>
+                <SectionTitle 
+                    bannerTitle={"Benefits of Outsourcing"}
+                    dscrpt={"Flexible outsourcing solutions tailored to your business goals — <br/>from startups to global teams."}
+                />
                 <div className="flex gap-5">
                     {benefitsData.map((data, index) => (
                         <BenefitCard 

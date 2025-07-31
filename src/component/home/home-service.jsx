@@ -1,10 +1,10 @@
 // services section
 
-import BrandLabel from "../ui/brand-label";
 import { ServicesCardData, ServicesPitchCardData } from "@/api/data";
 import ServicesCard from "./service-card";
 import WhiteButton from "../ui/white-btn";
 import ServicesPitchCard from "./services-pitch-card";
+import SectionTitle from "../ui/section-title";
 
 const ServicesSection = () => {
 
@@ -12,10 +12,11 @@ const ServicesSection = () => {
     return (
         <div>
             <div className="max-w-7xl m-auto flex flex-col gap-10">
-                <div className="flex items-center justify-start gap-10">
-                    <BrandLabel style={"text-4xl py-5 px-7 font-semibold"} text={"Our Services"}/>
-                    <p className="font-semibold">Flexible outsourcing solutions tailored to your business goals —<br/> from startups to global teams.</p>
-                </div>
+                <SectionTitle 
+                    bannerTitle={"Our Services"} 
+                    dscrpt={"Flexible outsourcing solutions tailored to your business goals —<br/> from startups to global teams."}
+                />
+       
                 <div className="flex items-stretch gap-6 ">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-1/2">
                     {/* iterating box */}
@@ -33,7 +34,7 @@ const ServicesSection = () => {
                             <p>We’re a team of 100+ skilled professionals based in Manila, ready to power your growth with tailored outsourcing solutions.</p>
                             <WhiteButton 
                                 text={"Explore Services"}
-                                url={"/"}
+                                url={"/services"}
                             />
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
