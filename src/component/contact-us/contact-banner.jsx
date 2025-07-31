@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const BannerSection = () => {
     return (
-        <div className="min-w-7xl py-8 m-auto flex flex-col">
+        <div className="min-w-7xl m-auto flex flex-col">
             <div className="relative overflow-hidden">
                 <Image
                   className="object-cover w-full h-full contrast-70"
