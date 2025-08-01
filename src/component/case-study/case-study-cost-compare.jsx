@@ -50,7 +50,11 @@ const CostComparisonSection = () => {
             <div className="py-10 flex flex-col gap-8">
               <div className="flex justify-evenly gap-32">
                 {Object.keys(caseStudyData).map(c => (
-                  <button className={`${country === c ? "brand-text-orange border-b-2 border-[var(--color-brand-orange)] font-semibold" : ""} text-2xl`} key={c} onClick={() => setCountry(c)}>{c}</button>
+                  <button 
+                    className={`${country === c ? "brand-text-orange border-b-2 border-[var(--color-brand-orange)] font-semibold" : ""} text-2xl cursor-pointer`} 
+                    key={c} 
+                    onClick={() => setCountry(c)}
+                  >{c}</button>
                 ))}
               </div>
             
