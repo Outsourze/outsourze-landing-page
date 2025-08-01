@@ -1,4 +1,5 @@
 import Image from "next/image";
+import contactBanner from "@/assets/images/contact-banner.png"
 
 const BannerSection = () => {
     return (
@@ -6,7 +7,7 @@ const BannerSection = () => {
             <div className="relative overflow-hidden">
                 <Image
                   className="object-cover w-full h-full contrast-70"
-                  src={require("@/assets/images/contact-banner.png")}
+                  src={contactBanner}
                   alt="About"
                 />    
                 {/* Soft orange overlay */}

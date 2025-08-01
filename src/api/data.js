@@ -1,72 +1,40 @@
-import { data } from "autoprefixer"
+import CustomerSupportIcon from "@/assets/icon/services-nav/Customer Support.svg";
+import SalesLeadIcon from "@/assets/icon/services-nav/Sales & Lead Generation.svg";
+import HrRecruitmentIcon from "@/assets/icon/services-nav/HR & Recruitment.svg";
+import AdminIcon from "@/assets/icon/services-nav/Administration.svg";
+import FinanceAccountingIcon from "@/assets/icon/services-nav/Finance & Accounting.svg";
+import MarketingIcon from "@/assets/icon/services-nav/Marketing & Design.svg";
 
-// footer
-export const socialMedia = [{
-    url: "https://www.facebook.com/outsourze/",
-    alt: "facebook",
-    icon: require("@/assets/icon/facebook.png")
-}, {
-    url: "https://www.instagram.com/outsourzeglobal",
-    alt: "instagram",
-    icon: require("@/assets/icon/instagram.png")
-}, {
-    url: "www.tiktok.com/@outsourzeglobal",
-    alt: "tiktok",
-    icon: require("@/assets/icon/tiktok.png")
-}, {
-    url: "",
-    alt: "linkedin",
-    icon: require("@/assets/icon/linkedin.png")
-}]
 
-export const contactInfo = [{
-    alt: "call",
-    icon: require("@/assets/icon/call.png"),
-    text: "PH 12345678 | NZ 12345678 | AU 12345678UK | UK 12345678 | CAN 12345678"
-}, {
-    alt: "email",
-    icon: require("@/assets/icon/email.png"),
-    text: "hello@outsourze.com"
-}, {
-    alt: "location",
-    icon: require("@/assets/icon/location.png"),
-    text: "Outsourze Inc Knightsbridge Level 2, 392 B. Valdez Street, Poblacion, Makati,Metro Manila, Philippines, 1201"
-}, {
-    alt: "globe",
-    icon: require("@/assets/icon/globe.png"),
-    text: "www.outsourze.com"
-}]
-//
-
-// nav
+// nav services
 export const ServicesMenuData = [{
-    url: "",
-    icon: require("@/assets/icon/customer-support.png"),
+    url: "/services/customer-support",
+    icon: <CustomerSupportIcon className="w-10 brand-text-orange h-auto"/>,
     text: "Customer Support",
     subText: "Support that cares"
 }, {
-    url: "",
-    icon: require("@/assets/icon/sales-lead.png"),
+    url: "/services/sale-geneartion",
+    icon: <SalesLeadIcon className="w-10 brand-text-orange h-auto"/>,
     text: "Sale & Lead Generation",
     subText: "Sales that convert"
 }, {
-    url: "",
-    icon: require("@/assets/icon/hr-recruitment.png"),
+    url: "/services/hr-recruitment",
+    icon: <HrRecruitmentIcon className="w-10 brand-text-orange h-auto"/>,
     text: "HR Recruitment",
     subText: "Hiring made easy"
 }, {
-    url: "",
-    icon: require("@/assets/icon/admin.png"),
+    url: "/services/administration",
+    icon: <AdminIcon className="w-10 brand-text-orange h-auto"/>,
     text: "Administration",
     subText: "Operations run smoothly"
 }, {
-    url: "",
-    icon: require("@/assets/icon/finance-accounting.png"),
+    url: "/services/finance",
+    icon: <FinanceAccountingIcon className="w-10 brand-text-orange h-auto"/>,
     text: "Finance & Accounting",
     subText: "Number done right"
 }, {
-    url: "",
-    icon: require("@/assets/icon/marketing.png"),
+    url: "/services/marketing",
+    icon: <MarketingIcon className="w-10 brand-text-orange h-auto"/>,
     text: "Marketing & Creative",
     subText: "Creativity that sells"
 }]
@@ -77,27 +45,27 @@ export const ServicesMenuData = [{
 //services card data
 export const ServicesCardData = [{
     url: "",
-    icon: require("@/assets/icon/customer-support.png"),
+    icon: <CustomerSupportIcon className="w-[4.5rem] h-auto brand-text-orange"/>,
     text: "Customer Support",
 }, {
     url: "",
-    icon: require("@/assets/icon/hr-recruitment.png"),
+    icon: <HrRecruitmentIcon className="w-[4.5rem] h-auto brand-text-orange"/>,
     text: "HR Recruitment",
 },  {
     url: "",
-    icon: require("@/assets/icon/finance-accounting.png"),
+    icon: <FinanceAccountingIcon className="w-[4.5rem] h-auto brand-text-orange"/>,
     text: "Finance & Accounting",
 }, {
     url: "",
-    icon: require("@/assets/icon/sales-lead.png"),
+    icon: <SalesLeadIcon className="w-[4.5rem] h-auto brand-text-orange"/>,
     text: "Sale & Lead Generation",
 }, {
     url: "",
-    icon: require("@/assets/icon/admin.png"),
+    icon: <AdminIcon className="w-[4.5rem] h-auto brand-text-orange"/>,
     text: "Administration",
 }, {
     url: "",
-    icon: require("@/assets/icon/marketing.png"),
+    icon: <MarketingIcon className="w-[4.5rem] h-auto brand-text-orange"/>,
     text: "Marketing & Creative",
 }]
 

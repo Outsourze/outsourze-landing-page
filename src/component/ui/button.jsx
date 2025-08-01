@@ -3,11 +3,13 @@ import Link from "next/link";
 
 const Button = ({
     text,
-    style
+    style,
+    url
 }) => {
+
     return (
         <Link 
-            href="" 
+            href={url}
             className={`${style} inline-flex items-center gap-2 brand-bg-orange py-3 px-5 rounded-full font-bold`}
         >
             {text} 

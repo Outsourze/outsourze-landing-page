@@ -1,25 +1,29 @@
 import FounderCard from "./founder-card";
+import Michael from "@/assets/images/michael.png";
+import Liam from "@/assets/images/liam.png";
+import David from "@/assets/images/david.png";
+import Paul from "@/assets/images/paul.png";
 
 const founderData = [{
     name: "Michael Scott",
     pos: "CO- FOUNDER",
     descrp: "is a seasoned international professional with a unique blend of academic excellence and cross-sector experience.",
-    img: require("@/assets/images/michael.png")
+    img: Michael
 }, {
     name: "Liam Cullen",
     pos: "CO- FOUNDER",
     descrp: "is a seasoned international leader with over 15 years of experience managing complex organizations across the UK, China, and the Middle East.",
-    img: require("@/assets/images/liam.png")
+    img: Liam
 }, {
     name: "David Scott",
     pos: "CO- FOUNDER",
     descrp: "is a seasoned executive with over 15 years of experience in elite sport academy management and international community development across the UK, Australia, Papua New Guinea, and the Philippines.",
-    img: require("@/assets/images/david.png")
+    img: David
 }, {
     name: "Paul Saunders",
     pos: "CO- FOUNDER",
     descrp: "has over 9 years of experience in the BPO industry, having first moved to the Philippines in 2016 to establish an outsourced processing centre for his Australian visa services company.",
-    img: require("@/assets/images/paul.png")
+    img: Paul
 }];
 
 const FounderSection = () => {

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { ButtonPlain } from "../ui/button";
+import introCaseBanner from "@/assets/images/intro-case-banner-1.png";
+import introCaseBanner2 from "@/assets/images/intro-case-banner-2.png";
 
 const IntroductionSection = () => {
     return (
@@ -11,11 +13,11 @@ const IntroductionSection = () => {
                 </div>
                 <Image 
                     className="w-[42.2rem] absolute right-0 top-0 opacity-10"
-                    src={require("@/assets/images/intro-case-banner-1.png")}
+                    src={introCaseBanner}
                 />
                 <Image 
                     className="w-[30rem] absolute right-10 bottom-0 opacity-10"
-                    src={require("@/assets/images/intro-case-banner-2.png")}
+                    src={introCaseBanner2}
                 />
             </div>
             <div className="flex items-center gap-6">

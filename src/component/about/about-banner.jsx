@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AboutBanner from "@/assets/images/about-banner.png";
 
 const BannerSection = () => {
     return (
@@ -8,7 +9,7 @@ const BannerSection = () => {
                 {/* Apply contrast directly to the image */}
                 <Image
                   className="object-cover w-full h-full contrast-70"
-                  src={require("@/assets/images/about-banner.png")}
+                  src={AboutBanner}
                   alt="About"
                 />    
 

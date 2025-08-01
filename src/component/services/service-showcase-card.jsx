@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import BrandLabel from "../ui/brand-label";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -9,7 +10,7 @@ const ServiceShowcaseCard = ({
     url
 }) => {
     return (
-        <div className="w-[31%] py-5 flex-col flex gap-5">
+        <Link href={url} className="w-[31%] py-5 flex-col flex gap-5">
             <div className="relative">
                 <div className="relative">
                     {/* Soft orange overlay */}
@@ -23,7 +24,7 @@ const ServiceShowcaseCard = ({
             </div>
             <BrandLabel text={title}  style={"self-start font-semibold text-xl"}/>
             <p className="text-xl font-semibold ">{text}</p>
-        </div>
+        </Link>
     )
 }
 
