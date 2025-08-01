@@ -13,7 +13,7 @@ export const ServicesMenuData = [{
     text: "Customer Support",
     subText: "Support that cares"
 }, {
-    url: "/services/sale-geneartion",
+    url: "/services/sale-generation",
     icon: <SalesLeadIcon className="w-10 brand-text-orange h-auto"/>,
     text: "Sale & Lead Generation",
     subText: "Sales that convert"

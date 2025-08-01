@@ -11,32 +11,32 @@ const showcaseData = [{
     img: customerSupportIcon,
     title: "Customer Support",
     text: "Creating smooth, reliable customer service experiences.",
-    url: "customer-support"
+    url: "/customer-support"
 }, {
     img: hrRecruitmentIcon,
     title: "HR Recruitment",
     text: "Finding the right people, effortlessly and efficiently.",
-    url: ""
+    url: "/hr-recruitment"
 }, {
     img: financeAccountingIcon,
     title: "Finance & Accounting",
     text: "Managing numbers with clarity, accuracy, and insight.",
-    url: ""
+    url: "/finance"
 }, {
     img: salesLeadLogo,
     title: "Sales & Lead Generation",
     text: "Turning interest into action through strategic outreach.",
-    url: ""
+    url: "/sale-generation"
 }, {
     img: adminLogo,
     title: "Administration",
     text: "Keeping operations organized, efficient, and smooth.",
-    url: ""
+    url: "/administration"
 }, {
     img: marketingLogo,
     title: "Marketing & Creative",
     text: "Bringing ideas to life through creative strategy.",
-    url: ""
+    url: "/marketing"
 }]
 
 const ServicesShowcaseSection = () => {
