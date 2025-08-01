@@ -1,33 +1,39 @@
 import SectionTitle from "../ui/section-title";
 import ServiceShowcaseCard from "./service-showcase-card";
+import customerSupportIcon from "@/assets/images/our-services/customer-support.png";
+import hrRecruitmentIcon from "@/assets/images/our-services/hr-recruitment.png";
+import financeAccountingIcon from "@/assets/images/our-services/finance-accounting.png";
+import salesLeadLogo from "@/assets/images/our-services/sales-lead-generation.png";
+import adminLogo from "@/assets/images/our-services/administration.png";
+import marketingLogo from "@/assets/images/our-services/marketing-creative.png";
 
 const showcaseData = [{
-    img: require("@/assets/images/our-services/customer-support.png"),
+    img: customerSupportIcon,
     title: "Customer Support",
     text: "Creating smooth, reliable customer service experiences.",
-    url: ""
+    url: "customer-support"
 }, {
-    img: require("@/assets/images/our-services/hr-recruitment.png"),
+    img: hrRecruitmentIcon,
     title: "HR Recruitment",
     text: "Finding the right people, effortlessly and efficiently.",
     url: ""
 }, {
-    img: require("@/assets/images/our-services/finance-accounting.png"),
+    img: financeAccountingIcon,
     title: "Finance & Accounting",
     text: "Managing numbers with clarity, accuracy, and insight.",
     url: ""
 }, {
-    img: require("@/assets/images/our-services/sales-lead-generation.png"),
+    img: salesLeadLogo,
     title: "Sales & Lead Generation",
     text: "Turning interest into action through strategic outreach.",
     url: ""
 }, {
-    img: require("@/assets/images/our-services/administration.png"),
+    img: adminLogo,
     title: "Administration",
     text: "Keeping operations organized, efficient, and smooth.",
     url: ""
 }, {
-    img: require("@/assets/images/our-services/marketing-creative.png"),
+    img: marketingLogo,
     title: "Marketing & Creative",
     text: "Bringing ideas to life through creative strategy.",
     url: ""
@@ -40,6 +46,7 @@ const ServicesShowcaseSection = () => {
             <div className="flex flex-wrap justify-between">
                 {showcaseData.map((data, index) => (
                     <ServiceShowcaseCard 
+                        url={`/services/${data.url}`}
                         img={data.img}
                         text={data.text}
                         title={data.title}

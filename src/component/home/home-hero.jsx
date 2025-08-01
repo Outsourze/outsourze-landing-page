@@ -2,6 +2,10 @@
 
 import Button from "../ui/button";
 import Image from "next/image";
+import trendingUp from "@/assets/icon/trending-up.png";
+import heroOne from "@/assets/images/hero-1.webp";
+import heroTwo from "@/assets/images/hero-2.webp";
+import bubble from "@/assets/images/bubble-bg.png";
 
 const HeroSection = () => {
     return (
@@ -16,7 +20,10 @@ const HeroSection = () => {
                           Serving the Globe to offer tailored outsourcing solutions.
                         </p>
                     </div>
-                    <Button text={"Continue"}/>
+                    <Button 
+                      url={"/contact-us"} 
+                      text={"Continue"}
+                    />
                </div>
                <div className="flex flex-col items-center w-1/2 gap-5 px-7">
                     <div className="flex items-stretch gap-5">
@@ -24,7 +31,7 @@ const HeroSection = () => {
                       <div className="w-[54%] brand-bg-orange px-10 flex flex-col justify-center rounded-[2.50rem] relative">
                         {/* arrow icon | logo */}
                         <div className="rounded-full absolute top-[-5%] left-[-10%] bg-black border-white border-6 p-5">
-                            <Image className="w-12" src={require("@/assets/icon/trending-up.png")}/>
+                            <Image className="w-12" src={trendingUp}/>
                         </div>
                         {/* text content */}
                         <div className="ml-5">
@@ -40,14 +47,14 @@ const HeroSection = () => {
                         <div className="relative">
                           <Image
                             className="rounded-[1.25rem] w-full mix-blend-multiply"
-                            src={require("@/assets/images/hero-2.webp")}
+                            src={heroTwo}
                           />
                           <div className="absolute inset-0 bg-orange-500 opacity-30 rounded-[1.25rem] pointer-events-none" />
                         </div>
                         <div className="relative">
                           <Image
                             className="rounded-[1.25rem] w-full mix-blend-multiply"
-                            src={require("@/assets/images/hero-1.webp")}
+                            src={heroOne}
                           />
                           <div className="absolute inset-0 bg-orange-500 opacity-10 rounded-[1.25rem] pointer-events-none" />
                         </div>
@@ -57,7 +64,7 @@ const HeroSection = () => {
                       {/* Background image */}
                       <Image
                         className="absolute left-[-27%] bottom-[-80%] z-0 filter brightness-70 backdrop-sepia-50"
-                        src={require("@/assets/images/bubble-bg.png")}
+                        src={bubble}
                         alt="Background"
                         style={{ transform: "rotate(115.48deg)" }}
                       />

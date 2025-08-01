@@ -1,21 +1,25 @@
-import BrandLabel from "../ui/brand-label";
 import BenefitCard from "./benefits-card";
 import SectionTitle from "../ui/section-title";
+import Benefit1 from "@/assets/icon/benefit-outsourcing/benefit-1.svg";
+import Benefit2 from "@/assets/icon/benefit-outsourcing/benefit-2.svg";
+import Benefit3 from "@/assets/icon/benefit-outsourcing/benefit-3.svg";
+import Benefit4 from "@/assets/icon/benefit-outsourcing/benefit-4.svg";
+import Benefit5 from "@/assets/icon/benefit-outsourcing/benefit-5.svg";
 
 const benefitsData = [{
-    icon: require("@/assets/icon/benefit-1.png"),
+    icon: <Benefit1 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
     text: "Save Up to 70% on Labor Costs"
 }, {
-    icon: require("@/assets/icon/benefit-2.png"),
+    icon: <Benefit2 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
     text: "No Overhead, No Hassle"
 }, {
-    icon: require("@/assets/icon/benefit-3.png"),
+    icon: <Benefit3 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
     text: "Scale on Demand"
 }, {
-    icon: require("@/assets/icon/benefit-4.png"),
+    icon: <Benefit4 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
     text: "24/7 Productivity"
 }, {
-    icon: require("@/assets/icon/benefit-5.png"),
+    icon: <Benefit5 className="w-14 h-auto brand-text-orange absolute top-5 right-5" />,
     text: "Built for Businesses"
 }]
 
