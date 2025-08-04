@@ -72,14 +72,58 @@ export const ServicesCardData = [{
 // service pitch data
 export const ServicesPitchCardData = [{
     url: "",
-    question: "Why Choose OUTSOURZE?",
-    subText: "With our team based in the Philippines, you access world-class talent at a fraction of the..."
+    question: "Why Choose Outsourze.com?",
+    subText: (
+      <>
+      <div className="mb-4">
+        <span className="font-medium ">Lower Costs, Higher Returns</span><br />
+        <p className="text-sm">With our team based in the Philippines, you access world-class talent at a fraction of the local cost—boosting your margins without compromising quality.</p>
+      </div>
+
+      <div className="mb-4">
+        <span className="font-medium">Client-First Approach</span><br />
+        <p className="text-sm">We listen, adapt, and partner with you to build flexible staffing models aligned with your short- and long-term goals.</p>
+      </div>
+
+      <div className="mb-4">
+        <span className="font-medium ">Tailored Global Talent</span><br />
+        <p className="text-sm">We handpick professionals who meet international standards, ensuring your team can hit the ground running.</p>
+      </div>
+
+      <div>
+        <span className="font-medium ">Agile & Scalable</span><br />
+        <p className="text-sm">From startups to enterprises, we offer adaptable solutions that grow with your business.</p>
+      </div>
+    </>
+    ),
 }, {
     url: "",
     question: "Ready to Beat High Staff Costs?",
-    subText: "Let’s face it—labor costs are rising fast, and recruitment takes ....",
+    subText: (
+        <>
+          <p className="mb-4 text-sm">
+            Face it—labor costs are rising fast, and recruitment takes time. Staffing can eat up to 60% of your profits. We help you take control by delivering skilled remote staff quickly and affordably.
+          </p>
+          <p className="text-sm">   
+            Outsourcing isn't just for large corporations anymore—it's your next competitive edge.
+          </p>
+        </>
+    ) 
 }, {
     url: "",
     question: "What Sets Us Apart",
-    subText: "Lowest Rates in the Industry Long-Term Client Partnerships ...",
+    subText: (
+        <>
+          <ul className="list-disc pl-5 mb-4 text-white text-sm">
+            <li>Lowest Rates in the Industry</li>
+            <li>Long-Term Client Partnerships</li>
+            <li>On-Time, On-Budget Delivery</li>
+            <li>Proactive, Responsive Communication</li>
+          </ul>
+
+          <p className="text-white text-sm">
+            Let’s build your dream team—without the overhead.
+          </p>
+        </>
+    )
 }]

@@ -7,7 +7,7 @@ import ServicesPitchCard from "./services-pitch-card";
 import SectionTitle from "../ui/section-title";
 
 const ServicesSection = () => {
-
+    
     
     return (
         <div>
@@ -49,7 +49,7 @@ const ServicesSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-start gap-4">
                     {ServicesPitchCardData.map((data, index) => (
                         <ServicesPitchCard 
                             key={index}

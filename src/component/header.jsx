@@ -54,7 +54,10 @@ const Header = () => {
     return (
         <div className="fixed py-4 max-w-7xl m-auto top-0 left-0 right-0 w-full z-50 bg-[var(--background)]">
             <div className="py-4 flex items-center justify-between">
-                <OutsouzedLogo className="w-56"/>
+                <Link href={"/home"}>
+                  <OutsouzedLogo className="w-56"/>
+                </Link>
+                
         
                 <div className="flex items-center gap-9">
                     <Link className="text-[var(--color-gray)] font-cta" href="/home">Home</Link>
