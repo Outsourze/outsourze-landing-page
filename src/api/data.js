@@ -122,7 +122,7 @@ export const ServicesPitchCardData = [{
           </ul>
 
           <p className="text-white text-sm">
-            Let’s build your dream team—without the overhead.
+            Let's build your dream team—without the overhead.
           </p>
         </>
     )
