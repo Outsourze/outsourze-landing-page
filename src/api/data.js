@@ -89,28 +89,28 @@ export const ServicesPitchCardData = [
         <div className="mb-4">
           <span className="font-medium">Lower Costs, Higher Returns</span>
           <p className="text-sm">
-            With our team based in the Philippines, you access world-class talent at a fraction of the local cost—boosting your margins without compromising quality.
+            {`With our team based in the Philippines, you access world-class talent at a fraction of the local cost—boosting your margins without compromising quality.`}
           </p>
         </div>
 
         <div className="mb-4">
           <span className="font-medium">Client-First Approach</span>
           <p className="text-sm">
-            We listen, adapt, and partner with you to build flexible staffing models aligned with your short- and long-term goals.
+            {`We listen, adapt, and partner with you to build flexible staffing models aligned with your short- and long-term goals.`}
           </p>
         </div>
 
         <div className="mb-4">
           <span className="font-medium">Tailored Global Talent</span>
           <p className="text-sm">
-            We handpick professionals who meet international standards, ensuring your team can hit the ground running.
+            {`We handpick professionals who meet international standards, ensuring your team can hit the ground running.`}
           </p>
         </div>
 
         <div>
-          <span className="font-medium">Agile &amp; Scalable</span>
+          <span className="font-medium">Agile & Scalable</span>
           <p className="text-sm">
-            From startups to enterprises, we offer adaptable solutions that grow with your business.
+            {`From startups to enterprises, we offer adaptable solutions that grow with your business.`}
           </p>
         </div>
       </>
@@ -122,10 +122,10 @@ export const ServicesPitchCardData = [
     subText: (
       <>
         <p className="mb-4 text-sm">
-          Face it—labor costs are rising fast, and recruitment takes time. Staffing can eat up to 60% of your profits. We help you take control by delivering skilled remote staff quickly and affordably.
+          {`Face it—labor costs are rising fast, and recruitment takes time. Staffing can eat up to 60% of your profits. We help you take control by delivering skilled remote staff quickly and affordably.`}
         </p>
         <p className="text-sm">
-          Outsourcing isn&apos;t just for large corporations anymore—it's your next competitive edge.
+          {`Outsourcing isn't just for large corporations anymore—it's your next competitive edge.`}
         </p>
       </>
     )
@@ -136,14 +136,14 @@ export const ServicesPitchCardData = [
     subText: (
       <>
         <ul className="list-disc pl-5 mb-4 text-white text-sm">
-          <li>Lowest Rates in the Industry</li>
-          <li>Long-Term Client Partnerships</li>
-          <li>On-Time, On-Budget Delivery</li>
-          <li>Proactive, Responsive Communication</li>
+          <li>{`Lowest Rates in the Industry`}</li>
+          <li>{`Long-Term Client Partnerships`}</li>
+          <li>{`On-Time, On-Budget Delivery`}</li>
+          <li>{`Proactive, Responsive Communication`}</li>
         </ul>
 
         <p className="text-white text-sm">
-          Let&apos;s build your dream team—without the overhead.
+          {`Let's build your dream team—without the overhead.`}
         </p>
       </>
     )
