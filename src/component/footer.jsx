@@ -82,7 +82,9 @@ const Footer = () => {
 
                 <div className="flex items-center justify-between ">
                     <div className="flex flex-col gap-5 max-w-[34rem]">
-                        <OutsouzedLogo className="w-56"/>
+                        <Link href={"/home"}>
+                          <OutsouzedLogo className="w-56"/>
+                        </Link>
                
                         <p className="text-[15px]">Outsourze is a remote staffing and outsourcing solutions company based in the Philippines. We help businesses scale by providing skilled, cost-effective talent across customer support, sales, admin, marketing, and more. Our goal is to simplify outsourcing—so you can focus on what matters most.</p>
                         <div className="flex items-center gap-7">

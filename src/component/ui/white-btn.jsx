@@ -6,7 +6,8 @@ const WhiteButton = ({
 }) => {
     return (
         <Link 
-            className="font-cta py-3 px-4 border border-[var(--border-black)] rounded-[50px] text-[var(--primary-text-color)]"
+            className="font-cta py-3 px-4 border border-[var(--border-black)] rounded-[50px] text-[var(--primary-text-color)]
+            hover:bg-black hover:text-white duration-300"
             href={url}
         >
             {text}

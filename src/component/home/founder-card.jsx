@@ -24,6 +24,7 @@ const FounderCard = ({
                 
                 <p className="text-sm">{descrp}</p>
                 <ButtonPlain 
+                    url={"/about"}
                     style={"font-cta text-sm"}
                     text={"Read More"}
                 />
