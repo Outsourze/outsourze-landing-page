@@ -18,7 +18,7 @@ export default function CustomerSupport() {
         logo: <CS1 className="brand-text-orange w-15 h-auto"/>,
         title: "Customer Support Representative",
         dscrpt: "Handles customer inquiries with professionalism and empathy, providing timely resolutions and maintaining a positive brand experience.",
-        url: "",
+        url: "/services/customer-support/customer-service-representative",
       }, {
         logo: <CS2 className="brand-text-orange w-15 h-auto"/>,
         title: "Email Support Representative",
