@@ -48,32 +48,32 @@ export const ServicesMenuData = [
 // home services card data
 export const ServicesCardData = [
   {
-    url: "",
+    url: "/services/customer-support",
     icon: <CustomerSupportIcon className="w-[4.5rem] h-auto brand-text-orange" />,
     text: "Customer Support"
   },
   {
-    url: "",
+    url: "/services/hr-recruitment",
     icon: <HrRecruitmentIcon className="w-[4.5rem] h-auto brand-text-orange" />,
     text: "HR Recruitment"
   },
   {
-    url: "",
+    url: "/services/finance",
     icon: <FinanceAccountingIcon className="w-[4.5rem] h-auto brand-text-orange" />,
     text: "Finance & Accounting"
   },
   {
-    url: "",
+    url: "/services/sale-generation",
     icon: <SalesLeadIcon className="w-[4.5rem] h-auto brand-text-orange" />,
     text: "Sales & Lead Generation"
   },
   {
-    url: "",
+    url: "/services/administration",
     icon: <AdminIcon className="w-[4.5rem] h-auto brand-text-orange" />,
     text: "Administration"
   },
   {
-    url: "",
+    url: "/services/marketing",
     icon: <MarketingIcon className="w-[4.5rem] h-auto brand-text-orange" />,
     text: "Marketing & Creative"
   }

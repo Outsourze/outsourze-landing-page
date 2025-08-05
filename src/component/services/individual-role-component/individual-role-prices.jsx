@@ -40,7 +40,7 @@ const IndividualRolePrices = () => {
                           {activeData.columns.map((col, index) => (
                             <th
                               key={index}
-                              className={`py-8 px-5 font-semibold text-xl ${index === 0 ? "text-left" : "text-center"}`}
+                              className={`py-8 px-16 font-semibold text-xl ${index === 0 ? "text-left" : "text-center"}`}
                             >
                               {col}
                             </th>
@@ -53,7 +53,7 @@ const IndividualRolePrices = () => {
                               {activeData.columns.map((col, j) => (
                                 <td
                                   key={j}
-                                  className={`py-6 px-5 ${j === 0 ? "text-left" : "text-center"}`}
+                                  className={`py-6 px-16 font-medium ${j === 0 ? "text-left" : "text-center"}`}
                                 >
                                   {typeof row[col] === "object" ? (
                                     <span className="brand-bg-orange px-3 py-1 rounded-lg inline-block text-black">

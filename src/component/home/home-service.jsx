@@ -25,6 +25,7 @@ const ServicesSection = () => {
                             key={index} 
                             icon={data.icon} 
                             text={data.text}
+                            url={data.url}
                           />
                         ))}
                     </div>
@@ -44,6 +45,7 @@ const ServicesSection = () => {
                                 key={index} 
                                 icon={data.icon} 
                                 text={data.text}
+                                url={data.url}
                               />
                             ))}
                         </div>

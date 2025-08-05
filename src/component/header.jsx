@@ -48,12 +48,12 @@ const Header = () => {
     const [isServicesOpen, setIsServicesOpen] = useState(false);
 
     const handleOpenServicesDropDown = () => {
-        setIsServicesOpen((prev) => !prev);
+      setIsServicesOpen((prev) => !prev);
     }
 
     return (
-        <div className="fixed py-4 max-w-7xl m-auto top-0 left-0 right-0 w-full z-50 bg-[var(--background)]">
-            <div className="py-4 flex items-center justify-between">
+        <div className="fixed py-4 top-0 left-0 right-0 w-full z-50 bg-[var(--background)]">
+            <div className="py-4 flex items-center justify-between max-w-7xl m-auto">
                 <Link href={"/home"}>
                   <OutsouzedLogo className="w-56"/>
                 </Link>
