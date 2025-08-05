@@ -6,29 +6,28 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function ChatSupportRepresentative() {
-    const chatSupportData = {
-        title: "Chat Support Representative",
-        subTitle: "Fast, Friendly, Real-Time Support — Without the Full-Time Cost",
-        dscrpt: "Live chat is one of the most effective customer service channels, offering instant responses and higher satisfaction. At Outsourze.com, our Philippines-based Chat Support Representatives help your business engage visitors, resolve issues, and close sales — all while significantly reducing overhead compared to local hires.",
-        whatToDoHeader: "What a Chat Support Rep Can Handle",
+export default function Telemarketer() {
+    const telemarketerDa = {
+        title: "Telemarketer",
+        subTitle: "Effective Outbound Calling — Boost Sales & Engagement Without Local Hiring Costs",
+        dscrpt: "Telemarketing requires skilled communication, persistence, and the ability to engage prospects professionally. At Outsourze.com, our Philippines-based Telemarketers conduct targeted outbound calls to promote your products or services, generate leads, and support your sales funnel — all at a fraction of local expenses.",
+        whatToDoHeader: "What a Telemarketer Can Handle",
         whatTodos: [
-            "Responding to customer queries in real time", 
-            "Escalating complex or unresolved chats",
-            "Assisting with product questions and recommendations",
-            "Capturing leads and booking appointments",
-            "Troubleshooting simple technical issues",
-            "Maintaining chat logs and customer records",
-            "Helping customers navigate your website or portal"
+            "Making outbound calls to prospects and existing customers", 
+            "Promoting products, services, or events",
+            "Gathering customer feedback and survey responses",
+            "Qualifying leads and scheduling appointments",
+            "Managing call scripts and objection handling",
+            "Maintaining accurate records and CRM updates",
         ],
-        whyOutSourzeTitle: "Why Outsource Chat Support?",
+        whyOutSourzeTitle: "Why Outsource Telemarketing?",
         whyOutSourzeItems: [
-            "Provide instant help 24/7 without adding in-house staff",
-            "Increase conversions and reduce abandoned carts",
-            "Keep your response time competitive",
-            "Reduce cost-per-resolution compared to phone support"
+            "Quickly scale outbound calling campaigns",
+            "Access trained professionals with excellent phone skills",
+            "Reduce recruitment and operational costs",
+            "Focus your internal teams on closing and strategy"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com provides experienced live chat agents trained in multitasking, tone control, and real-time communication — all tailored to your brand voice and standards.",
+        whyOutSourzeDscrpt: "Outsourze.com telemarketers are trained to follow your scripts, represent your brand professionally, and use your CRM or calling platforms effectively.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -117,36 +116,36 @@ export default function ChatSupportRepresentative() {
           role: "New Zealand",
           currency: "NZD",
           currencySign: "$",
-          localCost: { lowest: 4500, highest: 6500 },
+          localCost: { lowest: 4500, highest: 5500 },
           outsourze: 650,
-          estimatedSaving: 89,
+          estimatedSaving: 88,
         }, {
           role: "Australia",
           currency: "AUD",
           currencySign: "$",
-          localCost: { lowest: 5000, highest: 6500 },
+          localCost: { lowest: 5000, highest: 6000 },
           outsourze: 600,
           estimatedSaving: 90
         }, {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
-          localCost: { lowest: 2500, highest: 3200 },
+          localCost: { lowest: 2200, highest: 2800 },
           outsourze: 350,
           estimatedSaving: 87,
         }, {
           role: "Canada",
           currency: "CAD",
           currencySign: "$",
-          localCost: { lowest: 4000, highest: 5500 },
+          localCost: { lowest: 4000, highest: 5000 },
           outsourze: 550,
           estimatedSaving: 89,
         }],
-        disclaimer: "Sales Support outsourcing is ideal for businesses looking to streamline operations, boost team efficiency, and grow sales without growing overhead."
-    }
+        disclaimer: "Telemarketing outsourcing is great for businesses wanting professional, high-volume outbound calling support without the costs of local hires."
+    }   
 
     return (
-        <ServiceContext.Provider value={chatSupportData}>
+        <ServiceContext.Provider value={telemarketerDa}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

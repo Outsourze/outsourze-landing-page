@@ -6,28 +6,28 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function EmailSupportRepresentative() {
-    const emailSupportData = {
-        title: "Email Support Representative",
-        subTitle: "Professional, Prompt, and Polished Email Support — Without the High Overhead",
-        dscrpt: "Email remains a vital channel for customer service, especially for businesses that value detailed, trackable, and professional communication. At Outsourze.com, our Philippines-based Email Support Representatives ensure every customer interaction reflects your brand — with quick turnarounds and expert service, all at a fraction of local costs.",
-        whatToDoHeader: "What an Email Support Rep Can Handle",
+export default function LeadGenerationSpecialist() {
+    const leadGenerationSpecialistData = {
+        title: "Lead Generation Specialist",
+        subTitle: "Fuel Your Sales Pipeline — Without the High Local Costs",
+        dscrpt: "Consistent, qualified leads are the lifeblood of sales success. At Outsourze.com, our Philippines-based Lead Generation Specialists help you identify, research, and connect with your ideal prospects — delivering a steady flow of potential customers at a fraction of local hiring costs.",
+        whatToDoHeader: "What a Lead Generation Specialist Can Handle",
         whatTodos: [
-            "Responding to customer inquiries and complaints", 
-            "Providing product or service information",
-            "Resolving account and billing issues",
-            "Escalating technical or complex issues",
-            "Handling order questions, returns, and exchanges",
-            "Maintaining detailed records of interactions",
+            "Researching target markets and ideal customer profiles", 
+            "Finding and verifying contact information (emails, phone numbers)",
+            "Managing CRM data and updating prospect lists",
+            "Conducting outreach via cold email or LinkedIn (optional)",
+            "Scheduling appointments or demos for sales teams",
+            "Supporting campaign tracking and reporting",
         ],
-        whyOutSourzeTitle: "Why Outsource Email Support?",
+        whyOutSourzeTitle: "Why Outsource Lead Generation?",
         whyOutSourzeItems: [
-            "Scale efficiently during peak periods",
-            "Ensure response SLAs without expanding your in-house team",
-            "Maintain 24/7 or weekend response coverage",
-            "Save on salary, equipment, and office costs"
+            "Scale lead generation efforts quickly without expanding your team",
+            "Improve sales efficiency with qualified, pre-screened prospects",
+            "Save on recruitment, salaries, and training costs",
+            "Free up your sales reps to focus on closing deals"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com provides skilled professionals trained to communicate clearly, follow templates, and use your systems — all under your direction and standards.",
+        whyOutSourzeDscrpt: "Outsourze.com provides trained lead generation professionals experienced in tools like LinkedIn Sales Navigator, ZoomInfo, Hunter.io, and CRMs such as Salesforce, HubSpot, or Pipedrive.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -141,11 +141,11 @@ export default function EmailSupportRepresentative() {
           outsourze: 500,
           estimatedSaving: 85,
         }],
-        disclaimer: "Email support is ideal for businesses that want consistency, professionalism, and cost control — all in one channel."
-    }
+        disclaimer: "Lead generation outsourcing is ideal for sales teams looking to ramp up pipeline growth without the cost or hassle of local hires."
+    }   
 
     return (
-        <ServiceContext.Provider value={emailSupportData}>
+        <ServiceContext.Provider value={leadGenerationSpecialistData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

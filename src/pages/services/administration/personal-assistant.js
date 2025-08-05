@@ -6,29 +6,29 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function ChatSupportRepresentative() {
-    const chatSupportData = {
-        title: "Chat Support Representative",
-        subTitle: "Fast, Friendly, Real-Time Support — Without the Full-Time Cost",
-        dscrpt: "Live chat is one of the most effective customer service channels, offering instant responses and higher satisfaction. At Outsourze.com, our Philippines-based Chat Support Representatives help your business engage visitors, resolve issues, and close sales — all while significantly reducing overhead compared to local hires.",
-        whatToDoHeader: "What a Chat Support Rep Can Handle",
+export default function PersonalAssistant() {
+    const personalAssistantData = {
+        title: "Personal Assistant",
+        subTitle: "Dedicated Personal Support — Without the Local Salary Premium",
+        dscrpt: "Personal assistants help busy professionals manage daily tasks, schedules, and communications with efficiency and discretion. At Outsourze.com, our Philippines-based Personal Assistants provide reliable, proactive support — helping you stay organized and focused while saving significantly compared to local hires.",
+        whatToDoHeader: "What a Personal Assistant Can Handle",
         whatTodos: [
-            "Responding to customer queries in real time", 
-            "Escalating complex or unresolved chats",
-            "Assisting with product questions and recommendations",
-            "Capturing leads and booking appointments",
-            "Troubleshooting simple technical issues",
-            "Maintaining chat logs and customer records",
-            "Helping customers navigate your website or portal"
+            "Managing calendars and appointments", 
+            "Handling personal and professional correspondence",
+            "Booking travel and managing itineraries",
+            "Organizing documents and files",
+            "Coordinating with family, staff, or vendors as needed",
+            "Running errands and managing personal tasks remotely",
+            "Assisting with research and event planning"
         ],
-        whyOutSourzeTitle: "Why Outsource Chat Support?",
+        whyOutSourzeTitle: "Why Outsource Personal Assistance?",
         whyOutSourzeItems: [
-            "Provide instant help 24/7 without adding in-house staff",
-            "Increase conversions and reduce abandoned carts",
-            "Keep your response time competitive",
-            "Reduce cost-per-resolution compared to phone support"
+            "Access skilled, trustworthy assistants without high local costs",
+            "Free up your time for high-value activities",
+            "Scale support flexibly based on your needs",
+            "Maintain confidentiality and professionalism"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com provides experienced live chat agents trained in multitasking, tone control, and real-time communication — all tailored to your brand voice and standards.",
+        whyOutSourzeDscrpt: "Our Personal Assistants are trained to work with your preferred tools and processes, providing seamless support tailored to your lifestyle and work requirements.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -36,11 +36,11 @@ export default function ChatSupportRepresentative() {
             data: [
               {
                 Role: "New Zealand",
-                "Hourly Rate": { cost: 11, currency: "NZD" },
+                "Hourly Rate": { cost: 12, currency: "NZD" },
               },
               {
                 Role: "Australia",
-                "Hourly Rate": { cost: 10, currency: "AUD" },
+                "Hourly Rate": { cost: 11, currency: "AUD" },
               },
               {
                 Role: "UK",
@@ -48,7 +48,7 @@ export default function ChatSupportRepresentative() {
               },
               {
                 Role: "Canada",
-                "Hourly Rate": { cost: 9, currency: "CAD" },
+                "Hourly Rate": { cost: 10, currency: "CAD" },
               },
             ],
           },
@@ -58,26 +58,26 @@ export default function ChatSupportRepresentative() {
             data: [
               {
                 "Role": "New Zealand",
-                "Entry Level": { cost: 650, currency: "NZD" },
-                "Mid Level": { cost: 900, currency: "NZD" },
-                "Advanced": { cost: 1300, currency: "NZD" },
+                "Entry Level": { cost: 700, currency: "NZD" },
+                "Mid Level": { cost: 950, currency: "NZD" },
+                "Advanced": { cost: 1350, currency: "NZD" },
               },
               {
                 "Role": "Australia",
-                "Entry Level": { cost: 600, currency: "AUD" },
-                "Mid Level": { cost: 820, currency: "AUD" },
-                "Advanced": { cost: 1150, currency: "AUD" },
+                "Entry Level": { cost: 650, currency: "AUD" },
+                "Mid Level": { cost: 870, currency: "AUD" },
+                "Advanced": { cost: 1200, currency: "AUD" },
               },
               {
                 "Role": "UK",
                 "Entry Level": { cost: 350, currency: "GBP" },
-                "Mid Level": { cost: 450, currency: "GBP" },
+                "Mid Level": { cost: 480, currency: "GBP" },
                 "Advanced": { cost: 650, currency: "GBP" },
               },
               {
                 "Role": "Canada",
-                "Entry Level": { cost: 550, currency: "CAD" },
-                "Mid Level": { cost: 720, currency: "CAD" },
+                "Entry Level": { cost: 580, currency: "CAD" },
+                "Mid Level": { cost: 790, currency: "CAD" },
                 "Advanced": { cost: 1050, currency: "CAD" },
               },
             ],
@@ -89,26 +89,26 @@ export default function ChatSupportRepresentative() {
               {
                 "Role": "New Zealand",
                 "Entry Level": { cost: 900, currency: "NZD" },
-                "Mid Level": { cost: 1100, currency: "NZD" },
-                "Advanced": { cost: 1500, currency: "NZD" },
+                "Mid Level": { cost: 1350, currency: "NZD" },
+                "Advanced": { cost: 1600, currency: "NZD" },
               },
               {
                 "Role": "Australia",
                 "Entry Level": { cost: 820, currency: "AUD" },
-                "Mid Level": { cost: 1000, currency: "AUD" },
-                "Advanced": { cost: 1350, currency: "AUD" },
+                "Mid Level": { cost: 1050, currency: "AUD" },
+                "Advanced": { cost: 1400, currency: "AUD" },
               },
               {
                 "Role": "UK",
                 "Entry Level": { cost: 450, currency: "GBP" },
                 "Mid Level": { cost: 550, currency: "GBP" },
-                "Advanced": { cost: 800, currency: "GBP" },
+                "Advanced": { cost: 750, currency: "GBP" },
               },
               {
                 "Role": "Canada",
                 "Entry Level": { cost: 720, currency: "CAD" },
                 "Mid Level": { cost: 900, currency: "CAD" },
-                "Advanced": { cost: 1250, currency: "CAD" },
+                "Advanced": { cost: 1300, currency: "CAD" },
               },
             ],
           },
@@ -117,36 +117,36 @@ export default function ChatSupportRepresentative() {
           role: "New Zealand",
           currency: "NZD",
           currencySign: "$",
-          localCost: { lowest: 4500, highest: 6500 },
-          outsourze: 650,
-          estimatedSaving: 89,
+          localCost: { lowest: 4500, highest: 5500 },
+          outsourze: 700,
+          estimatedSaving: 85,
         }, {
           role: "Australia",
           currency: "AUD",
           currencySign: "$",
-          localCost: { lowest: 5000, highest: 6500 },
-          outsourze: 600,
-          estimatedSaving: 90
+          localCost: { lowest: 5000, highest: 6000 },
+          outsourze: 650,
+          estimatedSaving: 87
         }, {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
           localCost: { lowest: 2500, highest: 3200 },
           outsourze: 350,
-          estimatedSaving: 87,
+          estimatedSaving: 86,
         }, {
           role: "Canada",
           currency: "CAD",
           currencySign: "$",
-          localCost: { lowest: 4000, highest: 5500 },
-          outsourze: 550,
-          estimatedSaving: 89,
+          localCost: { lowest: 4000, highest: 5000 },
+          outsourze: 580,
+          estimatedSaving: 85,
         }],
-        disclaimer: "Sales Support outsourcing is ideal for businesses looking to streamline operations, boost team efficiency, and grow sales without growing overhead."
+        disclaimer: "Personal assistant outsourcing is perfect for busy professionals wanting reliable, flexible, and discreet support — without the costs and complexities of local hires."
     }
 
     return (
-        <ServiceContext.Provider value={chatSupportData}>
+        <ServiceContext.Provider value={personalAssistantData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

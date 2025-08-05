@@ -6,29 +6,29 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function CustomerServiceRepresentative() {
-    const csrData = {
-        title: "Customer Service Representative (CSR)",
-        subTitle: "Friendly, Effective, and Professional Customer Support — Without the High Costs",
-        dscrpt: "Customer service is the frontline of your business, shaping customer satisfaction and loyalty. Our Philippines-based Customer Service Representatives provide courteous, knowledgeable, and timely support across multiple channels — ensuring your customers feel valued and heard while saving you significant local employment expenses.",
-        whatToDoHeader: "What a Customer Service Rep Can Handle",
+export default function SalesBusinessDevelopmentSpecialist() {
+    const salesBusinessDevelopmentSpecialistData = {
+        title: "Sales / Business Development Specialist",
+        subTitle: "Grow Your Business Faster — Without the Local Hiring Premium",
+        dscrpt: "Driving new business requires strategic outreach, relationship building, and consistent follow-up. At Outsourze.com, our Philippines-based Sales and Business Development Specialists combine sales savvy with professionalism to help you identify opportunities, nurture leads, and close deals — all while saving significantly compared to local hiring.",
+        whatToDoHeader: "What a Sales/Business Development Specialist Can Handle",
         whatTodos: [
-            "Responding to customer inquiries via phone, email, or chat", 
-            "Updating customer records and databases",
-            "Handling order processing and tracking",
-            "Escalating complex issues to specialized teams",
-            "Resolving billing and payment issues",
-            "Providing product or service information",
-            "Managing returns, refunds, and exchanges"
+            "Prospecting and qualifying new business opportunities", 
+            "Building and maintaining client relationships",
+            "Conducting market research and competitive analysis",
+            "Preparing and delivering sales presentations and proposals",
+            "Negotiating contracts and closing deals",
+            "Managing CRM data and sales pipelines",
+            "Collaborating closely with marketing and product teams",
         ],
-        whyOutSourzeTitle: "Why Outsource Customer Service?",
+        whyOutSourzeTitle: "Why Outsource Sales / Business Development?",
         whyOutSourzeItems: [
-            "Deliver 24/7 or extended support hours without the overhead",
-            "Scale your team quickly during seasonal peaks",
-            "Maintain consistent quality and customer satisfaction",
-            "Save on salaries, equipment, and office infrastructure"
+            "Access experienced sales pros without the high local salaries",
+            "Scale outreach and pipeline generation flexibly",
+            "Free your senior sales team to focus on closing and strategy",
+            "Reduce recruitment, training, and operational costs"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com offers experienced Customer Service Representatives trained to follow your protocols, use your CRM systems, and embody your brand values — all at a fraction of local costs.",
+        whyOutSourzeDscrpt: "Our specialists are trained in your sales processes and tools — representing your brand professionally while delivering measurable growth.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -58,26 +58,26 @@ export default function CustomerServiceRepresentative() {
             data: [
               {
                 "Role": "New Zealand",
-                "Entry Level": { cost: 900, currency: "NZD" },
+                "Entry Level": { cost: 850, currency: "NZD" },
                 "Mid Level": { cost: 1200, currency: "NZD" },
-                "Advanced": { cost: 1700, currency: "NZD" },
+                "Advanced": { cost: 1800, currency: "NZD" },
               },
               {
                 "Role": "Australia",
-                "Entry Level": { cost: 850, currency: "AUD" },
+                "Entry Level": { cost: 790, currency: "AUD" },
                 "Mid Level": { cost: 1100, currency: "AUD" },
-                "Advanced": { cost: 1550, currency: "AUD" },
+                "Advanced": { cost: 1600, currency: "AUD" },
               },
               {
                 "Role": "UK",
-                "Entry Level": { cost: 480, currency: "GBP" },
+                "Entry Level": { cost: 450, currency: "GBP" },
                 "Mid Level": { cost: 650, currency: "GBP" },
                 "Advanced": { cost: 900, currency: "GBP" },
               },
               {
                 "Role": "Canada",
-                "Entry Level": { cost: 750, currency: "CAD" },
-                "Mid Level": { cost: 1000, currency: "CAD" },
+                "Entry Level": { cost: 700, currency: "CAD" },
+                "Mid Level": { cost: 950, currency: "CAD" },
                 "Advanced": { cost: 1400, currency: "CAD" },
               },
             ],
@@ -89,7 +89,7 @@ export default function CustomerServiceRepresentative() {
               {
                 "Role": "New Zealand",
                 "Entry Level": { cost: 1100, currency: "NZD" },
-                "Mid Level": { cost: 1400, currency: "NZD" },
+                "Mid Level": { cost: 1450, currency: "NZD" },
                 "Advanced": { cost: 2000, currency: "NZD" },
               },
               {
@@ -102,11 +102,11 @@ export default function CustomerServiceRepresentative() {
                 "Role": "UK",
                 "Entry Level": { cost: 580, currency: "GBP" },
                 "Mid Level": { cost: 750, currency: "GBP" },
-                "Advanced": { cost: 1100, currency: "GBP" },
+                "Advanced": { cost: 1000, currency: "GBP" },
               },
               {
                 "Role": "Canada",
-                "Entry Level": { cost: 900, currency: "CAD" },
+                "Entry Level": { cost: 880, currency: "CAD" },
                 "Mid Level": { cost: 1150, currency: "CAD" },
                 "Advanced": { cost: 1600, currency: "CAD" },
               },
@@ -117,36 +117,36 @@ export default function CustomerServiceRepresentative() {
           role: "New Zealand",
           currency: "NZD",
           currencySign: "$",
-          localCost: { lowest: 4500, highest: 6000 },
-          outsourze: 650,
-          estimatedSaving: 89,
+          localCost: { lowest: 6000, highest: 8000 },
+          outsourze: 850,
+          estimatedSaving: 88,
         }, {
           role: "Australia",
           currency: "AUD",
           currencySign: "$",
-          localCost: { lowest: 5000, highest: 6200 },
-          outsourze: 600,
+          localCost: { lowest: 6500, highest: 8500 },
+          outsourze: 790,
           estimatedSaving: 90
         }, {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
-          localCost: { lowest: 2200, highest: 2800 },
-          outsourze: 350,
-          estimatedSaving: 87,
+          localCost: { lowest: 3000, highest: 3800 },
+          outsourze: 450,
+          estimatedSaving: 88,
         }, {
           role: "Canada",
           currency: "CAD",
           currencySign: "$",
-          localCost: { lowest: 4000, highest: 5500 },
-          outsourze: 550,
+          localCost: { lowest: 5500, highest: 7500 },
+          outsourze: 700,
           estimatedSaving: 89,
         }],
-        disclaimer: "Customer service outsourcing is perfect for businesses looking to deliver excellent support while controlling costs and scaling quickly."
-    }
+        disclaimer: "Outsourcing sales and business development is ideal for businesses looking to grow pipeline and revenue cost-effectively without local hiring hassles."
+    }   
 
     return (
-        <ServiceContext.Provider value={csrData}>
+        <ServiceContext.Provider value={salesBusinessDevelopmentSpecialistData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

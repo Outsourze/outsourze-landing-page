@@ -6,29 +6,28 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function CustomerServiceRepresentative() {
-    const csrData = {
-        title: "Customer Service Representative (CSR)",
-        subTitle: "Friendly, Effective, and Professional Customer Support — Without the High Costs",
-        dscrpt: "Customer service is the frontline of your business, shaping customer satisfaction and loyalty. Our Philippines-based Customer Service Representatives provide courteous, knowledgeable, and timely support across multiple channels — ensuring your customers feel valued and heard while saving you significant local employment expenses.",
-        whatToDoHeader: "What a Customer Service Rep Can Handle",
+export default function GraphicDesigner() {
+    const graphicDesignerData = {
+        title: "Graphic Designer",
+        subTitle: "Creative Visual Solutions — Without the High Local Costs",
+        dscrpt: "Strong visual design is key to branding, marketing, and communications. At Outsourze.com, our Philippines-based Graphic Designers deliver eye-catching, professional designs tailored to your needs — all at a fraction of local hiring costs.",
+        whatToDoHeader: "What a Graphic Designer Can Handle",
         whatTodos: [
-            "Responding to customer inquiries via phone, email, or chat", 
-            "Updating customer records and databases",
-            "Handling order processing and tracking",
-            "Escalating complex issues to specialized teams",
-            "Resolving billing and payment issues",
-            "Providing product or service information",
-            "Managing returns, refunds, and exchanges"
+            "Creating logos, branding materials, and visual identities", 
+            "Designing marketing collateral (brochures, flyers, banners)",
+            "Developing social media graphics and web assets",
+            "Editing photos and images for marketing and presentations",
+            "Collaborating with marketing teams on campaign visuals",
+            "Producing layouts for print and digital publications",
         ],
-        whyOutSourzeTitle: "Why Outsource Customer Service?",
+        whyOutSourzeTitle: "Why Outsource Graphic Design?",
         whyOutSourzeItems: [
-            "Deliver 24/7 or extended support hours without the overhead",
-            "Scale your team quickly during seasonal peaks",
-            "Maintain consistent quality and customer satisfaction",
-            "Save on salaries, equipment, and office infrastructure"
+            "Access skilled designers with a range of styles and specialties",
+            "Scale design support without hiring full-time locally",
+            "Reduce recruitment, software, and equipment expenses",
+            "Benefit from fast turnaround and collaborative communication"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com offers experienced Customer Service Representatives trained to follow your protocols, use your CRM systems, and embody your brand values — all at a fraction of local costs.",
+        whyOutSourzeDscrpt: "Our designers are proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign), Canva, Figma, and other popular design tools.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -117,36 +116,36 @@ export default function CustomerServiceRepresentative() {
           role: "New Zealand",
           currency: "NZD",
           currencySign: "$",
-          localCost: { lowest: 4500, highest: 6000 },
-          outsourze: 650,
-          estimatedSaving: 89,
+          localCost: { lowest: 5000, highest: 6500 },
+          outsourze: 900,
+          estimatedSaving: 85,
         }, {
           role: "Australia",
           currency: "AUD",
           currencySign: "$",
-          localCost: { lowest: 5000, highest: 6200 },
-          outsourze: 600,
-          estimatedSaving: 90
+          localCost: { lowest: 5500, highest: 7000 },
+          outsourze: 850,
+          estimatedSaving: 87
         }, {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
-          localCost: { lowest: 2200, highest: 2800 },
-          outsourze: 350,
-          estimatedSaving: 87,
+          localCost: { lowest: 2500, highest: 3200 },
+          outsourze: 480,
+          estimatedSaving: 85,
         }, {
           role: "Canada",
           currency: "CAD",
           currencySign: "$",
-          localCost: { lowest: 4000, highest: 5500 },
-          outsourze: 550,
-          estimatedSaving: 89,
+          localCost: { lowest: 4500, highest: 6000 },
+          outsourze: 750,
+          estimatedSaving: 85,
         }],
-        disclaimer: "Customer service outsourcing is perfect for businesses looking to deliver excellent support while controlling costs and scaling quickly."
-    }
+        disclaimer: "Graphic design outsourcing is perfect for businesses needing consistent, high-quality creative output — without the local salary overhead."
+    }   
 
     return (
-        <ServiceContext.Provider value={csrData}>
+        <ServiceContext.Provider value={graphicDesignerData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

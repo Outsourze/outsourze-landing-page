@@ -23,22 +23,22 @@ export default function CustomerSupport() {
         logo: <CS2 className="brand-text-orange w-15 h-auto"/>,
         title: "Email Support Representative",
         dscrpt: "Responds to customer concerns via email with clear, thoughtful communication—ensuring accuracy and customer satisfaction in every interaction.",
-        url: "",
+        url: "/services/customer-support/email-support-representative",
       }, {
         logo: <CS3 className="brand-text-orange w-15 h-auto"/>,
         title: "Help Desk Support",
         dscrpt: "Provides technical assistance and troubleshooting, helping users resolve issues efficiently while minimizing downtime.",
-        url: "",
+        url: "/services/customer-support/help-desk-support-representative",
       }, {
         logo: <CS4 className="brand-text-orange w-15 h-auto"/>,
         title: "Sales Support Representative",
         dscrpt: "Assists the sales team by managing client data, preparing materials, and ensuring a smooth pre- and post-sale process.",
-        url: "",
+        url: "/services/customer-support/sales-support-representative",
       }, {
         logo: <CS5 className="brand-text-orange w-15 h-auto"/>,
         title: "Chat Support",
         dscrpt: "Engages with customers in real-time via chat, delivering quick, helpful responses that enhance user satisfaction and retention.",
-        url: "",
+        url: "/services/customer-support/chat-support-representative",
       }]
   } 
 

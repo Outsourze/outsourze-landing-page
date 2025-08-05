@@ -17,22 +17,22 @@ export default function HrRecruitment() {
       logo: <HR1 className="brand-text-orange w-15 h-auto"/>,
       title: "Recruitment Specialist",
       dscrpt: "Finds and attracts top-tier talent through proactive sourcing, screening, and relationship-building. Ensures each hire aligns with company needs and culture.",
-      url: "",
+      url: "/services/hr-recruitment/recruitment-specialist",
     }, {
       logo: <HR2 className="brand-text-orange w-15 h-auto"/>,
       title: "Talent Acquisition Specialist",
       dscrpt: "Strategically partners with teams to fill roles efficiently. Focuses on employer branding, talent pipelines, and seamless candidate experiences.",
-      url: "",
+      url: "/services/hr-recruitment/talent-acquisition-specialist",
     }, {
       logo: <HR3 className="brand-text-orange w-15 h-auto"/>,
       title: "HR Generalist",
       dscrpt: "Handles a broad range of HR functions from employee relations to policy implementation. Ensures smooth operations and compliance across the organization.",
-      url: "",
+      url: "/services/hr-recruitment/hr-generalist",
     }, {
       logo: <HR4 className="brand-text-orange w-15 h-auto"/>,
       title: "Psychometric Testing",
       dscrpt: "Uses data-driven assessments to evaluate candidates’ cognitive abilities, personality, and job fit. Helps make smarter hiring decisions based on insight, not instinct.",
-      url: "",
+      url: "/services/hr-recruitment/psychometric-testing",
     }]
   } 
 

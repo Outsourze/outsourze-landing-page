@@ -6,29 +6,29 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function HelpDeskSupportRepresentative() {
-    const helpDeskSupportData = {
-        title: "Help Desk Support Representative",
-        subTitle: "Reliable, Responsive, and Resourceful IT Support — Without the High Costs",
-        dscrpt: "When your customers or team members run into technical issues, quick and knowledgeable support is essential. Our Philippines-based Help Desk Support staff are trained to resolve problems efficiently, ensuring minimal downtime and a smooth user experience — all while helping you save significantly on local employment costs.",
-        whatToDoHeader: "What a Help Desk Support Rep Can Handle",
+export default function HRGeneralist() {
+    const hrGeneralistData = {
+        title: "HR Generalist",
+        subTitle: "Reliable, Day-to-Day HR Support — Without the Full-Time Cost",
+        dscrpt: "Managing people and processes takes time — especially as your team grows. At Outsourze.com, our Philippines-based HR Generalists provide professional, day-to-day HR support that keeps your business compliant, your staff engaged, and your operations running smoothly — all while saving you up to 90% compared to local hires.",
+        whatToDoHeader: "What an HR Generalist Can Handle",
         whatTodos: [
-            "Troubleshooting hardware and software issues", 
-            "Resetting passwords and managing access",
-            "Installing or configuring software",
-            "Responding to IT service desk tickets",
-            "Providing step-by-step solutions to users",
-            "Escalating complex technical problems",
-            "Documenting issues and resolutions"
+            "Drafting employment contracts and onboarding documents", 
+            "Maintaining employee records and HRIS systems",
+            "Managing timekeeping, leave, and attendance tracking",
+            "Supporting payroll and benefits administration",
+            "Assisting with recruitment coordination and job postings",
+            "Conducting employee surveys and engagement tracking",
+            "Helping with policy updates, compliance, and documentation"
         ],
-        whyOutSourzeTitle: "Why Outsource Help Desk Support?",
+        whyOutSourzeTitle: "Why Outsource HR Support?",
         whyOutSourzeItems: [
-            "Provide round-the-clock technical assistance",
-            "Reduce internal IT workload and overhead",
-            "Quickly scale your support team during peak periods",
-            "Maintain service level agreements (SLAs) with ease"
+            "Get expert help without hiring a full HR department",
+            "Reduce administrative burden on managers and founders",
+            "Ensure HR compliance without expensive consultants",
+            "Save on salaries, HR software licenses, and office costs"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com connects you with experienced Help Desk professionals who follow your processes, use your ticketing systems, and deliver the same level of support as local hires — at a significantly reduced cost.",
+        whyOutSourzeDscrpt: "Outsourze.com connects you with experienced HR professionals who can handle the operational side of HR while working seamlessly with your internal team or external advisors.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -119,7 +119,7 @@ export default function HelpDeskSupportRepresentative() {
           currencySign: "$",
           localCost: { lowest: 5000, highest: 6500 },
           outsourze: 720,
-          estimatedSaving: 88,
+          estimatedSaving: 89,
         }, {
           role: "Australia",
           currency: "AUD",
@@ -131,7 +131,7 @@ export default function HelpDeskSupportRepresentative() {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
-          localCost: { lowest: 2500, highest: 3000 },
+          localCost: { lowest: 2500, highest: 3200 },
           outsourze: 360,
           estimatedSaving: 86,
         }, {
@@ -142,11 +142,11 @@ export default function HelpDeskSupportRepresentative() {
           outsourze: 600,
           estimatedSaving: 87,
         }],
-        disclaimer: "Help Desk outsourcing is ideal for businesses that want to deliver fast, effective technical support without increasing infrastructure or headcount costs."
+        disclaimer: "Outsourcing HR support is perfect for small to mid-sized businesses that want professional HR coverage without the cost or complexity of a full in-house team."
     }
 
     return (
-        <ServiceContext.Provider value={helpDeskSupportData}>
+        <ServiceContext.Provider value={hrGeneralistData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

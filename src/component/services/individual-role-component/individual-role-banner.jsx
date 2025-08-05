@@ -13,7 +13,7 @@ const IndividualRoleBanner = () => {
                     className="absolute inset-0 object-cover"
                     src={maskCircle}
                 />  
-                <h1 className="text-7xl text-white font-heading font-extrabold mt-32">{services.title}</h1>
+                <h1 className="text-7xl text-white font-heading font-extrabold mt-32 max-w-[70%]">{services.title}</h1>
                 <h3 className="font-extrabold text-2xl">{services.subTitle}</h3>
                 <p className="text-lg font-medium">{services.dscrpt}</p>
             </div>

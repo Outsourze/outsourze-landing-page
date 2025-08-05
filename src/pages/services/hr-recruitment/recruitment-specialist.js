@@ -6,29 +6,29 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function HelpDeskSupportRepresentative() {
-    const helpDeskSupportData = {
-        title: "Help Desk Support Representative",
-        subTitle: "Reliable, Responsive, and Resourceful IT Support — Without the High Costs",
-        dscrpt: "When your customers or team members run into technical issues, quick and knowledgeable support is essential. Our Philippines-based Help Desk Support staff are trained to resolve problems efficiently, ensuring minimal downtime and a smooth user experience — all while helping you save significantly on local employment costs.",
-        whatToDoHeader: "What a Help Desk Support Rep Can Handle",
+export default function RecruitmentSpecialist() {
+    const recruitmentSpecialistData = {
+        title: "Recruitment Specialist",
+        subTitle: "Streamlined Hiring Support — Without the Overhead",
+        dscrpt: "Finding the right talent takes time, coordination, and attention to detail. At Outsourze.com, our Philippines-based Recruitment Specialists support your hiring process from sourcing to onboarding — helping you scale faster and smarter while keeping costs low. Whether you're a recruitment agency or a growing business, we provide the extra hands you need to build your team.",
+        whatToDoHeader: "What a Recruitment Specialist Can Handle",
         whatTodos: [
-            "Troubleshooting hardware and software issues", 
-            "Resetting passwords and managing access",
-            "Installing or configuring software",
-            "Responding to IT service desk tickets",
-            "Providing step-by-step solutions to users",
-            "Escalating complex technical problems",
-            "Documenting issues and resolutions"
+            "Sourcing candidates via job boards, LinkedIn, and databases", 
+            "Screening CVs and shortlisting applicants",
+            "Coordinating interviews and sending confirmations",
+            "Managing applicant tracking systems (ATS)",
+            "Conducting initial candidate outreach and follow-ups",
+            "Assisting with job ads and posting schedules",
+            "Supporting onboarding and compliance processes"
         ],
-        whyOutSourzeTitle: "Why Outsource Help Desk Support?",
+        whyOutSourzeTitle: "Why Outsource Recruitment Support?",
         whyOutSourzeItems: [
-            "Provide round-the-clock technical assistance",
-            "Reduce internal IT workload and overhead",
-            "Quickly scale your support team during peak periods",
-            "Maintain service level agreements (SLAs) with ease"
+            "Save hours of admin per role so you can focus on closing hires",
+            "Reduce internal HR and recruiter workload",
+            "Improve candidate engagement and process speed",
+            "Cut back on operational hiring costs"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com connects you with experienced Help Desk professionals who follow your processes, use your ticketing systems, and deliver the same level of support as local hires — at a significantly reduced cost.",
+        whyOutSourzeDscrpt: "Outsourze.com provides trained professionals experienced in recruitment tools and platforms. They work under your direction to help you stay ahead in the war for talent — without the burden of full-time local costs.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -119,7 +119,7 @@ export default function HelpDeskSupportRepresentative() {
           currencySign: "$",
           localCost: { lowest: 5000, highest: 6500 },
           outsourze: 720,
-          estimatedSaving: 88,
+          estimatedSaving: 89,
         }, {
           role: "Australia",
           currency: "AUD",
@@ -131,7 +131,7 @@ export default function HelpDeskSupportRepresentative() {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
-          localCost: { lowest: 2500, highest: 3000 },
+          localCost: { lowest: 2500, highest: 3200 },
           outsourze: 360,
           estimatedSaving: 86,
         }, {
@@ -142,11 +142,11 @@ export default function HelpDeskSupportRepresentative() {
           outsourze: 600,
           estimatedSaving: 87,
         }],
-        disclaimer: "Help Desk outsourcing is ideal for businesses that want to deliver fast, effective technical support without increasing infrastructure or headcount costs."
+        disclaimer: "Recruitment outsourcing is ideal for agencies and businesses looking to scale hiring operations quickly and affordably — without compromising quality."
     }
 
     return (
-        <ServiceContext.Provider value={helpDeskSupportData}>
+        <ServiceContext.Provider value={recruitmentSpecialistData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

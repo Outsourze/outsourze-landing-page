@@ -7,7 +7,7 @@ const SectionTitle = ({
 }) => {
     return (
       <div className={`${style} flex items-center justify-start gap-10`}>
-          <BrandLabel style={"text-[2.10rem] py-4 px-7 font-semibold"} text={bannerTitle}/>
+          <BrandLabel style={"text-[1.8rem] py-4 px-7 font-semibold"} text={bannerTitle}/>
           <p className="font-semibold text-xl">
             {dscrpt.split('<br/>').map((line, index) => (
               <span key={index}>

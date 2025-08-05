@@ -6,29 +6,29 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function ChatSupportRepresentative() {
-    const chatSupportData = {
-        title: "Chat Support Representative",
-        subTitle: "Fast, Friendly, Real-Time Support — Without the Full-Time Cost",
-        dscrpt: "Live chat is one of the most effective customer service channels, offering instant responses and higher satisfaction. At Outsourze.com, our Philippines-based Chat Support Representatives help your business engage visitors, resolve issues, and close sales — all while significantly reducing overhead compared to local hires.",
-        whatToDoHeader: "What a Chat Support Rep Can Handle",
+export default function PsychometricTesting() {
+    const psychometricTestingData = {
+        title: "Psychometric Testing Support",
+        subTitle: "Streamline Your Hiring with Smarter, Cost-Effective Talent Insights",
+        dscrpt: "Psychometric testing plays a key role in hiring smarter — helping you assess candidates’ personality traits, cognitive abilities, and job fit before they join your team. At Outsourze.com, our Philippines-based staff can fully manage the coordination, administration, and reporting of your psychometric assessments, ensuring a smooth and scalable process at a fraction of local costs.",
+        whatToDoHeader: "What Psychometric Testing Support Can Handle",
         whatTodos: [
-            "Responding to customer queries in real time", 
-            "Escalating complex or unresolved chats",
-            "Assisting with product questions and recommendations",
-            "Capturing leads and booking appointments",
-            "Troubleshooting simple technical issues",
-            "Maintaining chat logs and customer records",
-            "Helping customers navigate your website or portal"
+            "Managing candidate test invitations and follow-up communication", 
+            "Setting up and administering online assessments",
+            "Monitoring completion rates and sending reminders",
+            "Collating and formatting test results for hiring managers",
+            "Integrating reports into your applicant tracking system",
+            "Coordinating with third-party test providers",
+            "Ensuring confidentiality and secure data handling"
         ],
-        whyOutSourzeTitle: "Why Outsource Chat Support?",
+        whyOutSourzeTitle: "Why Outsource Psychometric Test Admin?",
         whyOutSourzeItems: [
-            "Provide instant help 24/7 without adding in-house staff",
-            "Increase conversions and reduce abandoned carts",
-            "Keep your response time competitive",
-            "Reduce cost-per-resolution compared to phone support"
+            "Save time for your internal HR or TA team",
+            "Ensure smooth and professional candidate experiences",
+            "Maintain consistent testing processes at scale",
+            "Avoid the cost of hiring in-house testing coordinators"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com provides experienced live chat agents trained in multitasking, tone control, and real-time communication — all tailored to your brand voice and standards.",
+        whyOutSourzeDscrpt: "Our staff are experienced in working with leading platforms like SHL, Hogan, Criteria, and custom assessment tools. They follow your process, timelines, and candidate communication standards — acting as a seamless extension of your recruitment operations.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -117,21 +117,21 @@ export default function ChatSupportRepresentative() {
           role: "New Zealand",
           currency: "NZD",
           currencySign: "$",
-          localCost: { lowest: 4500, highest: 6500 },
+          localCost: { lowest: 4500, highest: 6000 },
           outsourze: 650,
           estimatedSaving: 89,
         }, {
           role: "Australia",
           currency: "AUD",
           currencySign: "$",
-          localCost: { lowest: 5000, highest: 6500 },
+          localCost: { lowest: 5000, highest: 6200 },
           outsourze: 600,
           estimatedSaving: 90
         }, {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
-          localCost: { lowest: 2500, highest: 3200 },
+          localCost: { lowest: 2200, highest: 2800 },
           outsourze: 350,
           estimatedSaving: 87,
         }, {
@@ -142,11 +142,11 @@ export default function ChatSupportRepresentative() {
           outsourze: 550,
           estimatedSaving: 89,
         }],
-        disclaimer: "Sales Support outsourcing is ideal for businesses looking to streamline operations, boost team efficiency, and grow sales without growing overhead."
+        disclaimer: "Psychometric testing support is ideal for recruitment teams who want consistent, candidate-friendly testing workflows — without the administrative load or high in-house costs."
     }
 
     return (
-        <ServiceContext.Provider value={chatSupportData}>
+        <ServiceContext.Provider value={psychometricTestingData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

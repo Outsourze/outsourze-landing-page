@@ -6,29 +6,28 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function CustomerServiceRepresentative() {
-    const csrData = {
-        title: "Customer Service Representative (CSR)",
-        subTitle: "Friendly, Effective, and Professional Customer Support — Without the High Costs",
-        dscrpt: "Customer service is the frontline of your business, shaping customer satisfaction and loyalty. Our Philippines-based Customer Service Representatives provide courteous, knowledgeable, and timely support across multiple channels — ensuring your customers feel valued and heard while saving you significant local employment expenses.",
-        whatToDoHeader: "What a Customer Service Rep Can Handle",
+export default function VideoEditor() {
+    const videoEditorData = {
+        title: "Video Editor",
+        subTitle: "Professional Video Editing — Without Local Salary Overheads",
+        dscrpt: "Engaging, polished videos are essential for marketing, training, and communications. At Outsourze.com, our Philippines-based Video Editors provide expert editing services — helping you create compelling video content while saving on costly local hires.",
+        whatToDoHeader: "What a Video Editor Can Handle",
         whatTodos: [
-            "Responding to customer inquiries via phone, email, or chat", 
-            "Updating customer records and databases",
-            "Handling order processing and tracking",
-            "Escalating complex issues to specialized teams",
-            "Resolving billing and payment issues",
-            "Providing product or service information",
-            "Managing returns, refunds, and exchanges"
+            "Editing raw footage into finished videos for various platforms", 
+            "Adding transitions, effects, and audio enhancements",
+            "Color correction and sound editing",
+            "Formatting videos for social media, websites, or presentations",
+            "Collaborating with creative and marketing teams",
+            "Managing video projects from intake to delivery",
         ],
-        whyOutSourzeTitle: "Why Outsource Customer Service?",
+        whyOutSourzeTitle: "Why Outsource Video Editing?",
         whyOutSourzeItems: [
-            "Deliver 24/7 or extended support hours without the overhead",
-            "Scale your team quickly during seasonal peaks",
-            "Maintain consistent quality and customer satisfaction",
-            "Save on salaries, equipment, and office infrastructure"
+            "Access skilled editors with technical expertise",
+            "Scale video production without hiring full-time locally",
+            "Reduce recruitment, software, and hardware costs",
+            "Benefit from fast turnaround and professional quality"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com offers experienced Customer Service Representatives trained to follow your protocols, use your CRM systems, and embody your brand values — all at a fraction of local costs.",
+        whyOutSourzeDscrpt: "Our Video Editors are proficient with Adobe Premiere Pro, Final Cut Pro, DaVinci Resolve, and other industry-standard editing software.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -36,11 +35,11 @@ export default function CustomerServiceRepresentative() {
             data: [
               {
                 Role: "New Zealand",
-                "Hourly Rate": { cost: 15, currency: "NZD" },
+                "Hourly Rate": { cost: 16, currency: "NZD" },
               },
               {
                 Role: "Australia",
-                "Hourly Rate": { cost: 14, currency: "AUD" },
+                "Hourly Rate": { cost: 15, currency: "AUD" },
               },
               {
                 Role: "UK",
@@ -70,9 +69,9 @@ export default function CustomerServiceRepresentative() {
               },
               {
                 "Role": "UK",
-                "Entry Level": { cost: 480, currency: "GBP" },
-                "Mid Level": { cost: 650, currency: "GBP" },
-                "Advanced": { cost: 900, currency: "GBP" },
+                "Entry Level": { cost: 450, currency: "GBP" },
+                "Mid Level": { cost: 600, currency: "GBP" },
+                "Advanced": { cost: 850, currency: "GBP" },
               },
               {
                 "Role": "Canada",
@@ -100,8 +99,8 @@ export default function CustomerServiceRepresentative() {
               },
               {
                 "Role": "UK",
-                "Entry Level": { cost: 580, currency: "GBP" },
-                "Mid Level": { cost: 750, currency: "GBP" },
+                "Entry Level": { cost: 500, currency: "GBP" },
+                "Mid Level": { cost: 720, currency: "GBP" },
                 "Advanced": { cost: 1100, currency: "GBP" },
               },
               {
@@ -117,36 +116,36 @@ export default function CustomerServiceRepresentative() {
           role: "New Zealand",
           currency: "NZD",
           currencySign: "$",
-          localCost: { lowest: 4500, highest: 6000 },
-          outsourze: 650,
-          estimatedSaving: 89,
+          localCost: { lowest: 5500, highest: 7500 },
+          outsourze: 900,
+          estimatedSaving: 85,
         }, {
           role: "Australia",
           currency: "AUD",
           currencySign: "$",
-          localCost: { lowest: 5000, highest: 6200 },
-          outsourze: 600,
-          estimatedSaving: 90
+          localCost: { lowest: 6000, highest: 7800 },
+          outsourze: 850,
+          estimatedSaving: 86
         }, {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
-          localCost: { lowest: 2200, highest: 2800 },
-          outsourze: 350,
-          estimatedSaving: 87,
+          localCost: { lowest: 2800, highest: 3700 },
+          outsourze: 450,
+          estimatedSaving: 85,
         }, {
           role: "Canada",
           currency: "CAD",
           currencySign: "$",
-          localCost: { lowest: 4000, highest: 5500 },
-          outsourze: 550,
-          estimatedSaving: 89,
+          localCost: { lowest: 4800, highest: 6500 },
+          outsourze: 750,
+          estimatedSaving: 85,
         }],
-        disclaimer: "Customer service outsourcing is perfect for businesses looking to deliver excellent support while controlling costs and scaling quickly."
-    }
+        disclaimer: "Video editing outsourcing is ideal for businesses wanting expert, professional video content without the local salary premium."
+    }   
 
     return (
-        <ServiceContext.Provider value={csrData}>
+        <ServiceContext.Provider value={videoEditorData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

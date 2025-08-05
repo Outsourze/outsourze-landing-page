@@ -6,29 +6,29 @@ import IndividualRolePrices from "@/component/services/individual-role-component
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
 
-export default function ChatSupportRepresentative() {
-    const chatSupportData = {
-        title: "Chat Support Representative",
-        subTitle: "Fast, Friendly, Real-Time Support — Without the Full-Time Cost",
-        dscrpt: "Live chat is one of the most effective customer service channels, offering instant responses and higher satisfaction. At Outsourze.com, our Philippines-based Chat Support Representatives help your business engage visitors, resolve issues, and close sales — all while significantly reducing overhead compared to local hires.",
-        whatToDoHeader: "What a Chat Support Rep Can Handle",
+export default function TelesalesSpecialist() {
+    const telesalesSpecialistData = {
+        title: "Telesales Specialist",
+        subTitle: "Drive Sales and Revenue Growth — Without Local Hiring Costs",
+        dscrpt: "Converting prospects into customers over the phone takes skill, persistence, and professionalism. At Outsourze.com, our Philippines-based Telesales Specialists deliver effective sales calls, follow-ups, and lead nurturing — helping you grow revenue while cutting local hiring expenses.",
+        whatToDoHeader: "What a Telesales Specialist Can Handle",
         whatTodos: [
-            "Responding to customer queries in real time", 
-            "Escalating complex or unresolved chats",
-            "Assisting with product questions and recommendations",
-            "Capturing leads and booking appointments",
-            "Troubleshooting simple technical issues",
-            "Maintaining chat logs and customer records",
-            "Helping customers navigate your website or portal"
+            "Making outbound sales calls to prospects", 
+            "Qualifying leads and identifying buying intent",
+            "Presenting products or services clearly and persuasively",
+            "Handling objections and answering questions",
+            "Scheduling appointments or closing sales",
+            "Maintaining accurate call records and CRM updates",
+            "Following up on warm leads and inquiries"
         ],
-        whyOutSourzeTitle: "Why Outsource Chat Support?",
+        whyOutSourzeTitle: "Why Outsource Telesales?",
         whyOutSourzeItems: [
-            "Provide instant help 24/7 without adding in-house staff",
-            "Increase conversions and reduce abandoned carts",
-            "Keep your response time competitive",
-            "Reduce cost-per-resolution compared to phone support"
+            "Scale your sales outreach quickly without increasing overhead",
+            "Access trained sales professionals with strong communication skills",
+            "Reduce recruitment and training costs",
+            "Free your sales managers to focus on strategy and closing"
         ],
-        whyOutSourzeDscrpt: "Outsourze.com provides experienced live chat agents trained in multitasking, tone control, and real-time communication — all tailored to your brand voice and standards.",
+        whyOutSourzeDscrpt: "Outsourze.com provides telesales staff trained in your sales processes and CRM tools, delivering consistent, high-quality sales conversations tailored to your brand.",
         priceComparison: [
           {
             type: "Hourly Freelancer",
@@ -36,11 +36,11 @@ export default function ChatSupportRepresentative() {
             data: [
               {
                 Role: "New Zealand",
-                "Hourly Rate": { cost: 11, currency: "NZD" },
+                "Hourly Rate": { cost: 12, currency: "NZD" },
               },
               {
                 Role: "Australia",
-                "Hourly Rate": { cost: 10, currency: "AUD" },
+                "Hourly Rate": { cost: 11, currency: "AUD" },
               },
               {
                 Role: "UK",
@@ -48,7 +48,7 @@ export default function ChatSupportRepresentative() {
               },
               {
                 Role: "Canada",
-                "Hourly Rate": { cost: 9, currency: "CAD" },
+                "Hourly Rate": { cost: 10, currency: "CAD" },
               },
             ],
           },
@@ -58,13 +58,13 @@ export default function ChatSupportRepresentative() {
             data: [
               {
                 "Role": "New Zealand",
-                "Entry Level": { cost: 650, currency: "NZD" },
+                "Entry Level": { cost: 700, currency: "NZD" },
                 "Mid Level": { cost: 900, currency: "NZD" },
                 "Advanced": { cost: 1300, currency: "NZD" },
               },
               {
                 "Role": "Australia",
-                "Entry Level": { cost: 600, currency: "AUD" },
+                "Entry Level": { cost: 650, currency: "AUD" },
                 "Mid Level": { cost: 820, currency: "AUD" },
                 "Advanced": { cost: 1150, currency: "AUD" },
               },
@@ -76,7 +76,7 @@ export default function ChatSupportRepresentative() {
               },
               {
                 "Role": "Canada",
-                "Entry Level": { cost: 550, currency: "CAD" },
+                "Entry Level": { cost: 580, currency: "CAD" },
                 "Mid Level": { cost: 720, currency: "CAD" },
                 "Advanced": { cost: 1050, currency: "CAD" },
               },
@@ -89,26 +89,26 @@ export default function ChatSupportRepresentative() {
               {
                 "Role": "New Zealand",
                 "Entry Level": { cost: 900, currency: "NZD" },
-                "Mid Level": { cost: 1100, currency: "NZD" },
-                "Advanced": { cost: 1500, currency: "NZD" },
+                "Mid Level": { cost: 1150, currency: "NZD" },
+                "Advanced": { cost: 1600, currency: "NZD" },
               },
               {
                 "Role": "Australia",
                 "Entry Level": { cost: 820, currency: "AUD" },
-                "Mid Level": { cost: 1000, currency: "AUD" },
-                "Advanced": { cost: 1350, currency: "AUD" },
+                "Mid Level": { cost: 1050, currency: "AUD" },
+                "Advanced": { cost: 1400, currency: "AUD" },
               },
               {
                 "Role": "UK",
                 "Entry Level": { cost: 450, currency: "GBP" },
                 "Mid Level": { cost: 550, currency: "GBP" },
-                "Advanced": { cost: 800, currency: "GBP" },
+                "Advanced": { cost: 750, currency: "GBP" },
               },
               {
                 "Role": "Canada",
                 "Entry Level": { cost: 720, currency: "CAD" },
                 "Mid Level": { cost: 900, currency: "CAD" },
-                "Advanced": { cost: 1250, currency: "CAD" },
+                "Advanced": { cost: 1300, currency: "CAD" },
               },
             ],
           },
@@ -117,36 +117,36 @@ export default function ChatSupportRepresentative() {
           role: "New Zealand",
           currency: "NZD",
           currencySign: "$",
-          localCost: { lowest: 4500, highest: 6500 },
-          outsourze: 650,
-          estimatedSaving: 89,
+          localCost: { lowest: 4500, highest: 6000 },
+          outsourze: 700,
+          estimatedSaving: 85,
         }, {
           role: "Australia",
           currency: "AUD",
           currencySign: "$",
           localCost: { lowest: 5000, highest: 6500 },
-          outsourze: 600,
-          estimatedSaving: 90
+          outsourze: 650,
+          estimatedSaving: 88
         }, {
           role: "United Kingdom",
           currency: "GBP",
           currencySign: "£",
           localCost: { lowest: 2500, highest: 3200 },
           outsourze: 350,
-          estimatedSaving: 87,
+          estimatedSaving: 86,
         }, {
           role: "Canada",
           currency: "CAD",
           currencySign: "$",
-          localCost: { lowest: 4000, highest: 5500 },
-          outsourze: 550,
-          estimatedSaving: 89,
+          localCost: { lowest: 4500, highest: 6000 },
+          outsourze: 580,
+          estimatedSaving: 88,
         }],
-        disclaimer: "Sales Support outsourcing is ideal for businesses looking to streamline operations, boost team efficiency, and grow sales without growing overhead."
-    }
+        disclaimer: "Telesales outsourcing is perfect for businesses wanting scalable, consistent, and professional phone sales support — without full-time local hire costs."
+    }   
 
     return (
-        <ServiceContext.Provider value={chatSupportData}>
+        <ServiceContext.Provider value={telesalesSpecialistData}>
             <div className="flex flex-col gap-20">
                 <IndividualRoleBanner />
                 <IndividualRoleShowcase />

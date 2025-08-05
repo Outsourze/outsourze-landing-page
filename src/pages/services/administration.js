@@ -17,27 +17,27 @@ export default function Administration() {
       logo: <AD1 className="brand-text-orange w-15 h-auto"/>,
       title: "Virtual Assistant",
       dscrpt: "Provides remote administrative support for scheduling, communication, and task management to keep operations running smoothly.",
-      url: "",
+      url: "/services/administration/virtual-assistant",
     }, {
       logo: <AD2 className="brand-text-orange w-15 h-auto"/>,
       title: "Executive Assistant",
       dscrpt: "Supports high-level executives with calendar management, coordination, and confidential tasks.",
-      url: "",
+      url: "/services/administration/executive-assistant",
     }, {
       logo: <AD3 className="brand-text-orange w-15 h-auto"/>,
       title: "Data Entry Specialist",
       dscrpt: "Inputs and organizes data with accuracy and speed, maintaining the integrity of critical information.",
-      url: "",
+      url: "/services/administration/data-entry-specialist",
     }, {
       logo: <AD4 className="brand-text-orange w-15 h-auto"/>,
       title: "Encoder",
       dscrpt: "Processes and records data efficiently, ensuring up-to-date and error-free documentation.",
-      url: "",
+      url: "/services/administration/encoder",
     }, {
       logo: <AD5 className="brand-text-orange w-15 h-auto"/>,
       title: "Personal Assistant",
       dscrpt: "Assists with both personal and professional tasks, from errands to executive scheduling, with reliability and discretion.",
-      url: "",
+      url: "/services/administration/personal-assistant",
     }]
   } 
 
