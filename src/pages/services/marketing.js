@@ -20,42 +20,42 @@ export default function MarketingCreative() {
       logo: <MC1 className="brand-text-orange w-15 h-auto"/>,
       title: "Graphic Designer",
       dscrpt: "Creates visual assets that communicate your brand through impactful design and layout.",
-      url: "",
+      url: "/services/marketing/graphic-designer",
     }, {
       logo: <MC2 className="brand-text-orange w-15 h-auto"/>,
       title: "Social Media Manager",
       dscrpt: "Plans, creates, and manages content across platforms to build brand presence and engagement.",
-      url: "",
+      url: "/services/marketing/social-media-manager",
     }, {
       logo: <MC3 className="brand-text-orange w-15 h-auto"/>,
       title: "UI/UX Developer",
       dscrpt: "Designs and builds user-friendly digital experiences that are visually appealing and highly functional.",
-      url: "",
+      url: "/services/marketing/ui-ux-developer",
     }, {
       logo: <MC4 className="brand-text-orange w-15 h-auto"/>,
       title: "Content Writer",
       dscrpt: "Crafts clear, engaging written content tailored to your audience and brand voice.",
-      url: "",
+      url: "/services/marketing/content-writer",
     }, {
       logo: <MC5 className="brand-text-orange w-15 h-auto"/>,
       title: "Copywriter",
       dscrpt: "Writes persuasive and on-brand marketing copy that converts readers into customers.",
-      url: "",
+      url: "/services/marketing/copy-writer",
     }, {
       logo: <MC6 className="brand-text-orange w-15 h-auto"/>,
       title: "Digital Marketing Specialist",
       dscrpt: "Executes online campaigns across channels, driving traffic, conversions, and measurable growth.",
-      url: "",
+      url: "/services/marketing/digital-marketing-specialist",
     }, {
       logo: <MC7 className="brand-text-orange w-15 h-auto"/>,
       title: "Video Editor",
       dscrpt: "Edits and assembles raw footage into compelling video content that informs or entertains.",
-      url: "",
+      url: "/services/marketing/video-editor",
     }, {
       logo: <MC8 className="brand-text-orange w-15 h-auto"/>,
       title: "Motion Graphics Artist",
       dscrpt: "Brings visuals to life through animated graphics for branding, storytelling, and advertising.",
-      url: "",
+      url: "/services/marketing/motion-graphics-artist",
     }]
   } 
 

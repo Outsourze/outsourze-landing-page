@@ -8,7 +8,7 @@ const ContactDetailData = [{
 }, {
     title: "Book a Free Consultation",
     text: null,
-    url: "",
+    url: "https://calendly.com/paul-outsourze/30min",
     subtitle: null
 }, {
     title: "Head Office",
