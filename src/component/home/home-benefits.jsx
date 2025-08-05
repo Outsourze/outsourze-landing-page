@@ -8,19 +8,44 @@ import Benefit5 from "@/assets/icon/benefit-outsourcing/benefit-5.svg";
 
 const benefitsData = [{
     icon: <Benefit1 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
-    text: "Save Up to 70% on Labor Costs"
+    text: "Save Up to 70% on Labor Costs",
+    dscrpt: (
+        <>
+            Our vetted offshore teams deliver top-tier support, admin, and back-office services at a fraction of what you'd pay locally —<span className="brand-text-orange">often saving you thousands per month.</span> 
+        </>
+    )
 }, {
     icon: <Benefit2 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
-    text: "No Overhead, No Hassle"
+    text: "No Overhead, No Hassle",
+    dscrpt: (
+        <>
+            We handle recruitment, HR, training, and infrastructure. That means <span className="brand-text-orange">no office space, no payroll headaches</span>, and no long-term commitments.
+        </>
+    )
 }, {
     icon: <Benefit3 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
-    text: "Scale on Demand"
+    text: "Scale on Demand",
+    dscrpt: (
+        <>
+            Need 1 staff today and 10 next month? No problem. Outsourze lets you scale effortlessly — whether you're growing fast or trimming down.
+        </>
+    )
 }, {
     icon: <Benefit4 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
-    text: "24/7 Productivity"
+    text: "24/7 Productivity",
+    dscrpt: (
+        <>
+            With global time zone coverage, your business can keep moving while you sleep — ideal for customer service, data processing, or lead gen. whether you're growing fast or trimming down.
+        </>
+    )
 }, {
     icon: <Benefit5 className="w-14 h-auto brand-text-orange absolute top-5 right-5" />,
-    text: "Built for Businesses"
+    text: "Built for Businesses",
+    dscrpt: (
+        <>
+            We understand your market, compliance expectations, and communication style — and we hire remote professionals trained to meet your standards.
+        </>
+    )
 }]
 
 const BenefitSection = () => {
@@ -37,6 +62,7 @@ const BenefitSection = () => {
                             key={index}
                             icon={data.icon}
                             text={data.text}
+                            dscrpt={data.dscrpt}
                         />
                     ))}
                 </div>
