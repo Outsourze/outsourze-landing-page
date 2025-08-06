@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { ServicesMenuData } from "@/api/data";
 import WhiteButton from "./ui/white-btn";
 import OutsouzedLogo from "@/assets/logo/Outsourze Logo.svg";
-
+import { AnimatePresence, motion } from "framer-motion";
 
 const ServicesMenu = () => {
   return (
@@ -24,21 +24,30 @@ const ServicesMenu = () => {
           border-transparent border-b-[var(--background)]"
       />
 
-      {/* Dropdown */}
-      <div className="w-[45rem] h-[20rem] absolute right-0 top-12 bg-[var(--background)] shadow-menu rounded-3xl p-8 ">
-        <div className="flex flex-wrap gap-3 justify-center items-center w-full h-full">
-            {ServicesMenuData.map((menuData, index) => (
-                <Link key={index} href={menuData.url} className="flex items-start gap-2 w-[49%] p-4 cursor-pointer">
-                    {menuData.icon}
-                    <div className="flex flex-col">
-                        <p className=" font-bold">{menuData.text}</p>
-                        <p className="text-sm">{menuData.subText}</p>
-                    </div>
-                    <FaArrowRight size={18} className="brand-text-orange"/>
-                </Link>
-            ))}
+      {/* Dropdown + animation */}
+      <motion.div
+         key="content"
+         initial={{ height: 0, opacity: 0 }}
+         animate={{ height: "auto", opacity: 1 }}
+         exit={{ height: 0, opacity: 0 }}
+         transition={{ duration: 0.3, ease: "easeInOut" }}
+         className="overflow-hidden"
+       >
+        <div className="w-[45rem] h-[20rem] absolute right-0 top-12 bg-[var(--background)] shadow-menu rounded-3xl p-8 ">
+          <div className="flex flex-wrap gap-3 justify-center items-center w-full h-full">
+              {ServicesMenuData.map((menuData, index) => (
+                  <Link key={index} href={menuData.url} className="flex items-start gap-2 w-[49%] p-4 cursor-pointer">
+                      {menuData.icon}
+                      <div className="flex flex-col">
+                          <p className=" font-bold">{menuData.text}</p>
+                          <p className="text-sm">{menuData.subText}</p>
+                      </div>
+                      <FaArrowRight size={18} className="brand-text-orange"/>
+                  </Link>
+              ))}
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
@@ -65,14 +74,16 @@ const Header = () => {
                     <div className="relative">
                       <button
                         onClick={handleOpenServicesDropDown}
-                        className={`font-cta flex items-center transition-colors cursor-pointer ${
+                        className={`duration-300 font-cta flex items-center transition-colors cursor-pointer ${
                           isServicesOpen ? "text-[var(--color-black)]" : "text-[var(--color-gray)]"
                         }`}
                       >
                         Services
                         <MdKeyboardArrowDown size={22} />
                       </button>
-                      {isServicesOpen && <ServicesMenu />}
+                      <AnimatePresence initial={false}>
+                        {isServicesOpen && <ServicesMenu />}
+                      </AnimatePresence>
                     </div>
                     <Link className="text-[var(--color-gray)] font-cta" href="/about">About</Link>
                     <WhiteButton 

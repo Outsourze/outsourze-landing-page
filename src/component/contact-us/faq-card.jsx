@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { AnimatePresence, motion } from "framer-motion"; // ✅ Correct import
+import { AnimatePresence, motion } from "framer-motion";
 
 const FaqCard = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);

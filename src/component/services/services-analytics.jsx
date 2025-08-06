@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import Button from "../ui/button";
 
 const analyticStats = [{
     number: "100+",
@@ -26,16 +27,14 @@ const AnalyticSection = () => {
                     </div>
                 ))}
             </div>
-            <div className="w-[40%] flex flex-col gap-3">
+            <div className="w-[40%] flex flex-col gap-3 items-start">
                 <h4 className="font-medium text-6xl">Commitments</h4>
                 <p className="font-medium text-[#00000099] m-2 leading-8">We’re committed to working hand-in-hand with you to understand your business goals and build a dedicated team that helps you grow—efficiently and effectively.</p>
-                <Link 
-                    href={"/case-study"} 
-                    className="flex items-center gap-5 brand-bg-orange text-white rounded-full self-start px-5 py-3"
-                >
-                    <p>View Cost Comparison</p>
-                    <FaArrowRight size={20}/>
-                </Link>
+                <Button 
+                    style={"text-white hover:bg-black hover:text-orange-500"}
+                    text={"View Cost Comparison"}
+                    url={"/case-study"}
+                />
             </div>  
         </div>
     )

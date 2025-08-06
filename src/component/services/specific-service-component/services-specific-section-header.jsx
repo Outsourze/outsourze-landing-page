@@ -7,6 +7,7 @@ const SpecificSectionHeader = () => {
         <Button 
           url={"/services"}
           text={"View All Services"}
+          style={"hover:bg-black hover:text-orange-500"}
         />
       </div>
     )
