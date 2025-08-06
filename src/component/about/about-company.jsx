@@ -1,5 +1,6 @@
 import { BiSolidRightArrow } from "react-icons/bi";
 import { FaArrowRight } from "react-icons/fa6";
+import Link from "next/link";
 
 const whatWeBelivedData = [
     "Transparency matters. No hidden fees. No jargon. Just straight answers and honest support.",
@@ -75,10 +76,14 @@ const CompanyAboutSection = () => {
                         <h3 className="brand-text-orange font-medium text-3xl">Let's Build Your Dream Team</h3>
                         <p className="text-sm text-white">Outsourcing doesn’t have to be complicated. With OUTSOURZE, you get a seamless, supported, and scalable experience—so you can reduce costs, boost productivity, and stay competitive in today’s fast-moving market.</p>
                         <p className="brand-text-orange font-medium font-cta">Ready to get started?</p>
-                        <button className="text-white flex items-center gap-5 border border-white rounded-3xl py-1 px-4 ml-auto ">
+                        <Link 
+                            href={"/contact-us"} 
+                            className="text-white flex items-center gap-5 border border-white rounded-3xl py-1 px-4 ml-auto duration-300
+                            hover:border-orange-500 hover:text-orange-500"
+                        >
                             <p>Contact Us</p> 
                             <FaArrowRight />
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>  

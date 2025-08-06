@@ -8,7 +8,6 @@ import SectionTitle from "../ui/section-title";
 
 const ServicesSection = () => {
     
-    
     return (
         <div>
             <div className="max-w-7xl m-auto flex flex-col gap-10">

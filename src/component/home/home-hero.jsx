@@ -23,6 +23,7 @@ const HeroSection = () => {
                     <Button 
                       url={"/contact-us"} 
                       text={"Continue"}
+                      style={"hover:bg-black hover:text-orange-500"}
                     />
                </div>
                <div className="flex flex-col items-center w-1/2 gap-5 px-7">

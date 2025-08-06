@@ -9,7 +9,10 @@ const IntroductionSection = () => {
             <div className="bg-[#1E1E1F] rounded-[1.3rem] flex items-center py-20 px-15 relative overflow-hidden">
                 <div className="flex flex-col gap-5">
                     <h1 className="text-white text-5xl  font-heading font-bold leading-15"><span className="brand-text-orange">Supercharge</span> Your <br />Team-Without<br /> Breaking the Bank</h1>
-                    <ButtonPlain style={"self-start px-7 font-cta shadow-md outline"} text={"Get Started"}/>
+                    <ButtonPlain 
+                        style={"self-start px-7 font-cta shadow-md outline hover:bg-black hover:text-white hover:border-none hover:outline-none duration-100"} 
+                        text={"Get Started"}
+                    />
                 </div>
                 <Image 
                     className="w-[42.2rem] absolute right-0 top-0 opacity-10"

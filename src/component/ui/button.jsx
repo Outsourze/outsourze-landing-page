@@ -10,7 +10,7 @@ const Button = ({
     return (
         <Link 
             href={url}
-            className={`${style} inline-flex items-center gap-2 brand-bg-orange py-3 px-5 rounded-full font-bold hover:bg-black hover:text-orange-500 duration-300`}
+            className={`${style} inline-flex items-center gap-2 brand-bg-orange py-3 px-5 rounded-full font-bold duration-300`}
         >
             {text} 
             <FaArrowRight size={18}/>

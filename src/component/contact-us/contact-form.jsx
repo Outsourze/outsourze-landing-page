@@ -74,7 +74,8 @@ const ContactFormSection = () => {
 
                       <button
                         type="submit"
-                        className="mt-4 w-full md:w-fit px-6 py-3 bg-black brand-text-orange text-white rounded-full hover:bg-orange-600 hover:text-white transition"
+                        className="mt-4 w-full md:w-fit px-6 py-3 bg-black brand-text-orange text-white rounded-full duration-300 cursor-pointer
+                        hover:bg-orange-600 hover:text-white"
                       >
                         Send Us a Message
                       </button>
