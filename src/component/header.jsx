@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
-import { ServicesMenuData } from "@/api/data";
+import { ServicesMenuData } from "@/pages/api/data";
 import WhiteButton from "./ui/white-btn";
 import OutsouzedLogo from "@/assets/logo/Outsourze Logo.svg";
 import { AnimatePresence, motion } from "framer-motion";

@@ -1,6 +1,6 @@
 // services section
 
-import { ServicesCardData, ServicesPitchCardData } from "@/api/data";
+import { ServicesCardData, ServicesPitchCardData } from "@/pages/api/data";
 import ServicesCard from "./service-card";
 import WhiteButton from "../ui/white-btn";
 import ServicesPitchCard from "./services-pitch-card";
