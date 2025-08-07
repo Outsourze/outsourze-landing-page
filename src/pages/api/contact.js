@@ -22,23 +22,31 @@ export default async function handler(req, res) {
       },
     });
 
-    await transporter.sendMail({
-      from: `"${name}" <${process.env.SMTP_USER}>`,
-      to: process.env.RECEIVER_EMAIL,
-      subject: "New Contact Form Message",
-      text: `
-            Name: ${name}
-            Email: ${email}
-            Company: ${company}
-            Message: ${message}
-      `,
-      html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Company:</strong> ${company}</p>
-        <p><strong>Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>
-      `,
-    });
+      await transporter.sendMail({
+        from: `"${name}" <${process.env.SMTP_USER}>`,
+        to: process.env.RECEIVER_EMAIL,
+        subject: "New Inquiry from Website Contact Form",
+        text: `
+          You have received a new message from the website contact form.
+        
+          Name: ${name}
+          Email: ${email}
+          Company: ${company || "N/A"}
+        
+          Message:
+          ${message}
+        `,
+        html: `
+          <div style="font-family: Arial, sans-serif; color: #000000; background-color: #ffffff; padding: 20px; border: 1px solid #FF6600;">
+            <h2 style="color: #FF6600; margin-bottom: 20px;">New Inquiry from Website Contact Form</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Company:</strong> ${company || "N/A"}</p>
+            <p><strong>Message:</strong></p>
+            <p style="white-space: pre-line;">${message}</p>
+          </div>
+        `,
+      });
 
     return res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
