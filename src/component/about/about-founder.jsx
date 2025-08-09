@@ -1,4 +1,5 @@
 import BrandLabel from "../ui/brand-label";
+import SectionTitle from "../ui/section-title";
 import FounderCard from "./founder-card";
 import Michael from "@/assets/images/michael.png";
 import Liam from "@/assets/images/liam.png";
@@ -29,11 +30,15 @@ const FounderSection = () => {
     }]
 
     return (
-        <div className="flex flex-col gap-20 items-start max-w-7xl py-10 m-auto">
-            <div className="flex items-center justify-start gap-10">
-                <BrandLabel style={"text-4xl py-5 px-7 font-semibold"} text={"Our Founders"}/>
-                <p className="font-semibold">Flexible outsourcing solutions tailored to your business goals —<br /> from startups to global teams.</p>
-            </div>
+        <div className="flex flex-col gap-20 items-start max-w-7xl m-auto
+        xl:px-0 xl:gap-20 
+        lg:px-20 lg:gap-10 lg:py-10
+        md:px-20 md:gap-5 md:py-0
+        max-md:px-5 max-md:py-5 max-md:gap-5 ">
+            <SectionTitle 
+                bannerTitle={"Our Founders"}
+                dscrpt={"Flexible outsourcing solutions tailored to your business goals from startups to global teams."}
+            />
             <div className="flex flex-col gap-5 w-full">
                 {founderData.map((data, index) => (
                     <FounderCard 

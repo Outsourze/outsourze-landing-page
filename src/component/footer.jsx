@@ -18,44 +18,46 @@ import OutsouzedLogo from "@/assets/logo/Outsourze Logo.svg";
 export const socialMedia = [{
     url: "https://www.facebook.com/outsourze/",
     alt: "facebook",
-    icon: <Facebook className="brand-text-orange w-10"/>
+    icon: <Facebook className="brand-text-orange lg:w-10 md:w-8 max-md:w-6"/>
 }, {
     url: "https://www.instagram.com/outsourzeglobal",
     alt: "instagram",
-    icon: <Intagram className="brand-text-orange w-10"/>
+    icon: <Intagram className="brand-text-orange lg:w-10 md:w-8 max-md:w-6"/>
 }, {
     url: "www.tiktok.com/@outsourzeglobal",
     alt: "tiktok",
-    icon: <Tiktok className="brand-text-orange w-10"/>
+    icon: <Tiktok className="brand-text-orange lg:w-10 md:w-8 max-md:w-6"/>
 }, {
     url: "",
     alt: "linkedin",
-    icon: <LinkedIn className="brand-text-orange w-10"/>
+    icon: <LinkedIn className="brand-text-orange lg:w-10 md:w-8 max-md:w-6"/>
 }]
 
 export const contactInfo = [{
     alt: "call",
-    icon: <CallIcon className="w-6"/>,
+    icon: <CallIcon className="lg:w-6 md:w-4 max-md:w-4"/>,
     text: "PH 12345678 | NZ 12345678 | AU 12345678UK | UK 12345678 | CAN 12345678"
 }, {
     alt: "email",
-    icon: <EmailIcon className="w-6"/>,
+    icon: <EmailIcon className="lg:w-6 md:w-4 max-md:w-4"/>,
     text: "hello@outsourze.com"
 }, {
     alt: "location",
-    icon: <LocationIcon className="w-6"/>,
+    icon: <LocationIcon className="lg:w-6 md:w-4 max-md:w-4"/>,
     text: "Outsourze Inc Knightsbridge Level 2, 392 B. Valdez Street, Poblacion, Makati,Metro Manila, Philippines, 1201"
 }, {
     alt: "globe",
-    icon: <WebsiteIcon className="w-6"/>,
+    icon: <WebsiteIcon className="lg:w-6 md:w-4 max-md:w-4"/>,
     text: "www.outsourze.com"
 }]
 
 const Footer = () => {
     return (
         <div className="brand-bg-offwhite py-4">
-            <div className="py-4 max-w-7xl m-auto">
-                <div className="footer-getstarted-banner-bg relative overflow-hidden rounded-4xl py-14 px-16 mb-15">
+            <div className="py-4 max-w-7xl m-auto 
+            xl:px-0 lg:px-20 md:px-20 max-md:px-5 max-md:relative">
+                <div className="footer-getstarted-banner-bg relative overflow-hidden rounded-4xl py-14 
+                lg:mb-15 lg:px-16 md:mb-5 md:px-8 max-md:mb-5 max-md:px-5 max-md:py-8 max-md:rounded-2xl">
                   {/* Background image */}
                   <Image
                     className="absolute right-0 bottom-[-80%] z-0 brightness-150 blur-2xl"
@@ -68,44 +70,48 @@ const Footer = () => {
                 
                   {/* Foreground content */}
                   <div className="relative z-10 flex items-center justify-between w-full">
-                    <h2 className="text-white font-semibold text-[4.6rem] font-jakarta">
+                    <h2 className="text-white font-semibold  font-jakarta
+                    xl:text-[4.6rem] lg:text-5xl md:text-4xl max-md:text-3xl">
                       Ready to work with us?
                     </h2>
                     
                     <Button 
                       url={"/contact-us"}
-                      style={"text-white text-sm gap-8 px-8 py-4"} 
+                      style={"text-white text-sm gap-8 px-8 py-4 max-md:px-3 max-md:py-2 max-sm:gap-0 max-sm:whitespace-nowrap"} 
                       text={"Get Started"} 
                     />
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between ">
-                    <div className="flex flex-col gap-5 max-w-[34rem]">
+                <div className="flex items-center justify-between 
+                xl:gap-0 lg:gap-10 md:gap-10 max-md:gap-5 max-md:flex-col">
+                    <div className="flex flex-col gap-5
+                    xl:max-w-xl lg:max-w-lg">
                         <Link href={"/home"}>
-                          <OutsouzedLogo className="w-56"/>
+                          <OutsouzedLogo className="lg:w-52 md:w-36 max-md:w-36"/>
                         </Link>
                
-                        <p className="text-[15px]">Outsourze is a remote staffing and outsourcing solutions company based in the Philippines. We help businesses scale by providing skilled, cost-effective talent across customer support, sales, admin, marketing, and more. Our goal is to simplify outsourcing—so you can focus on what matters most.</p>
-                        <div className="flex items-center gap-7">
-          
+                        <p className="xl:text-[15px] md:text-xs max-md:text-xs max-md:border-b-gray-300 max-md:border-b max-md:pb-2">Outsourze is a remote staffing and outsourcing solutions company based in the Philippines. We help businesses scale by providing skilled, cost-effective talent across customer support, sales, admin, marketing, and more. Our goal is to simplify outsourcing—so you can focus on what matters most.</p>
+                        <div className="flex items-center 
+                        lg:gap-7 md:gap-5 max-md:absolute max-md:bottom-0 max-md:right-5 max-md:gap-2">
                             {socialMedia.map((social, index) => (
                                 <Link href={social.url}>
                                     {social.icon}
                                 </Link>
                             ))}
-             
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 max-w-[30rem]">
-                        <h3 className="font-semibold text-[20px]">Contact</h3>
-                        <div className="flex flex-col gap-3">
+                        <h3 className="font-semibold brand-text-orange
+                        lg:text-[20px] md:text-sm max-md:text-sm">Contact</h3>
+                        <div className="flex flex-col gap-3 max-md:gap-2">
                             {contactInfo.map((info, index) => (
                                 <div key={index} className="flex items-start gap-3">
                                     <div>
                                         {info.icon}
                                     </div>
-                                    <p className="text-[15px] font-medium">{info.text}</p>
+                                    <p className=" font-medium
+                                    lg:text-[15px] md:text-[8px] max-md:text-[10px]">{info.text}</p>
                                 </div>
                             ))}
                         </div>

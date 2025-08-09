@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div className="w-full">
       <Header />
-      <main className="pt-30">{children}</main>
+      <main className="lg:pt-28 md:py-16 max-md:py-16">{children}</main>
       <Footer />
     </div>
   )
