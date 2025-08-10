@@ -13,7 +13,7 @@ const whatWeBelivedData = [
 const CompanyAboutSection = () => {
     return (
         <div className="brand-bg-offwhite">
-            <div className="flex flex-col items-start max-w-7xl py-10 m-auto
+            <div className="flex flex-col items-start max-w-7xl m-auto
             xl:gap-20 xl:px-0
             lg:px-20 lg:gap-10 lg:py-10
             md:px-20 md:gap-5 md:py-5

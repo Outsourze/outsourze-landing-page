@@ -9,7 +9,11 @@ const FaqCard = ({ question, answer }) => {
 
   return (
     <div 
-        className="w-[49%] cursor-pointer brand-bg-orange rounded-2xl overflow-hidden h-fit"
+        className="cursor-pointer brand-bg-orange rounded-2xl overflow-hidden h-fit
+        xl:w-[49%]
+        lg:w-[48%]
+        md:w-full
+        max-md:w-full"
         onClick={handleClick}
     >
       {/* Header */}

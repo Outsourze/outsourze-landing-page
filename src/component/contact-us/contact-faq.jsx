@@ -37,13 +37,24 @@ const faqData = [{
 
 const FaqSection = () => {
     return (
-        <div className="max-w-7xl m-auto">
-            <div className="bg-black px-8 py-12 font-semibold rounded-[1.7rem] flex flex-col gap-10">
-                <div className="flex flex-col gap-5 w-3/5">
+        <div className="max-w-7xl w-full m-auto
+        xl:px-0
+        lg:px-20
+        md:px-20
+        max-md:px-5">
+            <div className="bg-black font-semibold rounded-[1.7rem] flex flex-col gap-10
+            md:px-8 md:py-12
+            max-md:px-5 max-md:py-5">
+                <div className="flex flex-col gap-5 
+                lg:w-3/5
+                md:w-full md:px-8
+                max-md:w-full">
                     <h2 className="text-5xl font-jakarta brand-text-orange">Outsourze  FAQs</h2>
                     <p className="font-jakarta text-white font-medium text-[1rem]">As a trusted remote staffing partner, we’re committed to providing clear answers and helpful guidance to make outsourcing simple, smart, and successful for every client.</p>
                 </div>
-                <div className="flex flex-wrap gap-6">
+                <div className="flex flex-wrap gap-6
+                lg:justify-between
+                md:justify-start">
                     {faqData.map((data, index) => (
                         <FaqCard 
                             key={index}
