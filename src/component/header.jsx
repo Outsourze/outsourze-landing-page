@@ -1,96 +1,25 @@
 import Link from 'next/link';
-import { useState } from "react";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { FaArrowRight } from "react-icons/fa6";
-import { ServicesMenuData } from "@/api/data";
-import WhiteButton from "./ui/white-btn";
 import OutsouzedLogo from "@/assets/logo/Outsourze Logo.svg";
-import { AnimatePresence, motion } from "framer-motion";
-
-const ServicesMenu = () => {
-  return (
-    <div className="relative">
-      {/* Arrow shadow */}
-      <div
-        className="absolute top-[1.7rem] right-12 w-0 h-0 z-0
-          border-l-[12px] border-r-[12px] border-b-[18px]
-          border-transparent border-b-[rgba(223,223,223,0.15)]"
-      />
-
-      {/* Arrow (main triangle) */}
-      <div
-        className="absolute top-8 right-12 w-0 h-0 z-10
-          border-l-[12px] border-r-[12px] border-b-[18px]
-          border-transparent border-b-[var(--background)]"
-      />
-
-      {/* Dropdown + animation */}
-      <motion.div
-         key="content"
-         initial={{ height: 0, opacity: 0 }}
-         animate={{ height: "auto", opacity: 1 }}
-         exit={{ height: 0, opacity: 0 }}
-         transition={{ duration: 0.3, ease: "easeInOut" }}
-         className="overflow-hidden"
-       >
-        <div className="w-[45rem] h-[20rem] absolute right-0 top-12 bg-[var(--background)] shadow-menu rounded-3xl p-8 ">
-          <div className="flex flex-wrap gap-3 justify-center items-center w-full h-full">
-              {ServicesMenuData.map((menuData, index) => (
-                  <Link key={index} href={menuData.url} className="flex items-start gap-2 w-[49%] p-4 cursor-pointer">
-                      {menuData.icon}
-                      <div className="flex flex-col">
-                          <p className=" font-bold">{menuData.text}</p>
-                          <p className="text-sm">{menuData.subText}</p>
-                      </div>
-                      <FaArrowRight size={18} className="brand-text-orange"/>
-                  </Link>
-              ))}
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  );
-};
-
+import DesktopNav from './nav/destop-nav';
+import TabletNav from './nav/tablet-nav';
+import { useMediaQuery } from '@/utility/useMediaQuery';
+import MobileNav from './nav/mobile-nav';
 
 const Header = () => {
-    const [isServicesOpen, setIsServicesOpen] = useState(false);
-
-    const handleOpenServicesDropDown = () => {
-      setIsServicesOpen((prev) => !prev);
-    }
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1023px)");
+  const isMobile = useMediaQuery("(max-width: 767px)");
 
     return (
-        <div className="fixed py-4 top-0 left-0 right-0 w-full z-50 bg-[var(--background)]">
-            <div className="py-4 flex items-center justify-between max-w-7xl m-auto">
+        <div className="fixed lg:py-4 md:py-2 max-md:py-0 top-0 left-0 right-0 w-full z-50 bg-[var(--background)]">
+            <div className="py-4 flex items-center justify-between max-w-7xl m-auto 
+            xl:px-0 lg:px-20 md:px-20 max-md:px-5 relative">
                 <Link href={"/home"}>
-                  <OutsouzedLogo className="w-56"/>
+                  <OutsouzedLogo className="lg:w-52 md:w-36 max-md:w-36"/>
                 </Link>
-                
-        
-                <div className="flex items-center gap-9">
-                    <Link className="text-[var(--color-gray)] font-cta" href="/home">Home</Link>
-                     {/* Dropdown wrapper */}
-                    <div className="relative">
-                      <button
-                        onClick={handleOpenServicesDropDown}
-                        className={`duration-300 font-cta flex items-center transition-colors cursor-pointer ${
-                          isServicesOpen ? "text-[var(--color-black)]" : "text-[var(--color-gray)]"
-                        }`}
-                      >
-                        Services
-                        <MdKeyboardArrowDown size={22} />
-                      </button>
-                      <AnimatePresence initial={false}>
-                        {isServicesOpen && <ServicesMenu />}
-                      </AnimatePresence>
-                    </div>
-                    <Link className="text-[var(--color-gray)] font-cta" href="/about">About</Link>
-                    <WhiteButton 
-                      text={"Contact Us"}
-                      url={"/contact-us"}
-                    />
-                </div>
+                {isDesktop && <DesktopNav />}
+                {isTablet && <TabletNav />}
+                {isMobile && <MobileNav />}
             </div>
         </div>
     )

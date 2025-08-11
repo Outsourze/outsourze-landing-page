@@ -43,7 +43,8 @@ export default function Administration() {
 
   return (
     <ServiceContext.Provider value={admin}>
-      <div className="flex flex-col gap-20">
+      <div className="flex w-full flex-col 
+      lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
         {/* Services section container */}
         <SpecificBannerSection 
           title={"Administration"}

@@ -2,14 +2,28 @@
 
 const ContactFormSection = () => {
     return (
-        <div className="max-w-7xl m-auto">
-            <div className="flex justify-between items-start gap-10">
-                <div className="w-[32%] flex-col flex gap-5 py-5">
-                    <h2 className="font-heading text-5xl font-extrabold"> Let’s Talk About How We Can Help Your Business Grow</h2>
+        <div className="max-w-7xl m-auto
+        xl:px-0
+        lg:px-20
+        md:px-20
+        max-md:px-5">
+            <div className="flex justify-between items-start gap-10
+            lg:flex-row
+            md:flex-col
+            max-md:flex-col">
+                <div className="flex-col flex gap-5 py-5
+                lg:w-[32%] 
+                md:w-full
+                max-md:w-full">
+                    <h2 className="font-heading  font-extrabold
+                    xl:text-5xl lg:text-4xl md:text-4xl max-md:text-2xl max-md:text-center"> Let’s Talk About How We Can Help Your Business Grow</h2>
                     <hr />
-                    <p>Whether you're ready to outsource your first role or just want to explore your options, we're here to help. Fill out the form below or reach out directly—we’ll get back to you within 1 business day.</p>
+                    <p className="max-md:text-sm max-md:text-center">Whether you're ready to outsource your first role or just want to explore your options, we're here to help. Fill out the form below or reach out directly—we’ll get back to you within 1 business day.</p>
                 </div>
-                <div className="w-3/5 brand-bg-offwhite py-12 px-7 rounded-3xl">
+                <div className="brand-bg-offwhite rounded-3xl
+                lg:w-3/5 lg:py-12 lg:px-7 
+                md:w-full md:py-6 md:px-4
+                max-md:w-full max-md:py-6 max-md:px-4">
                     <form className="flex flex-col gap-6" method="POST" action="#">
                       <div className="flex flex-col gap-4">
                         <label htmlFor="first-name" className="font-medium">

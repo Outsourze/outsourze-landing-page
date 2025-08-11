@@ -13,11 +13,12 @@ const ServicesPitchCard = ({
     }
 
     return (
-        <div className="bg-black rounded-2xl flex flex-col items-start justify-between w-1/3 overflow-hidden">
+        <div className="bg-black rounded-2xl flex flex-col items-start justify-between overflow-hidden
+        lg:w-1/3 md:w-full max-md:w-full">
             <div className="brand-bg-orange w-full px-7 pt-4 pb-3">
                 <h3 className="text-xl font-semibold font-heading">{text}</h3>
             </div>
-            <div className="px-7 py-5">
+            <div className="px-7 py-5 w-full">
                 {/* animate using framer motion */}
                  <AnimatePresence initial={false} mode="wait">
                     {isShow ? (

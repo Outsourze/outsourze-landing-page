@@ -24,7 +24,8 @@ const BenefitCard = ({
         <div 
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            className="bg-black rounded-2xl p-6 flex flex-col items-start justify-end min-h-[19rem] w-full relative overflow-hidden"
+            className="bg-black rounded-2xl p-6 flex flex-col items-start justify-end w-full relative overflow-hidden
+            xl:min-h-[19rem] lg:min-h-64 lg:w-[24%] md:min-h-60 md:w-[31%] max-md:w-[47%] max-md:min-h-48"
         >
             <AnimatePresence mode="wait">
                 {isHover ? (

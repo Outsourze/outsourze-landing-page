@@ -51,12 +51,16 @@ const benefitsData = [{
 const BenefitSection = () => {
     return (
         <div>
-            <div className="max-w-7xl m-auto flex flex-col items-start gap-10">
+            <div className="max-w-7xl m-auto flex flex-col items-start gap-10
+            xl:px-0 lg:px-20 md:px-20 max-md:px-5">
                 <SectionTitle 
                     bannerTitle={"Benefits of Outsourcing"}
                     dscrpt={"Flexible outsourcing solutions tailored to your business goals — <br/>from startups to global teams."}
                 />
-                <div className="flex gap-5">
+                <div className="flex gap-5
+                lg:flex-nowrap 
+                md:flex-wrap
+                max-md:flex-wrap max-md:justify-between">
                     {benefitsData.map((data, index) => (
                         <BenefitCard 
                             key={index}

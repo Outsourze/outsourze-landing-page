@@ -3,7 +3,7 @@ import Button from "@/component/ui/button";
 const SpecificSectionHeader = () => {
     return (
       <div className="flex items-center justify-between">
-        <h2 className="font-heading text-4xl">What's Included</h2>
+        <h2 className="font-heading lg:text-4xl md:text-2xl">What's Included</h2>
         <Button 
           url={"/services"}
           text={"View All Services"}

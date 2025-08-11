@@ -29,8 +29,9 @@ const founderData = [{
 const FounderSection = () => {
     return (
         <div>
-            <div className="max-w-7xl m-auto flex flex-col items-start gap-5">
-                <h2 className="brand-text-orange font-extrabold text-5xl font-heading">Meet Our Founders</h2>
+            <div className="max-w-7xl m-auto flex flex-col items-start gap-5
+            xl:px-0 lg:px-20 md:px-20 max-md:px-5 max-md:gap-0">
+                <h2 className="brand-text-orange font-extrabold text-5xl font-heading max-md:text-2xl">Meet Our Founders</h2>
                 <div className="mt-5 flex flex-wrap gap-10 justify-center border-t-black border-t pt-5">
                     {founderData.map((data, index) => (
                         <FounderCard

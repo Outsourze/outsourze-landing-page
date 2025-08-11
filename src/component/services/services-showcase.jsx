@@ -41,7 +41,11 @@ const showcaseData = [{
 
 const ServicesShowcaseSection = () => {
     return (
-        <div className="max-w-7xl m-auto flex flex-col gap-5">
+        <div className="max-w-7xl w-full m-auto flex flex-col gap-5
+        xl:px-0 
+        lg:px-20
+        md:px-20 md:mt-8 
+        max-md:px-5 max-md:py-5">
             <SectionTitle bannerTitle={"Our Services"} dscrpt={"Flexible outsourcing solutions tailored to your business goals — from startups to global teams."}/>
             <div className="flex flex-wrap justify-between">
                 {showcaseData.map((data, index) => (
