@@ -2,30 +2,13 @@ import Link from 'next/link';
 import OutsouzedLogo from "@/assets/logo/Outsourze Logo.svg";
 import DesktopNav from './nav/destop-nav';
 import TabletNav from './nav/tablet-nav';
-import { useEffect, useState } from 'react';
+import { useMediaQuery } from '@/utility/useMediaQuery';
 import MobileNav from './nav/mobile-nav';
-
-function useMediaQuery(query) {
-  const [matches, setMatches] = useState(false);
-
-  useEffect(() => {
-    const media = window.matchMedia(query);
-    const updateMatch = () => setMatches(media.matches);
-    updateMatch();
-    media.addEventListener("change", updateMatch);
-    return () => media.removeEventListener("change", updateMatch);
-  }, [query]);
-
-  return matches;
-}
 
 const Header = () => {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
   const isTablet = useMediaQuery("(min-width: 768px) and (max-width: 1023px)");
   const isMobile = useMediaQuery("(max-width: 767px)");
-
-  console.log({isTablet});
-  
 
     return (
         <div className="fixed lg:py-4 md:py-2 max-md:py-0 top-0 left-0 right-0 w-full z-50 bg-[var(--background)]">
