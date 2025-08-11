@@ -32,7 +32,7 @@ const ServicesMenu = () => {
          transition={{ duration: 0.3, ease: "easeInOut" }}
          className="overflow-hidden"
        >
-        <div className="w-[45rem] h-[20rem] absolute right-0 top-12 bg-[var(--background)] shadow-menu rounded-3xl p-8 ">
+        <div className="w-[45rem] h-[20rem] absolute right-0 top-10 bg-[var(--background)] shadow-menu rounded-3xl p-8 ">
           <div className="flex flex-wrap gap-3 justify-center items-center w-full h-full">
               {ServicesMenuData.map((menuData, index) => (
                   <Link key={index} href={menuData.url} className="flex items-start gap-2 w-[49%] p-4 cursor-pointer">
