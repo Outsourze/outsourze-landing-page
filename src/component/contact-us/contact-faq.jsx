@@ -5,7 +5,7 @@ const faqData = [{
     answer: "If a task doesn’t require face-to-face interaction, chances are you can outsource it. Think: customer support, digital marketing, bookkeeping, social media management, content writing, data entry, graphic design, and more."
 }, {
     question: "What is Outsourcing?",
-    answer: "Outsourcing is the practice of partnering with professionals outside your company to handle tasks that would traditionally be done in-house. Instead of hiring an employee yourself, athird-party provider—like us—manages the recruitment, onboarding, and oversight of skilled offshore staff for you. The result? High-quality work at a significantly lower cost."
+    answer: "Outsourcing is the practice of partnering with professionals outside your company to handle tasks that would traditionally be done in-house. Instead of hiring an employee yourself, a third-party provider—like us—manages the recruitment, onboarding, and oversight of skilled offshore staff for you. The result? High-quality work at a significantly lower cost."
 }, {
     question: "Will I Lose Control of My Business If I Outsource?",
     answer: "Not at all. In fact, outsourcing gives you more control. You decide which tasks to delegate and retain oversight without being bogged down in the day-to-day. With the right partner, you stay in the driver’s seat while freeing up valuable time and resources."
