@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoClose, IoMenu } from "react-icons/io5";
-import { ServicesMenuData } from "@/api/data";
+import { ServicesMenuData } from "@/pages/api/data";
 
 const MobileNav = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);

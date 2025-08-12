@@ -4,7 +4,7 @@ import WhiteButton from "../ui/white-btn";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoClose, IoMenu } from "react-icons/io5";
-import { ServicesMenuData } from "@/api/data";
+import { ServicesMenuData } from "@/pages/api/data";
 
 const TabletNav = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);

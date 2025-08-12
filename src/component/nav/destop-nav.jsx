@@ -3,7 +3,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";
-import { ServicesMenuData } from "@/api/data";
+import { ServicesMenuData } from "@/pages/api/data";
 import WhiteButton from "../ui/white-btn";
 
 const ServicesMenu = ({ onClose }) => (

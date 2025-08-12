@@ -1,6 +1,5 @@
 import Form from "./form";
 
-
 const ContactFormSection = () => {
     return (
         <div className="max-w-7xl m-auto
