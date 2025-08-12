@@ -10,9 +10,10 @@ const ServiceShowcaseCard = ({
     url
 }) => {
     return (
-        <Link href={url} className=" py-5 flex-col flex gap-5
-        lg:w-[31%]
-        md:w-[45%]">
+        <Link href={url} className="flex-col flex 
+        lg:w-[31%] lg:gap-5
+        md:w-[45%] md:py-5 md:gap-3
+        max-md:w-full max-md:py-3 max-md:gap-2">
             <div className="relative">
                 <div className="relative">
                     {/* Soft orange overlay */}
@@ -28,8 +29,14 @@ const ServiceShowcaseCard = ({
                     md:w-8 md:h-8" />
                 </div>
             </div>
-            <BrandLabel text={title}  style={"self-start font-semibold text-xl"}/>
-            <p className="text-xl font-semibold ">{text}</p>
+            <BrandLabel 
+                text={title}  
+                style={"font-semibold text-xl md:inline-flex md:self-start md:text-xl max-md:text-lg max-md:py-1 max-md:text-center"}
+            />
+            <p className="font-semibold
+            lg:text-xl 
+            md:text-lg md:leading-5
+            max-md:text-base max-md:text-center">{text}</p>
         </Link>
     )
 }

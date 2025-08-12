@@ -7,7 +7,9 @@ import Benefit4 from "@/assets/icon/benefit-outsourcing/benefit-4.svg";
 import Benefit5 from "@/assets/icon/benefit-outsourcing/benefit-5.svg";
 
 const benefitsData = [{
-    icon: <Benefit1 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
+    icon: <Benefit1 
+        className="w-14 h-auto brand-text-orange absolute top-5 right-5
+        md:w-14 max-md:w-12"/>,
     text: "Save Up to 70% on Labor Costs",
     dscrpt: (
         <>
@@ -15,7 +17,9 @@ const benefitsData = [{
         </>
     )
 }, {
-    icon: <Benefit2 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
+    icon: <Benefit2 
+        className="w-14 h-auto brand-text-orange absolute top-5 right-5
+        md:w-14 max-md:w-12"/>,
     text: "No Overhead, No Hassle",
     dscrpt: (
         <>
@@ -23,7 +27,9 @@ const benefitsData = [{
         </>
     )
 }, {
-    icon: <Benefit3 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
+    icon: <Benefit3 
+        className="w-14 h-auto brand-text-orange absolute top-5 right-5
+        md:w-14 max-md:w-12"/>,
     text: "Scale on Demand",
     dscrpt: (
         <>
@@ -31,7 +37,9 @@ const benefitsData = [{
         </>
     )
 }, {
-    icon: <Benefit4 className="w-14 h-auto brand-text-orange absolute top-5 right-5"/>,
+    icon: <Benefit4 
+        className="w-14 h-auto brand-text-orange absolute top-5 right-5
+        md:w-14 max-md:w-12"/>,
     text: "24/7 Productivity",
     dscrpt: (
         <>
@@ -39,7 +47,9 @@ const benefitsData = [{
         </>
     )
 }, {
-    icon: <Benefit5 className="w-14 h-auto brand-text-orange absolute top-5 right-5" />,
+    icon: <Benefit5 
+        className="w-14 h-auto brand-text-orange absolute top-5 right-5
+        md:w-14 max-md:w-12" />,
     text: "Built for Businesses",
     dscrpt: (
         <>
@@ -57,10 +67,10 @@ const BenefitSection = () => {
                     bannerTitle={"Benefits of Outsourcing"}
                     dscrpt={"Flexible outsourcing solutions tailored to your business goals — <br/>from startups to global teams."}
                 />
-                <div className="flex gap-5
+                <div className="flex 
                 lg:flex-nowrap 
-                md:flex-wrap
-                max-md:flex-wrap max-md:justify-between">
+                md:flex-wrap md:gap-5
+                max-md:flex-wrap max-md:justify-between max-md:gap-4">
                     {benefitsData.map((data, index) => (
                         <BenefitCard 
                             key={index}

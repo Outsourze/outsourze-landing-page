@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { IoClose, IoMenu } from "react-icons/io5";
-import { ServicesMenuData } from "@/api/data";
+import { ServicesMenuData } from "@/pages/api/data";
 
 const MobileNav = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -17,6 +17,11 @@ const MobileNav = () => {
     setIsMenuNavOpen((prev) => !prev);
     setIsServicesOpen(false);
   };
+
+  const handleMenuClose = () => {
+    setIsMenuNavOpen(false);
+    setIsServicesOpen(false);
+  }
 
   return (
     <nav aria-label="Mobile navigation" className="flex items-center gap-5">
@@ -44,6 +49,7 @@ const MobileNav = () => {
             <ul className="flex flex-col gap-4 p-4">
               <li>
                 <Link
+                  onClick={handleMenuClose}
                   href="/home"
                   className="block font-cta font-medium px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
                 >
@@ -79,7 +85,7 @@ const MobileNav = () => {
                       className="ml-4 flex flex-col gap-1 overflow-hidden"
                     >
                       {ServicesMenuData.map((data, index) => (
-                        <li key={index}>
+                        <li key={index} onClick={handleMenuClose}>
                           <Link
                             href={data.url}
                             className="block font-cta px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
@@ -95,6 +101,7 @@ const MobileNav = () => {
 
               <li>
                 <Link
+                  onClick={handleMenuClose}
                   href="/about"
                   className="block font-cta font-medium px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
                 >
@@ -103,6 +110,7 @@ const MobileNav = () => {
               </li>
               <li>
                 <Link
+                  onClick={handleMenuClose}
                   href="/contact-us"
                   className="block font-cta font-medium px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
                 >
