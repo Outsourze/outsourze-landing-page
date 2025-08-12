@@ -13,7 +13,7 @@ const BannerSection = () => {
                 <Image
                   className="object-cover w-full h-full contrast-70"
                   src={OurServices}
-                  alt="About"
+                  alt="our services"
                 />    
                 {/* Soft orange overlay */}
                 <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay pointer-events-none" />

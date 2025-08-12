@@ -38,7 +38,8 @@ const IndividualRoleWhyUs = () => {
                             <p className="font-extrabold text-black 
                             lg:text-2xl
                             md:text-xl
-                            max-md:text-lg">{data}</p>
+                            max-md:text-lg
+                            max-sm:text-sm">{data}</p>
                         </div>
                     ))}
                 </div>

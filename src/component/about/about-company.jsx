@@ -26,7 +26,7 @@ const CompanyAboutSection = () => {
                     <h2 className="font-heading font-extrabold 
                     lg:w-1/2 lg:text-[3.2rem] lg:text-left lg:leading-12
                     md:w-2/3 md:text-4xl md:font-semibold md:text-center md:leading-8
-                    max-md:w-2/3 max-md:text-2xl max-md:font-extrabold max-md:text-center max-md:leading-5">Your Offshore Team, Made Simple</h2>
+                    max-md:w-2/3 max-md:text-2xl max-md:font-extrabold max-md:text-center max-md:leading-6">Your Offshore Team, Made Simple</h2>
                     <div className="
                     lg:w-1/2 lg:text-left md:w-full md:text-center max-md:text-center max-md:w-full max-md:text-sm max-sm:text-xs max-sm:leading-4">
                         <p>At <span className="brand-text-orange font-bold">OUTSOURZE</span>, we help businesses do more with less—without compromising on quality. Whether you're a small business looking to scale or an established company seeking to streamline operations, our offshore staffing solutions give you access to top-tier global talent at a fraction of the local cost. </p>
@@ -77,7 +77,8 @@ const CompanyAboutSection = () => {
                                         ${index === 5 ? "h-[50%]" : "" } 
                                         ${index === 6 ? "h-[40%]" : "" } 
                                         ${index === 7 ? "h-[50%]" : "" } 
-                                        w-7 bg-white rounded-4xl`}
+                                      bg-white rounded-4xl 
+                                        md:w-7 max-md:w-6 max-sm:w-5 `}
                                     key={index}></div>
                             ))}
                         </div>

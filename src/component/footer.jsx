@@ -55,7 +55,7 @@ const Footer = () => {
     return (
         <div className="brand-bg-offwhite py-4">
             <div className="py-4 max-w-7xl m-auto 
-            xl:px-0 lg:px-20 md:px-20 max-md:px-5 max-md:relative">
+            xl:px-0 lg:px-20 md:px-20 max-md:px-5 max-md:relative max-md:border-t border-gray-400">
                 <div className="footer-getstarted-banner-bg relative overflow-hidden rounded-4xl py-14 
                 lg:mb-15 lg:px-16 md:mb-5 md:px-8 max-md:mb-5 max-md:px-5 max-md:py-8 max-md:rounded-2xl">
                   {/* Background image */}
@@ -69,9 +69,10 @@ const Footer = () => {
                     <div className="absolute inset-0 bg-blue-500 opacity-20 z-0 mix-blend-multiply"></div>
                 
                   {/* Foreground content */}
-                  <div className="relative z-10 flex items-center justify-between w-full">
+                  <div className="relative z-10 flex items-center justify-between w-full
+                  max-sm:gap-5">
                     <h2 className="text-white font-semibold  font-jakarta
-                    xl:text-[4.6rem] lg:text-5xl md:text-4xl max-md:text-3xl">
+                    xl:text-[4.6rem] lg:text-5xl md:text-4xl max-md:text-3xl max-sm:text-xl">
                       Ready to work with us?
                     </h2>
                     

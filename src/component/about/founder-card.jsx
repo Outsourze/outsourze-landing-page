@@ -12,7 +12,7 @@ const FounderCard = ({
         xl:h-[23rem]
         lg:h-auto lg:items-center
         md:auto md:items-start md:relative
-        max-md:flex-col max-md:items-center
+        max-md:flex-col max-md:items-center max-md:py-2 
         `}>
             <div className="w-[26%] overflow-hidden rounded-xl
             lg:h-full lg:mb-0

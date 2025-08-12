@@ -26,9 +26,9 @@ const IndividualRolePrices = () => {
             max-md:gap-3">
                 {/* header | controller of the table */}
                 <h3 className="font-heading font-semibold 
-                lg:text-4xl lg:mb-5
-                md:text-2xl md:mb-0
-                max-md:text-lg max-md:mb-0">Prices</h3>
+                lg:text-2xl lg:mb-5
+                md:text-xl md:mb-0
+                max-md:text-sm max-md:mb-0">Prices to Hire a {services.title}</h3>
                 <ul className="flex items-center justify-start bg-black text-white rounded-full
                 lg:gap-10 md:gap-0 max-md:gap-0">
                     {controllerData.map((data, index) => (
