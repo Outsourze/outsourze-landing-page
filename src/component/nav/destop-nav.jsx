@@ -74,7 +74,7 @@ const DesktopNav = () => {
 
   return (
     <div className="flex items-center gap-9">
-      <Link className="text-[var(--color-gray)] font-cta" href="/home">
+      <Link className="text-[var(--color-gray)] font-cta" href="/">
         Home
       </Link>
 

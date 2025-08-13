@@ -53,7 +53,7 @@ const TabletNav = () => {
               <Link
                 onClick={handleMenuClose} 
                 className="font-cta font-medium px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
-                href="/home"
+                href="/"
               >
                 Home
               </Link>

@@ -88,7 +88,7 @@ const Footer = () => {
                 xl:gap-0 lg:gap-10 md:gap-10 max-md:gap-5 max-md:flex-col">
                     <div className="flex flex-col gap-5
                     xl:max-w-xl lg:max-w-lg">
-                        <Link href={"/home"}>
+                        <Link href={"/"}>
                           <OutsouzedLogo className="lg:w-52 md:w-36 max-md:w-36"/>
                         </Link>
                
