@@ -1,10 +1,13 @@
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
+   console.log({
+    host: process.env.SMTP_HOST
+   });
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
-
+ 
   const { name, email, message, company } = req.body;
 
   if (!name || !email || !message) {
@@ -51,6 +54,6 @@ export default async function handler(req, res) {
     return res.status(200).json({ message: "Email sent successfully" });
   } catch (error) {
     console.error("Error sending email:", error);
-    return res.status(500).json({ message: "Internal server error" });
+    return res.status(500).json({ message: error });
   }
 }

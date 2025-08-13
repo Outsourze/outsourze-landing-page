@@ -36,7 +36,7 @@ export const socialMedia = [{
 export const contactInfo = [{
     alt: "call",
     icon: <CallIcon className="lg:w-6 md:w-4 max-md:w-4"/>,
-    text: "PH 12345678 | NZ 12345678 | AU 12345678UK | UK 12345678 | CAN 12345678"
+    text: "PH +63 968 372 4410 | AU +61 468 928 549\nUK +44 77 6063 0126"
 }, {
     alt: "email",
     icon: <EmailIcon className="lg:w-6 md:w-4 max-md:w-4"/>,
@@ -112,7 +112,7 @@ const Footer = () => {
                                         {info.icon}
                                     </div>
                                     <p className=" font-medium
-                                    lg:text-[15px] md:text-[8px] max-md:text-[10px]">{info.text}</p>
+                                    lg:text-[15px] md:text-[8px] max-md:text-[10px] whitespace-pre-line">{info.text}</p>
                                 </div>
                             ))}
                         </div>

@@ -34,6 +34,9 @@ const Form = () => {
 
       const data = await res.json();
 
+      console.log({data});
+      
+
       if (res.ok) {
         setSuccessMsg("Message sent successfully!");
         setFormData({ name: "", email: "", company: "", message: "" });
