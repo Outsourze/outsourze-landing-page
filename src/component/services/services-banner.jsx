@@ -18,6 +18,7 @@ const BannerSection = () => {
                 {/* Soft orange overlay */}
                 <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay pointer-events-none" />
                 <Image 
+                    alt="go arrow"
                     className="absolute 
                     xl:w-24 xl:top-12 xl:right-14 
                     lg:w-20 lg:top-8 lg:right-10

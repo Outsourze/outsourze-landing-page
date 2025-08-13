@@ -33,8 +33,8 @@ const IndividualRolePrices = () => {
                 lg:gap-10 md:gap-0 max-md:gap-0">
                     {controllerData.map((data, index) => (
                         <li 
-                            onClick={() => handleNav(index)}
                             key={index} 
+                            onClick={() => handleNav(index)}
                             className={`${activePriceTab === index && "brand-bg-orange rounded-full"} py-5 cursor-pointer 
                             lg:text-base lg:px-6  
                             md:text-xs md:px-4

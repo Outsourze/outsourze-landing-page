@@ -18,7 +18,11 @@ const NotFoundSection = () => {
                 </div>
               </div>
             </div>
-            <Image className="absolute bottom-0 left-0 h-[20rem] w-auto" src={notFoundDino}/>
+            <Image 
+              alt="404dino"
+              className="absolute bottom-0 left-0 h-[20rem] w-auto" 
+              src={notFoundDino}
+            />
         </div>
     )
 }

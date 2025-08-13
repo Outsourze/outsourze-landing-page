@@ -47,8 +47,8 @@ const CompanyAboutSection = () => {
                     lg:w-[52%]">
                         <h3 className="text-white font-medium text-2xl mb-5">What We Believe</h3>
                         <div className="flex flex-col gap-4">
-                            {whatWeBelivedData.map((data) => (
-                                <div className="flex items-center gap-5">
+                            {whatWeBelivedData.map((data, index) => (
+                                <div key={index} className="flex items-center gap-5">
                                     <BiSolidRightArrow className="brand-text-orange"/>
                                     <p className="text-white text-sm">{data}</p>
                                 </div>
@@ -68,6 +68,7 @@ const CompanyAboutSection = () => {
                         <div className="flex items-end w-full h-28 gap-1 max-md:justify-end">
                             {[...Array(8)].map((_, index) => (
                                 <div 
+                                    key={index}
                                     className={
                                         `${index === 0 ? "h-[30%]" : "" } 
                                         ${index === 1 ? "h-[45%]" : "" } 
@@ -79,7 +80,7 @@ const CompanyAboutSection = () => {
                                         ${index === 7 ? "h-[50%]" : "" } 
                                       bg-white rounded-4xl 
                                         md:w-7 max-md:w-6 max-sm:w-5 `}
-                                    key={index}></div>
+                                    ></div>
                             ))}
                         </div>
                     </div>

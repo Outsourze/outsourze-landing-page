@@ -33,6 +33,7 @@ const IntroductionSection = () => {
                     />
                 </div>
                 <Image 
+                    alt="intro-banner-1"
                     className=" absolute top-0 opacity-10 
                     xl:right-0
                     lg:-right-[10%] lg:w-[42.2rem]
@@ -42,6 +43,7 @@ const IntroductionSection = () => {
                     src={introCaseBanner}
                 />
                 <Image 
+                    alt="intro-banner-2"
                     className=" absolute bottom-0 opacity-10 
                     xl:right-10
                     lg:-right-[8%] lg:w-[30rem]

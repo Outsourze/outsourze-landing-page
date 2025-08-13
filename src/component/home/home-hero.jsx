@@ -47,7 +47,11 @@ const HeroSection = () => {
                       xl:px-10 lg:pl-5">
                         {/* arrow icon | logo */}
                         <div className="rounded-full absolute top-[-5%] left-[-10%] bg-black border-white border-6 p-5">
-                            <Image className="w-12" src={trendingUp}/>
+                            <Image 
+                              alt="trending-alt"
+                              className="w-12" 
+                              src={trendingUp}
+                            />
                         </div>
                         {/* text content */}
                         <div className="ml-5">
@@ -62,6 +66,7 @@ const HeroSection = () => {
                       <div className="flex flex-col w-[46%] gap-2">
                         <div className="relative">
                           <Image
+                            alt="hero-two"
                             className="rounded-[1.25rem] w-full mix-blend-multiply"
                             src={heroTwo}
                           />
@@ -69,6 +74,7 @@ const HeroSection = () => {
                         </div>
                         <div className="relative">
                           <Image
+                            alt="hero-one"
                             className="rounded-[1.25rem] w-full mix-blend-multiply"
                             src={heroOne}
                           />
@@ -81,7 +87,7 @@ const HeroSection = () => {
                       <Image
                         className="absolute left-[-27%] bottom-[-80%] z-0 filter brightness-70 backdrop-sepia-50"
                         src={bubble}
-                        alt="Background"
+                        alt="buble"
                         style={{ transform: "rotate(115.48deg)" }}
                       />
 

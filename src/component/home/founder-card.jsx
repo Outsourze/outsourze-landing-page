@@ -14,6 +14,7 @@ const FounderCard = ({
             <div className="h-full overflow-hidden rounded-xl
             lg:w-[45%] md:w-[31%] max-md:w-1/2">
                 <Image 
+                    alt="founder-img"
                     className="w-auto object-cover "
                     src={img} 
                 />

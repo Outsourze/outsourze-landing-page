@@ -19,11 +19,11 @@ const IndividualRoleCostComparison = () => {
 
                 <div className="flex flex-wrap gap-4">
                     {services.costComparison.map((data, index) => (
-                        <div className=" bg-black text-white rounded-2xl flex flex-col gap-3
+                        <div key={index} className=" bg-black text-white rounded-2xl flex flex-col gap-3
                         lg:w-[49%] lg:px-6 lg:py-8
                         md:w-[48%] md:px-4 md:py-6
                         max-md:w-full max-md:px-4 max-md:py-6
-                        max-sm:px-3 max-sm:py-5" key={index}>
+                        max-sm:px-3 max-sm:py-5">
                             <h4 className="font-bold font-heading brand-text-orange
                             lg:text-3xl 
                             md:text-2xl

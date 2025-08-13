@@ -62,7 +62,7 @@ const Footer = () => {
                   <Image
                     className="absolute right-0 bottom-[-80%] z-0 brightness-150 blur-2xl"
                     src={bubblePng}
-                    alt="Background"
+                    alt="bubble"
                     style={{ transform: "rotate(34.48deg)" }}
                   />
                     {/* Blue overlay */}
@@ -96,7 +96,7 @@ const Footer = () => {
                         <div className="flex items-center 
                         lg:gap-7 md:gap-5 max-md:absolute max-md:bottom-0 max-md:right-5 max-md:gap-2">
                             {socialMedia.map((social, index) => (
-                                <Link href={social.url}>
+                                <Link key={index} href={social.url}>
                                     {social.icon}
                                 </Link>
                             ))}

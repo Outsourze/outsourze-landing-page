@@ -22,6 +22,7 @@ const IndividualRoleBanner = () => {
             md:gap-3 md:p-9
             max-md:gap-3 max-md:p-8">
                 <Image 
+                    alt="mask circle"
                     className="absolute inset-0 object-cover"
                     src={isTabletBelow ? maskCircleTablet :maskCircle}
                 />  

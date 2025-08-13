@@ -19,6 +19,7 @@ const FounderCard = ({
             md:h-52 md:mb-24
             max-md:w-2/5 ">
                 <Image 
+                    alt="founded-img"
                     className="w-auto object-cover object-top"
                     src={img} 
                 />

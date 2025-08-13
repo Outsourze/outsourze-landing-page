@@ -42,11 +42,11 @@ const FounderSection = () => {
             <div className="flex flex-col gap-5 w-full">
                 {founderData.map((data, index) => (
                     <FounderCard 
+                        key={index}
                         img={data.img}
                         name={data.name}
                         pos={data.pos}
                         descrp={data.descrp}
-                        key={index}
                     />
                 ))}
             </div>
