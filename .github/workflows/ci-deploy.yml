@@ -46,7 +46,7 @@ jobs:
   
       - name: Deploy via rsync
         run: |
-          rsync -avz -e "ssh -p 65002" --delete ./ \
+          rsync -avz -e "ssh -p 65002" --delete ./out/ \
             ${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:/home/${{ secrets.HOSTINGER_USER }}/public_html
   
       - name: Verify deployment
