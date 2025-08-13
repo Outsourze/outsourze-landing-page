@@ -38,7 +38,6 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.HOSTINGER_SSH_KEY }}
-          ssh-passphrase: ${{ secrets.HOSTINGER_SSH_PASSPHRASE }}
 
       - name: Deploy via rsync
         run: |
