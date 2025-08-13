@@ -24,7 +24,7 @@ const HeroSection = () => {
                     lg:text-6xl 
                     md:text-7xl
                     max-md:text-5xl max-md:leading-10
-                    max-sm:text-[2.5rem] max-sm:leading-10">Outsource <br /> Smarter.<br /> Grow Faster.</h1>
+                    max-sm:text-[2.5rem] max-sm:leading-10">Outsources <br /> Smarter.<br /> Grow Faster.</h1>
                     <div className="flex flex-col gap-5
                     max-md:text-sm">
                         <p className="font-bold">At OUTSOURZE, we help businesses scale through high-quality, cost-effective staffing solutions based in the Philippines.</p>
