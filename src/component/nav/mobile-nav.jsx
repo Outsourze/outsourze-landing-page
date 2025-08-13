@@ -50,7 +50,7 @@ const MobileNav = () => {
               <li>
                 <Link
                   onClick={handleMenuClose}
-                  href="/home"
+                  href="/"
                   className="block font-cta font-medium px-2 py-1 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors"
                 >
                   Home
