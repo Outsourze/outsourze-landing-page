@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ServiceContext } from "@/context/services/services-utils";
-import circle1 from "@/assets/images/c1.png";
-import circle2 from "@/assets/images/c2.png";
+import circle1 from "@/assets/images/c1.webp";
+import circle2 from "@/assets/images/c2.webp";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 

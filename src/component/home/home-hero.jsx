@@ -5,7 +5,7 @@ import Image from "next/image";
 import trendingUp from "@/assets/icon/trending-up.png";
 import heroOne from "@/assets/images/hero-1.webp";
 import heroTwo from "@/assets/images/hero-2.webp";
-import bubble from "@/assets/images/bubble-bg.png";
+import bubble from "@/assets/images/bubble-bg.webp";
 
 const HeroSection = () => {
     return (

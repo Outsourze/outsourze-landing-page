@@ -3,20 +3,20 @@ import ServiceShowcaseCard from "./service-showcase-card";
 import { useMediaQuery } from "@/utility/useMediaQuery";
 
 // services images desktop
-import customerSupportIcon from "@/assets/images/our-services/customer-support.png";
-import hrRecruitmentIcon from "@/assets/images/our-services/hr-recruitment.png";
-import financeAccountingIcon from "@/assets/images/our-services/finance-accounting.png";
-import salesLeadLogo from "@/assets/images/our-services/sales-lead-generation.png";
-import adminLogo from "@/assets/images/our-services/administration.png";
-import marketingLogo from "@/assets/images/our-services/marketing-creative.png";
+import customerSupportIcon from "@/assets/images/our-services/customer-support.webp";
+import hrRecruitmentIcon from "@/assets/images/our-services/hr-recruitment.webp";
+import financeAccountingIcon from "@/assets/images/our-services/finance-accounting.webp";
+import salesLeadLogo from "@/assets/images/our-services/sales-lead-generation.webp";
+import adminLogo from "@/assets/images/our-services/administration.webp";
+import marketingLogo from "@/assets/images/our-services/marketing-creative.webp";
 
 // services images mobile
-import customerSupportIconM from "@/assets/images/our-services/customer-support-m.png";
-import hrRecruitmentIconM from "@/assets/images/our-services/hr-recruitment-m.png";
-import financeAccountingIconM from "@/assets/images/our-services/finance-accounting-m.png";
-import salesLeadLogoM from "@/assets/images/our-services/sales-lead-generation-m.png";
-import adminLogoM from "@/assets/images/our-services/administration-m.png";
-import marketingLogoM from "@/assets/images/our-services/marketing-creative-m.png";
+import customerSupportIconM from "@/assets/images/our-services/customer-support-m.webp";
+import hrRecruitmentIconM from "@/assets/images/our-services/hr-recruitment-m.webp";
+import financeAccountingIconM from "@/assets/images/our-services/finance-accounting-m.webp";
+import salesLeadLogoM from "@/assets/images/our-services/sales-lead-generation-m.webp";
+import adminLogoM from "@/assets/images/our-services/administration-m.webp";
+import marketingLogoM from "@/assets/images/our-services/marketing-creative-m.webp";
 
 const showcaseData = [
   {

@@ -1,8 +1,8 @@
 import FounderCard from "./founder-card";
-import Michael from "@/assets/images/michael.png";
-import Liam from "@/assets/images/liam.png";
-import David from "@/assets/images/david.png";
-import Paul from "@/assets/images/paul.png";
+import Michael from "@/assets/images/michael.webp";
+import Liam from "@/assets/images/liam.webp";
+import David from "@/assets/images/david.webp";
+import Paul from "@/assets/images/paul.webp";
 
 const founderData = [{
     name: "Michael Scott",

@@ -8,7 +8,7 @@ import CS2 from "@/assets/icon/specific-services/costumer-support/Email Support.
 import CS3 from "@/assets/icon/specific-services/costumer-support/Help Desk.svg";
 import CS4 from "@/assets/icon/specific-services/costumer-support/Sales Support.svg";
 import CS5 from "@/assets/icon/specific-services/costumer-support/Chat Support.svg";
-import CSImage from "@/assets/images/specific-service/Customer Support.png";
+import CSImage from "@/assets/images/specific-service/Customer Support.webp";
 
 export default function CustomerSupport() {
   const customerService = {

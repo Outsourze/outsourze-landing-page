@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { useContext } from "react";
 import { ServiceContext } from "@/context/services/services-utils";
-import maskCircle from "@/assets/images/Mask Circle.png";
-import maskCircleTablet from "@/assets/images/Mask Circle tablet.png";
+import maskCircle from "@/assets/images/Mask Circle.webp";
+import maskCircleTablet from "@/assets/images/Mask Circle tablet.webp";
 import { useMediaQuery } from '@/utility/useMediaQuery';
-
 
 const IndividualRoleBanner = () => {
     const services = useContext(ServiceContext);

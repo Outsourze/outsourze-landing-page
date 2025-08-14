@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AboutBanner from "@/assets/images/about-banner.png";
+import AboutBanner from "@/assets/images/about-banner.webp";
 
 const BannerSection = () => {
     return (
