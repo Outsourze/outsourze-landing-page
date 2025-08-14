@@ -24,11 +24,11 @@ export const socialMedia = [{
     alt: "instagram",
     icon: <Intagram className="brand-text-orange lg:w-10 md:w-8 max-md:w-6"/>
 }, {
-    url: "www.tiktok.com/@outsourzeglobal",
+    url: "https://www.tiktok.com/@outsourzeglobal",
     alt: "tiktok",
     icon: <Tiktok className="brand-text-orange lg:w-10 md:w-8 max-md:w-6"/>
 }, {
-    url: "",
+    url: "https://www.linkedin.com/company/outsourzeglobal",
     alt: "linkedin",
     icon: <LinkedIn className="brand-text-orange lg:w-10 md:w-8 max-md:w-6"/>
 }]
@@ -96,7 +96,12 @@ const Footer = () => {
                         <div className="flex items-center 
                         lg:gap-7 md:gap-5 max-md:absolute max-md:bottom-0 max-md:right-5 max-md:gap-2">
                             {socialMedia.map((social, index) => (
-                                <Link key={index} href={social.url}>
+                                <Link 
+                                    key={index} 
+                                    href={social.url}
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
                                     {social.icon}
                                 </Link>
                             ))}
