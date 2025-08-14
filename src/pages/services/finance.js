@@ -8,7 +8,7 @@ import FA2 from "@/assets/icon/specific-services/finance-accounting/Tax Accounta
 import FA3 from "@/assets/icon/specific-services/finance-accounting/Payroll.svg";
 import FA4 from "@/assets/icon/specific-services/finance-accounting/Financial Analyst.svg";
 import FA5 from "@/assets/icon/specific-services/finance-accounting/Accounts Payable.svg";
-import FAImage from "@/assets/images/specific-service/Finance & Accounting.png";
+import FAImage from "@/assets/images/specific-service/Finance & Accounting.webp";
 
 export default function FinanceAccounting() {
   const financeAccounting = {

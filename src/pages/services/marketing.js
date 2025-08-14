@@ -11,7 +11,7 @@ import MC5 from "@/assets/icon/specific-services/marketing-creative/Copywriter.s
 import MC6 from "@/assets/icon/specific-services/marketing-creative/Digital Merketing Specialist.svg";
 import MC7 from "@/assets/icon/specific-services/marketing-creative/Video Editor.svg";
 import MC8 from "@/assets/icon/specific-services/marketing-creative/Motion Graphic Artist.svg";
-import MCImage from "@/assets/images/specific-service/Marketing & Creatives.png";
+import MCImage from "@/assets/images/specific-service/Marketing & Creatives.webp";
 
 export default function MarketingCreative() {
   const marketingCreative = {

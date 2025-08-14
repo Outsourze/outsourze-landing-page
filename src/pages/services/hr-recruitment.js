@@ -7,7 +7,7 @@ import HR1 from "@/assets/icon/specific-services/hr-recruitment/Recruitment Spec
 import HR2 from "@/assets/icon/specific-services/hr-recruitment/Talent Acquisition.svg";
 import HR3 from "@/assets/icon/specific-services/hr-recruitment/HR Generalist.svg";
 import HR4 from "@/assets/icon/specific-services/hr-recruitment/Psychometric Testing.svg";
-import HRImage from "@/assets/images/specific-service/HR Recruitment.png";
+import HRImage from "@/assets/images/specific-service/HR Recruitment.webp";
 
 export default function HrRecruitment() {
   const hrRecruitment = {

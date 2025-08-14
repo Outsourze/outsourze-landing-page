@@ -8,7 +8,7 @@ import SL2 from "@/assets/icon/specific-services/sale-lead-generation/Telesales.
 import SL3 from "@/assets/icon/specific-services/sale-lead-generation/Outbound Sales.svg";
 import SL4 from "@/assets/icon/specific-services/sale-lead-generation/Telemarketer.svg";
 import SL5 from "@/assets/icon/specific-services/sale-lead-generation/Sales_Business Development.svg";
-import SLImage from "@/assets/images/specific-service/Sales & Lead Generation.png";
+import SLImage from "@/assets/images/specific-service/Sales & Lead Generation.webp";
 
 export default function SaleGeneration() {
   const salesGeneration = {

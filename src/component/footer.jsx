@@ -11,7 +11,7 @@ import EmailIcon from "@/assets/icon/contact/Mail v1.svg";
 import LocationIcon from "@/assets/icon/contact/Location v1.svg";
 import WebsiteIcon from "@/assets/icon/contact/Website v1.svg";
 
-import bubblePng from "@/assets/images/bubble-bg.png";
+import bubblePng from "@/assets/images/bubble-bg.webp";
 import OutsouzedLogo from "@/assets/logo/Outsourze Logo.svg";
 
 // footer

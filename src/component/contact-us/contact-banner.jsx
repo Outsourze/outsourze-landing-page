@@ -1,5 +1,5 @@
 import Image from "next/image";
-import contactBanner from "@/assets/images/contact-banner.png"
+import contactBanner from "@/assets/images/contact-banner.webp"
 
 const BannerSection = () => {
     return (

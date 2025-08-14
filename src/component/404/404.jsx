@@ -1,6 +1,6 @@
 import Image from "next/image";
-import notFoundmessage from "@/assets/images/404-message.png";
-import notFoundDino from "@/assets/images/404-dino.png";
+import notFoundmessage from "@/assets/images/404-message.webp";
+import notFoundDino from "@/assets/images/404-dino.webp";
 
 const NotFoundSection = () => {
     return (

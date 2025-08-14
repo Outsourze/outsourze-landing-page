@@ -1,5 +1,5 @@
 import Image from "next/image";
-import OurServices from "@/assets/images/our-services-banner.png";
+import OurServices from "@/assets/images/our-services-banner.webp";
 import goArrow from "@/assets/icon/go-arrow.png";
 
 const BannerSection = () => {

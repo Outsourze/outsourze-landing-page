@@ -8,7 +8,7 @@ import AD2 from "@/assets/icon/specific-services/administration/Executive Assist
 import AD3 from "@/assets/icon/specific-services/administration/Data Entry Specialist.svg";
 import AD4 from "@/assets/icon/specific-services/administration/Encoder.svg";
 import AD5 from "@/assets/icon/specific-services/administration/Personal Assistant.svg";
-import ADImage from "@/assets/images/specific-service/Administration.png";
+import ADImage from "@/assets/images/specific-service/Administration.webp";
 
 export default function Administration() {
   const admin = {

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ButtonPlain } from "../ui/button";
-import introCaseBanner from "@/assets/images/intro-case-banner-1.png";
-import introCaseBanner2 from "@/assets/images/intro-case-banner-2.png";
+import introCaseBanner from "@/assets/images/intro-case-banner-1.webp";
+import introCaseBanner2 from "@/assets/images/intro-case-banner-2.webp";
 
 const IntroductionSection = () => {
     return (
