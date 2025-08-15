@@ -31,6 +31,7 @@ const MobileNav = () => {
         aria-expanded={isMenuNavOpen}
         aria-controls="mobile-menu"
         className="p-1"
+        aria-label={isMenuNavOpen ? "Close menu" : "Open menu"}
       >
         {isMenuNavOpen ? <IoClose size={30} /> : <IoMenu size={30} />}
       </button>

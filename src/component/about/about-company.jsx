@@ -105,7 +105,7 @@ const CompanyAboutSection = () => {
                             hover:border-orange-500 hover:text-orange-500"
                         >
                             <p>Contact Us</p> 
-                            <FaArrowRight />
+                            <FaArrowRight aria-hidden="true" focusable="false" />
                         </Link>
                     </div>
                 </div>
