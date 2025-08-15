@@ -28,7 +28,7 @@ const ContactDetailCard = ({
                 <p className="text-sm text-white">{text}</p>
             </div>
             <div className="brand-bg-orange rounded-full p-4">
-                <MdArrowOutward size={20}/>
+                <MdArrowOutward size={20} aria-hidden="true" focusable="false" />
             </div>
         </Link>
     )

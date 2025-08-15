@@ -13,7 +13,7 @@ const Button = ({
             className={`${style} inline-flex items-center gap-2 brand-bg-orange py-3 px-5 rounded-full font-bold duration-300`}
         >
             {text} 
-            <FaArrowRight size={18}/>
+            <FaArrowRight size={18} aria-hidden="true" focusable="false"/>
         </Link> 
     )
 }

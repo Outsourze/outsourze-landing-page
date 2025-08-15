@@ -23,7 +23,7 @@ const ServiceShowcaseCard = ({
                 
                 <div className="bg-black absolute right-4 bottom-0 rounded-full
                 xl:p-5 lg:p-4 md:p-4">
-                    <MdArrowOutward className="text-white 
+                    <MdArrowOutward aria-hidden="true" focusable="false" className="text-white 
                     xl:w-12 xl:h-12
                     lg:w-[1.9rem] lg:h-[1.9rem]
                     md:w-8 md:h-8" />
