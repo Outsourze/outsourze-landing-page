@@ -14,7 +14,7 @@ const Header = () => {
         <div className="fixed lg:py-4 md:py-2 max-md:py-0 top-0 left-0 right-0 w-full z-50 bg-[var(--background)]">
             <div className="py-4 flex items-center justify-between max-w-7xl m-auto 
             xl:px-0 lg:px-20 md:px-20 max-md:px-5 relative">
-                <Link href={"/"}>
+                <Link href={"/"} aria-label="Outsouzed Home">
                   <OutsouzedLogo className="lg:w-52 md:w-36 max-md:w-36"/>
                 </Link>
                 {isDesktop && <DesktopNav />}
