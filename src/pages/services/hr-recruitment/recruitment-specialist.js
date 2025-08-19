@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function RecruitmentSpecialist() {
     const recruitmentSpecialistData = {
@@ -146,6 +147,12 @@ export default function RecruitmentSpecialist() {
     }
 
     return (
+      <>
+        <SEO
+          title="Outsourced Recruitment Specialists | Outsourze"
+          description="Hire remote recruitment specialists through Outsourze. Streamline candidate sourcing, screening, and hiring while reducing costs and time-to-hire."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/hr-recruitment/recruitment-specialist`}
+        />
         <ServiceContext.Provider value={recruitmentSpecialistData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function RecruitmentSpecialist() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

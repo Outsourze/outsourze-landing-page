@@ -9,6 +9,7 @@ import SL3 from "@/assets/icon/specific-services/sale-lead-generation/Outbound S
 import SL4 from "@/assets/icon/specific-services/sale-lead-generation/Telemarketer.svg";
 import SL5 from "@/assets/icon/specific-services/sale-lead-generation/Sales_Business Development.svg";
 import SLImage from "@/assets/images/specific-service/Sales & Lead Generation.webp";
+import SEO from "@/utility/useSeo";
 
 export default function SaleGeneration() {
   const salesGeneration = {
@@ -42,17 +43,24 @@ export default function SaleGeneration() {
   } 
 
   return (
-    <ServiceContext.Provider value={salesGeneration}>
-      <div className="flex w-full flex-col 
-      lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-        {/* Services section container */}
-        <SpecificBannerSection 
-          title={"Sales & Lead Generation"}
-          dscrpt={"Sales starts with connection. This team sparks interest, nurtures leads, and helps drive consistent business growth."}
-          img={SLImage}
-        />
-        <SpecificServicesSection />
-      </div>
-    </ServiceContext.Provider>
+    <>
+      <SEO
+        title="Sales & Lead Generation Outsourcing | Outsourze"
+        description="Boost your pipeline with our dedicated remote sales and lead generation teams. Engage prospects and drive growth with Outsourze’s expertise."
+        url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/sale-generation`}
+      />
+      <ServiceContext.Provider value={salesGeneration}>
+        <div className="flex w-full flex-col 
+        lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+          {/* Services section container */}
+          <SpecificBannerSection 
+            title={"Sales & Lead Generation"}
+            dscrpt={"Sales starts with connection. This team sparks interest, nurtures leads, and helps drive consistent business growth."}
+            img={SLImage}
+          />
+          <SpecificServicesSection />
+        </div>
+      </ServiceContext.Provider>
+    </>
   )
 }

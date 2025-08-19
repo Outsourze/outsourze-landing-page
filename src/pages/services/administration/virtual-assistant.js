@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function VirtualAssistant() {
     const virtualAssistantData = {
@@ -146,16 +147,23 @@ export default function VirtualAssistant() {
     }
 
     return (
+      <>
+        <SEO
+          title="Virtual Assistant Services | Outsourze"
+          description="Delegate tasks effectively with Outsourze's remote virtual assistants. Professional support for scheduling, email management, and admin—all at better rates."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/administration/virtual-assistant`}
+        />
         <ServiceContext.Provider value={virtualAssistantData}>
-            <div className="flex w-full flex-col 
-            lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-                <IndividualRoleBanner />
-                <IndividualRoleShowcase />
-                <IndividualRoleWhyUs />
-                <IndividualRolePrices />
-                <IndividualRoleCostComparison />
-                <IndividualRoleDisclaimer />
-            </div>
+          <div className="flex w-full flex-col 
+          lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+              <IndividualRoleBanner />
+              <IndividualRoleShowcase />
+              <IndividualRoleWhyUs />
+              <IndividualRolePrices />
+              <IndividualRoleCostComparison />
+              <IndividualRoleDisclaimer />
+          </div>
         </ServiceContext.Provider>
+      </>
     )
 }

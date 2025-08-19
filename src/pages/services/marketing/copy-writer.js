@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function Copywriter() {
     const copywriterData = {
@@ -145,6 +146,12 @@ export default function Copywriter() {
     }
 
     return (
+      <>
+        <SEO
+          title="Copywriting Services | Outsourze"
+          description="Boost your messaging with professional copywriting from Outsourze—compelling ad copy, email campaigns, and taglines that convert."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/marketing/copy-writer`}
+        />
         <ServiceContext.Provider value={copywriterData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -156,5 +163,6 @@ export default function Copywriter() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

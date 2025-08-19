@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function ChatSupportRepresentative() {
     const chatSupportData = {
@@ -146,16 +147,23 @@ export default function ChatSupportRepresentative() {
     }
 
     return (
+      <>
+        <SEO
+          title="Live Chat Support Outsourcing | Outsourze"
+          description="Engage customers in real time with Outsourze's chat support representatives. Deliver instant assistance, increase retention, and enhance satisfaction affordably."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/customer-support/chat-support-representative`}
+        />
         <ServiceContext.Provider value={chatSupportData}>
-            <div className="flex w-full flex-col 
-            lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-                <IndividualRoleBanner />
-                <IndividualRoleShowcase />
-                <IndividualRoleWhyUs />
-                <IndividualRolePrices />
-                <IndividualRoleCostComparison />
-                <IndividualRoleDisclaimer />
-            </div>
+          <div className="flex w-full flex-col 
+          lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+              <IndividualRoleBanner />
+              <IndividualRoleShowcase />
+              <IndividualRoleWhyUs />
+              <IndividualRolePrices />
+              <IndividualRoleCostComparison />
+              <IndividualRoleDisclaimer />
+          </div>
         </ServiceContext.Provider>
+      </>
     )
 }

@@ -76,7 +76,7 @@ const ServicesShowcaseSection = () => {
         {showcaseData.map((data, index) => (
           <ServiceShowcaseCard
             key={index}
-            url={`/services/${data.url}`}
+            url={`/services${data.url}`}
             img={isMobile ? data.img.mobile : data.img.desktop}
             text={data.text}
             title={data.title}

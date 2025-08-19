@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function HelpDeskSupportRepresentative() {
     const helpDeskSupportData = {
@@ -146,6 +147,12 @@ export default function HelpDeskSupportRepresentative() {
     }
 
     return (
+      <>
+        <SEO
+          title="Help Desk Support Outsourcing | Outsourze"
+          description="Scale your IT and customer help desk operations with Outsourze. Our remote support representatives handle tickets, troubleshooting, and resolutions efficiently."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/customer-support/help-desk-support-representative`}
+        />
         <ServiceContext.Provider value={helpDeskSupportData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function HelpDeskSupportRepresentative() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

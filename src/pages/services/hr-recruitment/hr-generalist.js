@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function HRGeneralist() {
     const hrGeneralistData = {
@@ -146,16 +147,23 @@ export default function HRGeneralist() {
     }
 
     return (
+      <>
+        <SEO
+          title="Outsourced HR Generalists | Outsourze"
+          description="Manage HR operations efficiently with Outsourze's remote HR generalists. From employee relations to compliance, we support your workforce needs."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/hr-recruitment/hr-generalist`}
+        />
         <ServiceContext.Provider value={hrGeneralistData}>
-            <div className="flex w-full flex-col 
-            lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-                <IndividualRoleBanner />
-                <IndividualRoleShowcase />
-                <IndividualRoleWhyUs />
-                <IndividualRolePrices />
-                <IndividualRoleCostComparison />
-                <IndividualRoleDisclaimer />
-            </div>
+          <div className="flex w-full flex-col 
+          lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+              <IndividualRoleBanner />
+              <IndividualRoleShowcase />
+              <IndividualRoleWhyUs />
+              <IndividualRolePrices />
+              <IndividualRoleCostComparison />
+              <IndividualRoleDisclaimer />
+          </div>
         </ServiceContext.Provider>
+      </>
     )
 }

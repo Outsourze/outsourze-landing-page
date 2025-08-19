@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function PayrollSpecialist() {
     const payrollSpecialistData = {
@@ -146,6 +147,12 @@ export default function PayrollSpecialist() {
     }
 
     return (
+      <>
+        <SEO
+          title="Remote Payroll Specialists | Outsourze"
+          description="Ensure accurate and on-time payroll processing with Outsourze's outsourced payroll specialists. Save time and reduce errors cost-effectively."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/finance/payroll-specialist`}
+        />
         <ServiceContext.Provider value={payrollSpecialistData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function PayrollSpecialist() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

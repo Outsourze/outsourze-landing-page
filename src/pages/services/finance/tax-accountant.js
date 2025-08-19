@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function TaxAccountant() {
     const taxAccountantData = {
@@ -146,6 +147,12 @@ export default function TaxAccountant() {
     }
 
     return (
+      <>
+        <SEO
+          title="Outsourced Tax Accounting Services | Outsourze"
+          description="Maximize tax compliance and savings with Outsourze's remote tax accountants. Professional expertise at a fraction of the cost."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/finance/tax-accountant`}
+        />
         <ServiceContext.Provider value={taxAccountantData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function TaxAccountant() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function EmailSupportRepresentative() {
     const emailSupportData = {
@@ -145,16 +146,24 @@ export default function EmailSupportRepresentative() {
     }
 
     return (
+      <>
+        <SEO
+          title="Outsourced Email Support Representatives | Outsourze"
+          description="Provide fast, reliable email support with trained remote representatives from Outsourze. Improve response times and customer experience affordably."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/customer-support/email-support-representative`}
+        />
         <ServiceContext.Provider value={emailSupportData}>
-            <div className="flex w-full flex-col 
-            lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-                <IndividualRoleBanner />
-                <IndividualRoleShowcase />
-                <IndividualRoleWhyUs />
-                <IndividualRolePrices />
-                <IndividualRoleCostComparison />
-                <IndividualRoleDisclaimer />
-            </div>
+          <div className="flex w-full flex-col 
+          lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+              <IndividualRoleBanner />
+              <IndividualRoleShowcase />
+              <IndividualRoleWhyUs />
+              <IndividualRolePrices />
+              <IndividualRoleCostComparison />
+              <IndividualRoleDisclaimer />
+          </div>
         </ServiceContext.Provider>
+      </>
+        
     )
 }

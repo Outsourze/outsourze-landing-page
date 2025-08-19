@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function CustomerServiceRepresentative() {
     const csrData = {
@@ -146,6 +147,12 @@ export default function CustomerServiceRepresentative() {
     }
 
     return (
+      <>
+        <SEO
+          title="Hire Customer Service Representatives | Outsourze"
+          description="Outsource customer service representatives with Outsourze. Deliver excellent support, resolve issues quickly, and boost customer satisfaction at lower costs."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/customer-support/customer-service-representative`}
+        />
         <ServiceContext.Provider value={csrData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function CustomerServiceRepresentative() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }
