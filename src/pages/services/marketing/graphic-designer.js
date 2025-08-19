@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function GraphicDesigner() {
     const graphicDesignerData = {
@@ -145,6 +146,12 @@ export default function GraphicDesigner() {
     }   
 
     return (
+      <>
+        <SEO
+          title="Outsourced Graphic Design Services | Outsourze"
+          description="Enhance your brand with creative designs from remote graphic designers at Outsourze—visual excellence without high agency costs."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/marketing/graphic-designer`}
+        />
         <ServiceContext.Provider value={graphicDesignerData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -156,5 +163,6 @@ export default function GraphicDesigner() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function PersonalAssistant() {
     const personalAssistantData = {
@@ -146,6 +147,12 @@ export default function PersonalAssistant() {
     }
 
     return (
+      <>
+        <SEO
+          title="Remote Personal Assistant Services | Outsourze"
+          description="Simplify your life with Outsourze's personal assistant services. Daily task support, personal coordination, and efficient assistance—without the overhead."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/administration/personal-assistant`}
+        />
         <ServiceContext.Provider value={personalAssistantData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function PersonalAssistant() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

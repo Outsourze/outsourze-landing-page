@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function ContentWriter() {
     const contentWriterData = {
@@ -145,6 +146,12 @@ export default function ContentWriter() {
     }
 
     return (
+      <>
+        <SEO
+          title="Content Writing Outsourcing | Outsourze"
+          description="Drive conversions with high-quality content created by remote writers from Outsourze—blog posts, articles, and SEO-focused copy delivered affordably."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/marketing/content-writer`}
+        />
         <ServiceContext.Provider value={contentWriterData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -156,5 +163,6 @@ export default function ContentWriter() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

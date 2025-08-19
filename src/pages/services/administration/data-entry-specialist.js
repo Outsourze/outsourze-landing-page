@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function DataEntrySpecialist() {
     const dataEntrySpecialistData = {
@@ -146,6 +147,12 @@ export default function DataEntrySpecialist() {
     }
 
     return (
+      <>
+        <SEO
+          title="Remote Data Entry Specialists | Outsourze"
+          description="Keep your data organized and accurate with Outsourze's remote data entry specialists. Timely, error-free entry at a more affordable cost."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/administration/data-entry-specialist`}
+        />
         <ServiceContext.Provider value={dataEntrySpecialistData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function DataEntrySpecialist() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function LeadGenerationSpecialist() {
     const leadGenerationSpecialistData = {
@@ -145,6 +146,12 @@ export default function LeadGenerationSpecialist() {
     }   
 
     return (
+      <>
+        <SEO
+          title="Lead Generation Outsourcing Specialist | Outsourze"
+          description="Scale your sales pipeline with outsourced lead generation specialists from Outsourze. Drive qualified leads affordably and consistently."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/sales-generation/lead-generation-specialist`}
+        />
         <ServiceContext.Provider value={leadGenerationSpecialistData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -156,5 +163,6 @@ export default function LeadGenerationSpecialist() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

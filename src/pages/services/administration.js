@@ -9,6 +9,7 @@ import AD3 from "@/assets/icon/specific-services/administration/Data Entry Speci
 import AD4 from "@/assets/icon/specific-services/administration/Encoder.svg";
 import AD5 from "@/assets/icon/specific-services/administration/Personal Assistant.svg";
 import ADImage from "@/assets/images/specific-service/Administration.webp";
+import SEO from "@/utility/useSeo";
 
 export default function Administration() {
   const admin = {
@@ -42,7 +43,13 @@ export default function Administration() {
   } 
 
   return (
-    <ServiceContext.Provider value={admin}>
+    <>
+      <SEO
+        title="Remote Administrative Support | Outsourze"
+        description="Keep your operations running smoothly with skilled virtual assistants, data entry, and executive support from Outsourze's offshore admin teams."
+        url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/administration`}
+      />
+      <ServiceContext.Provider value={admin}>
       <div className="flex w-full flex-col 
       lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
         {/* Services section container */}
@@ -54,5 +61,6 @@ export default function Administration() {
         <SpecificServicesSection />
       </div>
     </ServiceContext.Provider>
+    </>
   )
 }

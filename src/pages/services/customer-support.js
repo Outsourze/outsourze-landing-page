@@ -9,6 +9,7 @@ import CS3 from "@/assets/icon/specific-services/costumer-support/Help Desk.svg"
 import CS4 from "@/assets/icon/specific-services/costumer-support/Sales Support.svg";
 import CS5 from "@/assets/icon/specific-services/costumer-support/Chat Support.svg";
 import CSImage from "@/assets/images/specific-service/Customer Support.webp";
+import SEO from "@/utility/useSeo";
 
 export default function CustomerSupport() {
   const customerService = {
@@ -43,17 +44,24 @@ export default function CustomerSupport() {
   } 
 
   return (
-    <ServiceContext.Provider value={customerService}>
-      <div className="flex w-full flex-col 
-      lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-        {/* Services section container */}
-        <SpecificBannerSection 
-          title={"Customer Support"}
-          dscrpt={"Behind every great experience is a reliable support team. They resolve issues, build trust, and keep customers coming back."}
-          img={CSImage}
-        />
-        <SpecificServicesSection />
-      </div>
-    </ServiceContext.Provider>
+    <>
+      <SEO
+        title="Customer Support Outsourcing | Outsourze"
+        description="Provide dependable support with trained remote teams from Outsourze. Improve customer experience, response times, and satisfaction rates affordably."
+        url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/customer-support`}
+      />
+      <ServiceContext.Provider value={customerService}>
+        <div className="flex w-full flex-col 
+        lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+          {/* Services section container */}
+          <SpecificBannerSection 
+            title={"Customer Support"}
+            dscrpt={"Behind every great experience is a reliable support team. They resolve issues, build trust, and keep customers coming back."}
+            img={CSImage}
+          />
+          <SpecificServicesSection />
+        </div>
+      </ServiceContext.Provider>
+    </>
   )
 }

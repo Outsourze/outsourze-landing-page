@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function TelesalesSpecialist() {
     const telesalesSpecialistData = {
@@ -146,6 +147,12 @@ export default function TelesalesSpecialist() {
     }   
 
     return (
+      <>
+        <SEO
+          title="Remote Telesales Specialists | Outsourze"
+          description="Boost revenue with Outsourze's telesales specialists. Skilled, cost-effective remote teams ready to close deals and grow your business."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/sales-generation/telesales-specialist`}
+        />
         <ServiceContext.Provider value={telesalesSpecialistData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function TelesalesSpecialist() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

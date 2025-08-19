@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function VideoEditor() {
     const videoEditorData = {
@@ -145,6 +146,12 @@ export default function VideoEditor() {
     }   
 
     return (
+      <>
+        <SEO
+          title="Outsourced Video Editing Services | Outsourze"
+          description="Bring your story to life with outsourcing video editing from Outsourze—professional editing, fast turnaround, and budget-friendly."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/marketing/video-editor`}
+        />
         <ServiceContext.Provider value={videoEditorData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -156,5 +163,6 @@ export default function VideoEditor() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }
