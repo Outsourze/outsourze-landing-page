@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function ExecutiveAssistant() {
     const executiveAssistantData = {
@@ -146,6 +147,12 @@ export default function ExecutiveAssistant() {
     }
 
     return (
+      <>
+        <SEO
+          title="Outsourced Executive Assistant | Outsourze"
+          description="Boost your efficiency with dedicated executive assistant services from Outsourze. Seamless admin, scheduling, and coordination for busy professionals."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/administration/executive-assistant`}
+        />
         <ServiceContext.Provider value={executiveAssistantData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function ExecutiveAssistant() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

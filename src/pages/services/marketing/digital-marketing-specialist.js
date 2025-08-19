@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function DigitalMarketingSpecialist() {
     const digitalMarketingSpecialistData = {
@@ -146,6 +147,12 @@ export default function DigitalMarketingSpecialist() {
     }
 
     return (
+      <>
+        <SEO
+          title="Digital Marketing Outsourcing | Outsourze"
+          description="Scale your marketing with Outsourze's remote digital marketing specialists—PPC, SEO, analytics, and campaigns tailored to your goals."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/marketing/digital-marketing-specialist`}
+        />
         <ServiceContext.Provider value={digitalMarketingSpecialistData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function DigitalMarketingSpecialist() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

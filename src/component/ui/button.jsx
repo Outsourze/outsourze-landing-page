@@ -27,10 +27,11 @@ export const ButtonPlain = ({
 }) => {
     return (
         <Link 
-            href={url || ""}
-            className={`${style} inline-flex items-center gap-2 brand-bg-orange py-3 px-5 rounded-full`}
+          href="/about/michael-scott"
+          className="inline-flex items-center gap-2 brand-bg-orange py-3 px-5 rounded-full"
         >
-            {text} 
-        </Link> 
+          Read More
+          <span className="sr-only"> about Michael Scott, Co-Founder</span>
+        </Link>
     )
 }

@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function TalentAcquisitionSpecialist() {
     const talentAcquisitionSpecialistData = {
@@ -146,16 +147,23 @@ export default function TalentAcquisitionSpecialist() {
     }
 
     return (
+      <>
+        <SEO
+          title="Talent Acquisition Outsourcing | Outsourze"
+          description="Scale hiring with Outsourze's outsourced talent acquisition specialists. Find, attract, and retain top talent without the high overhead."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/hr-recruitment/talent-acquisition-specialist`}
+        />
         <ServiceContext.Provider value={talentAcquisitionSpecialistData}>
-            <div className="flex w-full flex-col 
-            lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-                <IndividualRoleBanner />
-                <IndividualRoleShowcase />
-                <IndividualRoleWhyUs />
-                <IndividualRolePrices />
-                <IndividualRoleCostComparison />
-                <IndividualRoleDisclaimer />
-            </div>
+          <div className="flex w-full flex-col 
+          lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+              <IndividualRoleBanner />
+              <IndividualRoleShowcase />
+              <IndividualRoleWhyUs />
+              <IndividualRolePrices />
+              <IndividualRoleCostComparison />
+              <IndividualRoleDisclaimer />
+          </div>
         </ServiceContext.Provider>
+      </>
     )
 }

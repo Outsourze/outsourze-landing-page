@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function SocialMediaManager() {
     const socialMediaManagerData = {
@@ -145,16 +146,23 @@ export default function SocialMediaManager() {
     }   
 
     return (
+      <>
+        <SEO
+          title="Remote Social Media Management | Outsourze"
+          description="Grow your online presence affordably with Outsourze's expert social media managers—strategy, content, and engagement handled professionally."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/marketing/graphic-designer`}
+        />
         <ServiceContext.Provider value={socialMediaManagerData}>
-            <div className="flex w-full flex-col 
-            lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-                <IndividualRoleBanner />
-                <IndividualRoleShowcase />
-                <IndividualRoleWhyUs />
-                <IndividualRolePrices />
-                <IndividualRoleCostComparison />
-                <IndividualRoleDisclaimer />
-            </div>
+              <div className="flex w-full flex-col 
+              lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+                  <IndividualRoleBanner />
+                  <IndividualRoleShowcase />
+                  <IndividualRoleWhyUs />
+                  <IndividualRolePrices />
+                  <IndividualRoleCostComparison />
+                  <IndividualRoleDisclaimer />
+              </div>
         </ServiceContext.Provider>
+      </>
     )
 }

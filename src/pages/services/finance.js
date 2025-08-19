@@ -9,6 +9,7 @@ import FA3 from "@/assets/icon/specific-services/finance-accounting/Payroll.svg"
 import FA4 from "@/assets/icon/specific-services/finance-accounting/Financial Analyst.svg";
 import FA5 from "@/assets/icon/specific-services/finance-accounting/Accounts Payable.svg";
 import FAImage from "@/assets/images/specific-service/Finance & Accounting.webp";
+import SEO from "@/utility/useSeo";
 
 export default function FinanceAccounting() {
   const financeAccounting = {
@@ -42,17 +43,24 @@ export default function FinanceAccounting() {
   } 
 
   return (
-    <ServiceContext.Provider value={financeAccounting}>
-      <div className="flex w-full flex-col 
-      lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-        {/* Services section container */}
-        <SpecificBannerSection 
-          title={"Finance & Accounting"}
-          dscrpt={"Every number tells a story. From reports to reconciliations, this team ensures accuracy, compliance, and financial clarity."}
-          img={FAImage}
-        />
-        <SpecificServicesSection />
-      </div>
-    </ServiceContext.Provider>
+    <>
+      <SEO
+        title="Finance & Accounting Outsourcing | Outsourze"
+        description="Manage finances stress-free with Outsourze's remote accounting solutions. Bookkeeping, payroll, tax, and analysis—all handled accurately and affordably."
+        url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/finance`}
+      />
+      <ServiceContext.Provider value={financeAccounting}>
+        <div className="flex w-full flex-col 
+        lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+          {/* Services section container */}
+          <SpecificBannerSection 
+            title={"Finance & Accounting"}
+            dscrpt={"Every number tells a story. From reports to reconciliations, this team ensures accuracy, compliance, and financial clarity."}
+            img={FAImage}
+          />
+          <SpecificServicesSection />
+        </div>
+      </ServiceContext.Provider>
+    </>
   )
 }

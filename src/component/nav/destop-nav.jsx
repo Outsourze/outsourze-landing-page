@@ -74,7 +74,7 @@ const DesktopNav = () => {
 
   return (
     <div className="flex items-center gap-9">
-      <Link className="text-[var(--color-gray)] font-cta" href="/">
+      <Link className="text-[var(--color-gray)] font-medium font-cta" href="/">
         Home
       </Link>
 
@@ -82,7 +82,7 @@ const DesktopNav = () => {
       <div className="relative" ref={dropdownRef}>
         <button
           onClick={() => setIsServicesOpen((prev) => !prev)}
-          className={`duration-300 font-cta flex items-center transition-colors cursor-pointer ${
+          className={`duration-300 font-cta font-medium flex items-center transition-colors cursor-pointer ${
             isServicesOpen ? "text-[var(--color-black)]" : "text-[var(--color-gray)]"
           }`}
           aria-haspopup="menu"
@@ -99,7 +99,7 @@ const DesktopNav = () => {
         </AnimatePresence>
       </div>
 
-      <Link className="text-[var(--color-gray)] font-cta" href="/about">
+      <Link className="text-[var(--color-gray)] font-cta font-medium" href="/about">
         About
       </Link>
       <WhiteButton text="Contact Us" url="/contact-us" />

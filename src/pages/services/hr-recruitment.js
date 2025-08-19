@@ -8,6 +8,7 @@ import HR2 from "@/assets/icon/specific-services/hr-recruitment/Talent Acquisiti
 import HR3 from "@/assets/icon/specific-services/hr-recruitment/HR Generalist.svg";
 import HR4 from "@/assets/icon/specific-services/hr-recruitment/Psychometric Testing.svg";
 import HRImage from "@/assets/images/specific-service/HR Recruitment.webp";
+import SEO from "@/utility/useSeo";
 
 export default function HrRecruitment() {
   const hrRecruitment = {
@@ -37,17 +38,24 @@ export default function HrRecruitment() {
   } 
 
   return (
-    <ServiceContext.Provider value={hrRecruitment}>
-      <div className="flex w-full flex-col 
-      lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-        {/* Services section container */}
-        <SpecificBannerSection 
-          title={"HR Recruitment"}
-          dscrpt={"Recruitment is more than hiring—it’s connecting the right people to the right roles. This team streamlines the process from sourcing to onboarding."}
-          img={HRImage}
-        />
-        <SpecificServicesSection />
-      </div>
-    </ServiceContext.Provider>
+    <>
+      <SEO
+        title="HR Recruitment Outsourcing | Outsourze"
+        description="Streamline hiring with our HR recruitment services. We help you attract, assess, and onboard skilled talent effortlessly through Outsourze."
+        url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/hr-recruitment`}
+      />
+      <ServiceContext.Provider value={hrRecruitment}>
+        <div className="flex w-full flex-col 
+        lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+          {/* Services section container */}
+          <SpecificBannerSection 
+            title={"HR Recruitment"}
+            dscrpt={"Recruitment is more than hiring—it's connecting the right people to the right roles. This team streamlines the process from sourcing to onboarding."}
+            img={HRImage}
+          />
+          <SpecificServicesSection />
+        </div>
+      </ServiceContext.Provider>
+    </>
   )
 }

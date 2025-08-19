@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function OutboundSalesAgent() {
     const outboundSalesAgentData = {
@@ -146,6 +147,12 @@ export default function OutboundSalesAgent() {
     }   
 
     return (
+      <>
+        <SEO
+          title="Outsourced Outbound Sales Agents | Outsourze"
+          description="Reach new markets through Outsourze's outbound sales agents. Professional prospecting and outreach to generate actionable leads."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/sales-generation/outbound-sales-agent`}
+        />
         <ServiceContext.Provider value={outboundSalesAgentData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -157,5 +164,6 @@ export default function OutboundSalesAgent() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }

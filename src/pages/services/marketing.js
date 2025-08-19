@@ -12,6 +12,7 @@ import MC6 from "@/assets/icon/specific-services/marketing-creative/Digital Merk
 import MC7 from "@/assets/icon/specific-services/marketing-creative/Video Editor.svg";
 import MC8 from "@/assets/icon/specific-services/marketing-creative/Motion Graphic Artist.svg";
 import MCImage from "@/assets/images/specific-service/Marketing & Creatives.webp";
+import SEO from "@/utility/useSeo";
 
 export default function MarketingCreative() {
   const marketingCreative = {
@@ -60,17 +61,25 @@ export default function MarketingCreative() {
   } 
 
   return (
-    <ServiceContext.Provider value={marketingCreative}>
-      <div className="flex w-full flex-col 
-      lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
-        {/* Services section container */}
-        <SpecificBannerSection 
-          title={"Marketing & Creative"}
-          dscrpt={"Creativity meets strategy here. This team brings brands to life through compelling visuals, content, and campaigns."}
-          img={MCImage}
-        />
-        <SpecificServicesSection />
-      </div>
-    </ServiceContext.Provider>
+    <>
+      <SEO
+       title="Marketing & Creative Outsourcing | Outsourze"
+       description="Elevate your brand with Outsourze's remote marketing experts—graphic design, content creation, social media, and campaigns tailored to your goals."
+       url={`${process.env.NEXT_PUBLIC_BASE_URL}/services/marketing`}
+     />
+      <ServiceContext.Provider value={marketingCreative}>
+        <div className="flex w-full flex-col 
+        lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
+          {/* Services section container */}
+          <SpecificBannerSection 
+            title={"Marketing & Creative"}
+            dscrpt={"Creativity meets strategy here. This team brings brands to life through compelling visuals, content, and campaigns."}
+            img={MCImage}
+          />
+          <SpecificServicesSection />
+        </div>
+      </ServiceContext.Provider>
+    </>
+    
   )
 }

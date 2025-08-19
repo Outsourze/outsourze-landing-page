@@ -5,6 +5,7 @@ import IndividualRoleWhyUs from "@/component/services/individual-role-component/
 import IndividualRolePrices from "@/component/services/individual-role-component/individual-role-prices";
 import IndividualRoleCostComparison from "@/component/services/individual-role-component/individual-role-cost-comparison";
 import IndividualRoleDisclaimer from "@/component/services/individual-role-component/individual-role-disclaimer";
+import SEO from "@/utility/useSeo";
 
 export default function Encoder() {
     const encoderData = {
@@ -144,6 +145,12 @@ export default function Encoder() {
     }
 
     return (
+      <>  
+        <SEO
+          title="Outsourced Encoding Services | Outsourze"
+          description="Get accurate document and data encoding services from Outsourze's remote professionals. Fast and reliable, so you can focus on growing your business."
+          url={`${process.env.NEXT_PUBLIC_BASE_URL}/administration/encoder`}
+        />
         <ServiceContext.Provider value={encoderData}>
             <div className="flex w-full flex-col 
             lg:gap-20 md:gap-10 max-md:gap-10 max-sm:gap-5">
@@ -155,5 +162,6 @@ export default function Encoder() {
                 <IndividualRoleDisclaimer />
             </div>
         </ServiceContext.Provider>
+      </>
     )
 }
