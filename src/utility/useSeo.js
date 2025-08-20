@@ -5,7 +5,7 @@ export default function SEO({
   title, 
   description, 
   url, 
-  image = "/Outsourze Logo Mark PNG.png" 
+  image = "/og-image.png" 
 }) {
   const siteName = "Outsourze"; // you can set this once
 
@@ -21,13 +21,14 @@ export default function SEO({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content="https://outsourze.com/images/og-image.jpg" />
+      <meta property="og:site_name" content="Outsourze" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content="https://outsourze.com/images/og-image.jpg" />
 
       {/* Canonical */}
       <link rel="canonical" href={url} />
