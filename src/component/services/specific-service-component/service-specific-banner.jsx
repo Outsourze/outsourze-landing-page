@@ -12,11 +12,17 @@ const SpecificBannerSection = ({
         lg:px-20
         md:px-20 md:mt-8 
         max-md:px-5 max-md:py-5">
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden
+              xl:rounded-[0.5rem] 
+              lg:rounded-[0.4rem] 
+              md:rounded-[0.3rem] 
+              max-md:rounded-[0.2rem] ">
                 <Image
                   className="object-cover w-full h-full contrast-70"
                   src={img}
                   alt={title}
+                  placeholder="blur"
+                  priority={true}
                 />    
                 {/* Soft orange overlay */}
                 <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay pointer-events-none" />

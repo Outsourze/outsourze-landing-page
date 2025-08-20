@@ -9,14 +9,20 @@ const BannerSection = () => {
         lg:px-20
         md:px-20 md:mt-8 
         max-md:px-5 max-md:py-5">
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden 
+            xl:rounded-[3rem] 
+            lg:rounded-[2.5rem] 
+            md:rounded-2xl
+            max-md:rounded-lg">
                 <Image
                   className="object-cover w-full h-full contrast-70"
                   src={OurServices}
                   alt="our services"
+                  placeholder="blur"
+                  priority={true}
                 />    
                 {/* Soft orange overlay */}
-                <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay pointer-events-none" />
+                <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay pointer-events-none"/>
                 <Image 
                     alt="go arrow"
                     className="absolute 
@@ -27,6 +33,7 @@ const BannerSection = () => {
                     max-[32rem]:w-8
                     max-[27rem]:w-7"
                     src={goArrow}
+                    placeholder="blur"
                 />
                 <h1 className="font-black font-heading absolute leading-none
                 xl:text-7xl xl:bottom-6 xl:left-7
