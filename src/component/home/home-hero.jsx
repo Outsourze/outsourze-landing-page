@@ -51,6 +51,7 @@ const HeroSection = () => {
                               alt="trending-alt"
                               className="w-12" 
                               src={trendingUp}
+                              placeholder="blur"
                             />
                         </div>
                         {/* text content */}
@@ -69,6 +70,7 @@ const HeroSection = () => {
                             alt="hero-two"
                             className="rounded-[1.25rem] w-full mix-blend-multiply"
                             src={heroTwo}
+                            placeholder="blur"
                           />
                           <div className="absolute inset-0 bg-orange-500 opacity-30 rounded-[1.25rem] pointer-events-none" />
                         </div>
@@ -77,6 +79,7 @@ const HeroSection = () => {
                             alt="hero-one"
                             className="rounded-[1.25rem] w-full mix-blend-multiply"
                             src={heroOne}
+                            placeholder="blur"
                           />
                           <div className="absolute inset-0 bg-orange-500 opacity-10 rounded-[1.25rem] pointer-events-none" />
                         </div>

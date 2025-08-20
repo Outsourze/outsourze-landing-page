@@ -23,10 +23,16 @@ const BannerSection = () => {
                   className="object-cover w-full h-full contrast-70"
                   src={AboutBanner}
                   alt="About"
+                  placeholder="blur"
+                  priority={true} // optional: if false, lazy loads by default
                 />    
 
                 {/* Soft orange overlay */}
-                <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay  pointer-events-none" />
+                <div className="absolute inset-0 bg-orange-500/43 mix-blend-overlay pointer-events-none 
+                xl:rounded-[3rem] 
+                lg:rounded-[2.5rem] 
+                md:rounded-2xl
+                max-md:rounded-lg" />
               </div>
               <h1 className="brand-text-orange font-black font-heading absolute leading-none 
               xl:text-[9rem] xl:leading-56 xl:bottom-[-0.1em] xl:tracking-normal
