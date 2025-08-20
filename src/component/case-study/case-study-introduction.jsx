@@ -30,6 +30,7 @@ const IntroductionSection = () => {
                     <ButtonPlain 
                         style={"lg:flex md:hidden max-md:hidden self-start px-7 font-cta shadow-md outline hover:bg-black hover:text-white hover:border-none hover:outline-none duration-100"} 
                         text={"Get Started"}
+                        url={"/contact-us"}
                     />
                 </div>
                 <Image 
