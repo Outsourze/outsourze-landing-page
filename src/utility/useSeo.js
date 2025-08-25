@@ -9,6 +9,14 @@ export default function SEO({
 }) {
   const siteName = "Outsourze"; // you can set this once
 
+  const schemaOrg = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Outsourze",
+    "url": "https://outsourze.com",
+    "logo": "https://outsourze.com/favicon-96x96.png"
+  };
+
   return (
     <Head>
       {/* Basic SEO */}
@@ -34,6 +42,12 @@ export default function SEO({
 
       {/* Canonical */}
       <link rel="canonical" href={url} />
+
+      {/* JSON-LD Organization Schema */}
+      <script 
+        type="application/ld+json" 
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }} 
+      />
     </Head>
   );
 }
