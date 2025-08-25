@@ -14,7 +14,7 @@ import GetStarted from "./get-started";
 
 // footer
 export const socialMedia = [{
-    url: "https://www.facebook.com/outsourze/",
+    url: "https://www.facebook.com/outsourze",
     alt: "facebook",
     icon: <Facebook className="brand-text-orange lg:w-10 md:w-8 max-md:w-6"/>
 }, {
