@@ -7,12 +7,12 @@ import Paul from "@/assets/images/paul.webp";
 const founderData = [{
     name: "Michael Scott",
     pos: "CO- FOUNDER",
-    descrp: "is a seasoned international professional with a unique blend of academic excellence and cross-sector experience.",
+    descrp: "is an experienced international professional with a unique blend of academic excellence and cross-sector experience.",
     img: Michael
 }, {
     name: "Liam Cullen",
     pos: "CO- FOUNDER",
-    descrp: "is a seasoned international leader with over 15 years of experience managing complex organizations across the UK, China, and the Middle East.",
+    descrp: "is an accomplished international leader with over 15 years of experience managing complex organizations across the UK, China, and the Middle East.",
     img: Liam
 }, {
     name: "David Scott",
